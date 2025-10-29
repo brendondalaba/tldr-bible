@@ -1,5 +1,16 @@
 ---
+import '../styles/global.css';
+import { getCollection } from 'astro:content';
+import { getGenreStyles } from '../utils/genreColors';
 
+const allBooks = await getCollection('bible');
+
+// Sort books by filename (which has the number prefix)
+const sortedBooks = allBooks.sort((a, b) => a.id.localeCompare(b.id));
+
+// Split into Old Testament (1-39) and New Testament (40-66)
+const oldTestament = sortedBooks.slice(0, 39);
+const newTestament = sortedBooks.slice(39);
 ---
 
 <html lang="en">
@@ -8,9 +19,70 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>TL;DR Bible - Quick Bible Summaries</title>
+		<meta name="description" content="Concise breakdowns of every book of the Bible" />
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-slate-50 min-h-screen">
+		<!-- Header -->
+		<header class="bg-white border-b border-slate-200">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+				<h1 class="text-4xl font-bold text-slate-900 mb-2">TL;DR Bible</h1>
+				<p class="text-lg text-slate-600">Concise breakdowns of every book of the Bible</p>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<!-- Old Testament Section -->
+			<section class="mb-16">
+				<h2 class="text-3xl font-bold text-slate-900 mb-6">Old Testament</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+					{oldTestament.map((book) => (
+						<a
+							href={`/bible/${book.slug}`}
+							class="block bg-white rounded-lg border border-slate-200 p-5 hover:border-blue-500 hover:shadow-md transition-all duration-200"
+						>
+							<div class="flex items-start justify-between mb-2">
+								<h3 class="text-lg font-semibold text-slate-900">{book.data.title}</h3>
+								<span class="text-xs font-medium px-2 py-1 rounded" style={getGenreStyles(book.data.genre)}>
+									{book.data.genre}
+								</span>
+							</div>
+							<p class="text-sm text-slate-600 line-clamp-2">{book.data.description}</p>
+						</a>
+					))}
+				</div>
+			</section>
+
+			<!-- New Testament Section -->
+			<section>
+				<h2 class="text-3xl font-bold text-slate-900 mb-6">New Testament</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+					{newTestament.map((book) => (
+						<a
+							href={`/bible/${book.slug}`}
+							class="block bg-white rounded-lg border border-slate-200 p-5 hover:border-blue-500 hover:shadow-md transition-all duration-200"
+						>
+							<div class="flex items-start justify-between mb-2">
+								<h3 class="text-lg font-semibold text-slate-900">{book.data.title}</h3>
+								<span class="text-xs font-medium px-2 py-1 rounded" style={getGenreStyles(book.data.genre)}>
+									{book.data.genre}
+								</span>
+							</div>
+							<p class="text-sm text-slate-600 line-clamp-2">{book.data.description}</p>
+						</a>
+					))}
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-white border-t border-slate-200 mt-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+				<p class="text-center text-slate-600 text-sm">
+					Explore the Bible, one book at a time
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>
