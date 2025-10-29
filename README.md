@@ -1,29 +1,33 @@
-# Astro Starter Kit: Minimal
+# TLDR Bible 📖
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A modern, interactive website that provides concise summaries of all 66 books of the Bible. Each book is presented with its key themes, important passages, and a digestible overview - perfect for quick reference or study.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Features
+
+- **Complete Coverage**: Summaries for all 66 books of the Bible (Old and New Testament)
+- **Genre Color Coding**: Visual organization by biblical genre (Law, History, Wisdom, Prophecy, Gospels, Letters, etc.)
+- **Clean Design**: Modern, responsive interface built with Astro
+- **Fast Performance**: Static site generation for optimal loading speeds
+- **Easy Navigation**: Browse all books from the home page, click to read detailed summaries
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
 /
-├── public/
+├── public/              # Static assets
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── content/
+│   │   ├── config.ts   # Content collection configuration
+│   │   └── bible/      # All 66 Bible book summaries (.md files)
+│   ├── pages/
+│   │   ├── index.astro           # Home page with book grid
+│   │   └── bible/[...slug].astro # Dynamic book detail pages
+│   ├── styles/
+│   │   └── global.css            # Global styles
+│   └── utils/
+│       └── genreColors.ts        # Genre color scheme utilities
 └── package.json
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
