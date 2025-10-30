@@ -6,37 +6,51 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-## Overview  
-False teachers (early Gnostics) were spreading confusion — claiming to have special knowledge while denying Jesus’ true humanity and divinity.  
-John writes to expose deception and affirm that real believers are marked by faith in Christ, obedience to God, and genuine love for others.  
+## Overview
+
+False teachers (early Gnostics) were spreading confusion — claiming to have special knowledge while denying Jesus’ true humanity and divinity.
+
+John writes to expose deception and affirm that real believers are marked by faith in Christ, obedience to God, and genuine love for others.
+
 It’s a letter full of tests and reassurance — how to *know* that your faith is real.
 
-## Author  
-**The Apostle John**, one of Jesus’ closest disciples and author of the Gospel of John and Revelation.  
+## Author
+
+**The Apostle John**, one of Jesus’ closest disciples and author of the Gospel of John and Revelation.
+
 He writes as a loving elder who had walked with Christ personally.
 
-## Era / Date  
+## Era / Date
+
 Written around **A.D. 85–95**, near the end of John’s life, likely from **Ephesus**.
 
-## Audience  
-Written to a network of early churches influenced by false teaching and struggling with assurance of salvation.  
+## Audience
+
+Written to a network of early churches influenced by false teaching and struggling with assurance of salvation.
+
 For believers today, 1 John grounds us in spiritual confidence — showing that God’s children are known by their truth, love, and obedience.
 
-## Historical / Cultural Context  
-The early Church faced a rising false belief called **Gnosticism**, which denied that Jesus truly came in the flesh and separated “spiritual” knowledge from moral living.  
+## Historical / Cultural Context
+
+The early Church faced a rising false belief called **Gnosticism**, which denied that Jesus truly came in the flesh and separated “spiritual” knowledge from moral living.
+
 John reminds believers that true Christianity is not about secret knowledge — it’s about relationship with a real Savior who lived, died, and rose again.
 
-## Purpose  
-- To help believers know they have eternal life in Christ  
-- To expose false teachers and spiritual deception  
-- To emphasize that genuine faith produces obedience and love  
-- To strengthen fellowship with God and one another  
+## Purpose
+- To help believers know they have eternal life in Christ
+- To expose false teachers and spiritual deception
+- To emphasize that genuine faith produces obedience and love
+- To strengthen fellowship with God and one another
 
-## Genre  
-**Pastoral letter of assurance and correction**  
+
+## Genre
+
+**Pastoral letter of assurance and correction**
+
 Warm yet direct — John writes as both shepherd and watchman.
 
-## Key Themes  
+## Key Themes
+
 
 | Theme | Summary |
 |-------|----------|
@@ -47,30 +61,36 @@ Warm yet direct — John writes as both shepherd and watchman.
 | **Fellowship with God** | True believers enjoy ongoing relationship with Him. |
 | **Victory Over Sin** | Christ’s power frees us from darkness. |
 
-## Structure  
+## Structure
+
 
 ### 1. Walking in Light (Ch. 1–2)
-- God is light; we must walk in honesty and obedience.  
-- Confession restores fellowship with Him.  
-- Love for others proves love for God.  
-- Warning against worldliness and false teachers.  
+- God is light; we must walk in honesty and obedience.
+- Confession restores fellowship with Him.
+- Love for others proves love for God.
+- Warning against worldliness and false teachers.
+
 
 ### 2. Living as God’s Children (Ch. 3)
-- We are God’s children — His love changes our character.  
-- Righteous living and love mark those born of God.  
-- The contrast between the children of God and the world.  
+- We are God’s children — His love changes our character.
+- Righteous living and love mark those born of God.
+- The contrast between the children of God and the world.
+
 
 ### 3. Testing the Spirits (Ch. 4)
-- Not every spirit or teaching is from God — test everything.  
-- God’s love is the proof of His presence.  
-- Perfect love drives out fear.  
+- Not every spirit or teaching is from God — test everything.
+- God’s love is the proof of His presence.
+- Perfect love drives out fear.
+
 
 ### 4. Confidence in Eternal Life (Ch. 5)
-- Faith in Jesus brings victory over the world.  
-- We can know that we have eternal life.  
-- God hears and answers the prayers of His children.  
+- Faith in Jesus brings victory over the world.
+- We can know that we have eternal life.
+- God hears and answers the prayers of His children.
 
-## Key Verses  
+
+## Key Verses
+
 
 | Passage | Why It Matters |
 |----------|----------------|
@@ -81,7 +101,8 @@ Warm yet direct — John writes as both shepherd and watchman.
 | **1 John 4:7–8** | God is love — those who know Him love others. |
 | **1 John 5:13** | “I write these things… so that you may know that you have eternal life.” |
 
-## Connection to Christ  
+## Connection to Christ
+
 
 | Foreshadow | Fulfilled in Jesus |
 |-------------|-------------------|
@@ -91,12 +112,14 @@ Warm yet direct — John writes as both shepherd and watchman.
 | **The Manifestation of Love (4:9–10)** | God’s love is revealed fully through the cross. |
 | **The Son of God (5:11–12)** | Eternal life is found only in Him. |
 
-## Application  
-1 John calls believers to live out a confident, authentic, and love-driven faith.  
-- **Walk in the Light:** Be honest before God and others.  
-- **Love Deeply:** True faith shows up in how you treat people.  
-- **Stay Grounded in Truth:** Test everything by God’s Word.  
-- **Live with Confidence:** You can know you belong to Him.  
-- **Abide in Christ:** Ongoing fellowship produces ongoing fruit.  
+## Application
+
+1 John calls believers to live out a confident, authentic, and love-driven faith.
+- **Walk in the Light:** Be honest before God and others.
+- **Love Deeply:** True faith shows up in how you treat people.
+- **Stay Grounded in Truth:** Test everything by God’s Word.
+- **Live with Confidence:** You can know you belong to Him.
+- **Abide in Christ:** Ongoing fellowship produces ongoing fruit.
+
 
 > *1 John reminds us that genuine Christianity is simple but powerful: walk in truth, live in love, and rest in the assurance that you are God’s child.*

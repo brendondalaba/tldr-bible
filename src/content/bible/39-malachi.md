@@ -6,41 +6,59 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-## Overview  
-After the temple was rebuilt and worship restored, the people of Judah drifted into complacency.  
-Their sacrifices were careless, their priests were corrupt, and their marriages unfaithful.  
-Through Malachi, God confronts their indifference and invites them to return to genuine devotion.  
-Even as He exposes their sin, He promises hope — the coming “Messenger” who will prepare the way for the Lord Himself.  
+## Overview
+
+After the temple was rebuilt and worship restored, the people of Judah drifted into complacency.
+
+Their sacrifices were careless, their priests were corrupt, and their marriages unfaithful.
+
+Through Malachi, God confronts their indifference and invites them to return to genuine devotion.
+
+Even as He exposes their sin, He promises hope — the coming “Messenger” who will prepare the way for the Lord Himself.
+
 Malachi stands as both a warning and a bridge — leading straight to the New Testament and the arrival of Jesus Christ.
 
-## Author  
-**Malachi**, whose name means *“My messenger.”*  
+## Author
+
+**Malachi**, whose name means *“My messenger.”*
+
 Some believe it may have been a title rather than a personal name, emphasizing his role as God’s final prophet before the Messiah.
 
-## Era / Date  
-Written around **430–420 BC**, during the time of **Nehemiah**, after the rebuilding of Jerusalem’s walls and temple.  
+## Era / Date
+
+Written around **430–420 BC**, during the time of **Nehemiah**, after the rebuilding of Jerusalem’s walls and temple.
+
 This was a period of spiritual apathy despite outward religion.
 
-## Audience  
-Addressed to **the post-exilic Jews in Judah**, especially the priests and leaders who had grown careless in their worship.  
+## Audience
+
+Addressed to **the post-exilic Jews in Judah**, especially the priests and leaders who had grown careless in their worship.
+
 For believers today, Malachi reminds us that God values sincerity over ceremony and faithfulness over formality.
 
-## Historical / Cultural Context  
-The people were no longer in exile — but their hearts were distant.  
-Corruption in the priesthood, broken vows in marriage, and neglect of tithes reflected a faith grown stale.  
+## Historical / Cultural Context
+
+The people were no longer in exile — but their hearts were distant.
+
+Corruption in the priesthood, broken vows in marriage, and neglect of tithes reflected a faith grown stale.
+
 Yet in the midst of this decline, God promises to send a forerunner (John the Baptist) and a Redeemer (Jesus Christ) who would bring ultimate purification and restoration.
 
-## Purpose  
-- To call God’s people back to wholehearted devotion  
-- To correct empty worship and spiritual laziness  
-- To reaffirm God’s covenant love and justice  
-- To prepare the way for the coming Messiah  
+## Purpose
+- To call God’s people back to wholehearted devotion
+- To correct empty worship and spiritual laziness
+- To reaffirm God’s covenant love and justice
+- To prepare the way for the coming Messiah
 
-## Genre  
-**Prophetic discourse in dialogue form**  
+
+## Genre
+
+**Prophetic discourse in dialogue form**
+
 Malachi uses a conversational style — God makes a statement, the people question it, and He responds with truth and correction.
 
-## Key Themes  
+## Key Themes
+
 
 | Theme | Summary |
 |-------|----------|
@@ -51,28 +69,34 @@ Malachi uses a conversational style — God makes a statement, the people questi
 | **Tithes and Trust** | Obedience opens the door for God’s blessing. |
 | **Hope and Messiah** | The coming “Messenger” prepares the way for Christ. |
 
-## Structure  
+## Structure
+
 
 ### 1. God’s Love and Israel’s Unfaithfulness (Ch. 1)
-- God declares His love for His people.  
-- The priests dishonor Him with corrupt sacrifices.  
+- God declares His love for His people.
+- The priests dishonor Him with corrupt sacrifices.
+
 
 ### 2. Covenant Faithlessness Exposed (Ch. 2)
-- Warnings to priests and people for breaking God’s covenant.  
-- Rebuke for unfaithfulness in marriage and worship.  
+- Warnings to priests and people for breaking God’s covenant.
+- Rebuke for unfaithfulness in marriage and worship.
+
 
 ### 3. The Call to Return and the Coming Messenger (Ch. 3)
-- “Return to Me, and I will return to you.”  
-- God promises to purify His people like silver.  
-- The “Messenger” foretold — fulfilled in John the Baptist.  
-- Promise of blessing for those who honor God with their tithes.  
+- “Return to Me, and I will return to you.”
+- God promises to purify His people like silver.
+- The “Messenger” foretold — fulfilled in John the Baptist.
+- Promise of blessing for those who honor God with their tithes.
+
 
 ### 4. The Day of the Lord (Ch. 4)
-- The wicked will be judged; the righteous will be healed.  
-- Promise of Elijah’s coming — fulfilled before Christ’s ministry.  
-- Ends with anticipation of the Messiah’s arrival.  
+- The wicked will be judged; the righteous will be healed.
+- Promise of Elijah’s coming — fulfilled before Christ’s ministry.
+- Ends with anticipation of the Messiah’s arrival.
 
-## Key Verses  
+
+## Key Verses
+
 
 | Passage | Why It Matters |
 |----------|----------------|
@@ -83,7 +107,8 @@ Malachi uses a conversational style — God makes a statement, the people questi
 | **Malachi 3:1** | Prophecy of John the Baptist preparing the way for the Lord. |
 | **Malachi 4:2** | “The Sun of righteousness will rise with healing in His wings.” — the hope of Christ. |
 
-## Connection to Christ  
+## Connection to Christ
+
 
 | Foreshadow | Fulfilled in Jesus |
 |-------------|-------------------|
@@ -93,12 +118,14 @@ Malachi uses a conversational style — God makes a statement, the people questi
 | **The Sun of Righteousness (4:2)** | Jesus brings light, healing, and righteousness to the world. |
 | **The Covenant Restorer** | Jesus fulfills and renews God’s covenant with His blood. |
 
-## Application  
-Malachi teaches that God desires genuine hearts, not hollow habits.  
-- **Return to Relationship:** God’s love never fails — come back to Him.  
-- **Honor God in Worship:** Give Him your best, not your leftovers.  
-- **Stay Faithful in Commitment:** Whether in marriage or ministry, covenant matters.  
-- **Trust His Provision:** Obedience opens the door to God’s blessing.  
-- **Live in Expectation:** The Savior has come — and He’s coming again.  
+## Application
+
+Malachi teaches that God desires genuine hearts, not hollow habits.
+- **Return to Relationship:** God’s love never fails — come back to Him.
+- **Honor God in Worship:** Give Him your best, not your leftovers.
+- **Stay Faithful in Commitment:** Whether in marriage or ministry, covenant matters.
+- **Trust His Provision:** Obedience opens the door to God’s blessing.
+- **Live in Expectation:** The Savior has come — and He’s coming again.
+
 
 > *Malachi reminds us that God doesn’t want religion — He wants relationship. His final Old Testament word is still His heart today: “Return to Me, and I will return to you.”*

@@ -6,40 +6,56 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-## Overview  
-Amos was a humble shepherd from Judah whom God sent to speak to the wealthy, self-satisfied northern kingdom of Israel.  
-Though Israel prospered materially, its heart was far from God.  
-Amos boldly declared that worship without justice was empty — God wanted hearts that reflected His character.  
+## Overview
+
+Amos was a humble shepherd from Judah whom God sent to speak to the wealthy, self-satisfied northern kingdom of Israel.
+
+Though Israel prospered materially, its heart was far from God.
+
+Amos boldly declared that worship without justice was empty — God wanted hearts that reflected His character.
+
 The book ends with both warning and hope: after judgment, God promises to restore His people and bless them again.
 
-## Author  
-**Amos**, a shepherd and fig farmer from Tekoa in Judah.  
+## Author
+
+**Amos**, a shepherd and fig farmer from Tekoa in Judah.
+
 He wasn’t a professional prophet but was called by God to deliver a strong message of truth to Israel.
 
-## Era / Date  
+## Era / Date
+
 Written around **760–750 BC**, during the reign of **Jeroboam II** in Israel — a time of national prosperity but spiritual corruption.
 
-## Audience  
-Directed primarily to **the northern kingdom of Israel**, who enjoyed comfort and wealth but ignored justice, honesty, and humility.  
+## Audience
+
+Directed primarily to **the northern kingdom of Israel**, who enjoyed comfort and wealth but ignored justice, honesty, and humility.
+
 For believers today, Amos reminds us that faith without compassion and obedience is hollow.
 
-## Historical / Cultural Context  
-Israel had become complacent, enjoying luxury while oppressing the poor and ignoring God’s commands.  
-Religious ceremonies continued, but the people’s hearts were cold.  
+## Historical / Cultural Context
+
+Israel had become complacent, enjoying luxury while oppressing the poor and ignoring God’s commands.
+
+Religious ceremonies continued, but the people’s hearts were cold.
+
 Amos exposes the gap between appearance and reality — God desires righteousness, not just religious activity.
 
-## Purpose  
-- To expose hypocrisy and social injustice  
-- To call God’s people to sincere repentance  
-- To show that God’s judgment is fair and inescapable  
-- To remind believers that true worship includes justice and mercy  
-- To reveal God’s promise of future restoration for the faithful remnant  
+## Purpose
+- To expose hypocrisy and social injustice
+- To call God’s people to sincere repentance
+- To show that God’s judgment is fair and inescapable
+- To remind believers that true worship includes justice and mercy
+- To reveal God’s promise of future restoration for the faithful remnant
 
-## Genre  
-**Prophetic oracles and poetic judgment**  
+
+## Genre
+
+**Prophetic oracles and poetic judgment**
+
 Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in self-righteousness.
 
-## Key Themes  
+## Key Themes
+
 
 | Theme | Summary |
 |-------|----------|
@@ -50,21 +66,26 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 | **Restoration and Hope** | Judgment is not the end — mercy follows repentance. |
 | **God’s Sovereignty** | He rules over all nations, not just Israel. |
 
-## Structure  
+## Structure
+
 
 ### 1. Judgment on the Nations (Ch. 1–2)
-- God pronounces judgment on Israel and surrounding nations for their sins.  
+- God pronounces judgment on Israel and surrounding nations for their sins.
+
 
 ### 2. Sins of Israel Exposed (Ch. 3–6)
-- Condemnation of hypocrisy, greed, and injustice.  
-- “Let justice roll like a river” — God calls for genuine righteousness.  
+- Condemnation of hypocrisy, greed, and injustice.
+- “Let justice roll like a river” — God calls for genuine righteousness.
+
 
 ### 3. Visions of Judgment (Ch. 7–9)
-- The locusts, fire, and plumb line — symbols of coming correction.  
-- The priest Amaziah opposes Amos.  
-- Ends with hope: God will restore the fallen “house of David.”  
+- The locusts, fire, and plumb line — symbols of coming correction.
+- The priest Amaziah opposes Amos.
+- Ends with hope: God will restore the fallen “house of David.”
 
-## Key Verses  
+
+## Key Verses
+
 
 | Passage | Why It Matters |
 |----------|----------------|
@@ -74,7 +95,8 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 | **Amos 7:8** | The plumb line — God measures His people by His standard, not theirs. |
 | **Amos 9:11–12** | Promise of restoration through the rebuilt house of David — fulfilled in Christ. |
 
-## Connection to Christ  
+## Connection to Christ
+
 
 | Foreshadow | Fulfilled in Jesus |
 |-------------|-------------------|
@@ -84,12 +106,14 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 | **Mercy for All Nations** | Salvation extends beyond Israel to all who believe. |
 | **Justice and Grace United** | The cross satisfies both God’s justice and His mercy. |
 
-## Application  
-Amos reminds us that what God desires most is integrity — faith that produces justice, humility, and love.  
-- **Live What You Believe:** True worship transforms daily life.  
-- **Seek Justice:** Care for the poor, oppressed, and forgotten.  
-- **Reject Hypocrisy:** God values obedience over performance.  
-- **Repent Quickly:** Sin tolerated becomes sin judged.  
-- **Hold to Hope:** God’s mercy restores what His judgment refines.  
+## Application
+
+Amos reminds us that what God desires most is integrity — faith that produces justice, humility, and love.
+- **Live What You Believe:** True worship transforms daily life.
+- **Seek Justice:** Care for the poor, oppressed, and forgotten.
+- **Reject Hypocrisy:** God values obedience over performance.
+- **Repent Quickly:** Sin tolerated becomes sin judged.
+- **Hold to Hope:** God’s mercy restores what His judgment refines.
+
 
 > *Amos calls us to wake up — to stop playing church and start living truth. God’s people should be known not by words, but by righteousness that flows like a river.*
