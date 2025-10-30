@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Colossians  
-*The God Who Is Above All Things*
-
-> “He is before all things, and in Him all things hold together.” — **Colossians 1:17**
-
-Colossians is Paul’s declaration that Jesus is not just *part* of the story — He *is* the story.  
-He’s the visible image of the invisible God, the Creator, Redeemer, and Sustainer of everything.  
-In a world full of competing beliefs, Paul reminds believers that Christ alone is supreme, sufficient, and central to all life and faith.
-
----
-
 ## Overview  
 False teachers had begun influencing the church in Colossae, mixing Jewish legalism, pagan mysticism, and philosophical ideas.  
 Paul writes to refocus their eyes on Jesus — who is fully God, fully sufficient, and the only way to fullness of life.  

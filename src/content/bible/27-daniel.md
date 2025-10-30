@@ -6,16 +6,6 @@ genre: 'Prophecy'
 group: 'Major Prophets'
 ---
 
-# Daniel  
-*The God Who Rules Over Every Kingdom*
-
-> “The Most High rules over the kingdom of men and gives it to whomever He will.” — **Daniel 4:17**
-
-Daniel is a book of uncompromising faith and divine sovereignty.  
-It shows how God’s people can stand firm in a corrupt culture while also unveiling breathtaking prophecies about the rise and fall of nations — and the ultimate victory of God’s eternal kingdom.
-
----
-
 ## Overview  
 Taken to Babylon as a teenager, Daniel served faithfully in a pagan empire without compromising his devotion to God.  
 Through trials, dreams, and divine encounters, he remained steadfast — proving that God’s wisdom and authority are greater than any earthly power.  

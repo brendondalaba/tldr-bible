@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# 1 Samuel  
-*The God Who Raises Up and Brings Down*
-
-> “The Lord does not look at the things people look at. People look at the outward appearance, but the Lord looks at the heart.” — **1 Samuel 16:7**
-
-1 Samuel marks a turning point in Israel’s story. It’s about God raising up prophets and kings — and reminding His people that true leadership begins with a heart surrendered to Him.  
-It’s a story of prayer, pride, failure, and faith — all woven together under the steady hand of a sovereign God.
-
----
-
 ## Overview  
 1 Samuel begins with Hannah’s prayer for a child and ends with the fall of King Saul.  
 Between those bookends, God raises up Samuel as a prophet, answers Israel’s cry for a king, and chooses David — a shepherd after His own heart.  

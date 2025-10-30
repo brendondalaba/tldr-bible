@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# 1 Kings  
-*The God Who Honors Devotion and Judges Division*
-
-> “If you walk before me in integrity of heart and uprightness... I will establish your royal throne over Israel forever.” — **1 Kings 9:4–5**
-
-1 Kings begins with Solomon’s rise to the throne and ends with a divided kingdom.  
-It’s a story of great wisdom, breathtaking glory, and heartbreaking compromise — showing that blessing endures only when God remains at the center.
-
----
-
 ## Overview  
 The book opens with David’s final days and Solomon’s coronation. Under Solomon, Israel reaches its peak of wealth, peace, and influence, including the building of the temple in Jerusalem.  
 But as Solomon and later kings drift toward idolatry, the kingdom splits into two — Israel in the north and Judah in the south.  

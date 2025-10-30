@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# 2 Kings  
-*The God Who Warns, Judges, and Still Redeems*
-
-> “The Lord was gracious to them, had compassion and showed concern for them because of His covenant...” — **2 Kings 13:23**
-
-2 Kings continues the story of Israel and Judah after the death of Ahab. It’s a tale of prophets, kings, and the consequences of choices — both good and bad.  
-Through miracles, warnings, and exile, God proves that His justice is real, but His compassion never fades.
-
----
-
 ## Overview  
 The book begins with Elijah’s final moments and Elisha’s ministry of miracles.  
 It follows the decline of both Israel (the northern kingdom) and Judah (the southern kingdom) as most of their kings turn from God.  

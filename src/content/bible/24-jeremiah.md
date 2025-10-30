@@ -6,16 +6,6 @@ genre: 'Prophecy'
 group: 'Major Prophets'
 ---
 
-# Jeremiah  
-*The God Who Calls, Corrects, and Still Restores*
-
-> “Before I formed you in the womb I knew you; before you were born I set you apart.” — **Jeremiah 1:5**
-
-Jeremiah is often called *“the weeping prophet.”* His ministry shows the pain of rebellion and the beauty of repentance.  
-He warned Judah of coming judgment but also pointed to God’s promise of a *new covenant* — one written not on tablets of stone, but on human hearts.
-
----
-
 ## Overview  
 Jeremiah served as God’s prophet during Judah’s final years before the Babylonian exile.  
 He pleaded with the people to turn back to God, but they refused.  

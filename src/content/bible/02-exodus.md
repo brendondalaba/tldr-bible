@@ -6,15 +6,6 @@ genre: 'Law'
 group: 'Pentateuch'
 ---
 
-# Exodus  
-*The God Who Delivers*
-
-> “The Lord will fight for you; you need only to be still.” — **Exodus 14:14**
-
-Exodus is the story of God rescuing His people from slavery and shaping them into a nation that belongs to Him. It’s not just Israel’s story — it’s a picture of how God still frees His people today.
-
----
-
 ## Overview  
 Exodus means *departure*. It tells how God delivered Israel from Egypt, made a covenant with them at Mount Sinai, and showed them how to live in His presence.  
 It’s a book about salvation, leadership, worship, and learning to trust the God who saves.

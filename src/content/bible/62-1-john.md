@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 1 John  
-*The God Who Gives Assurance Through Love and Truth*
-
-> “We love because He first loved us.” — **1 John 4:19**
-
-1 John was written to believers who were uncertain — shaken by false teachers and counterfeit spirituality.  
-John, now an aged apostle, writes like a spiritual father, reminding them that true fellowship with God produces both **truth and love**.  
-This letter calls believers back to the basics: walk in light, live in love, and rest in assurance that you belong to Him.
-
----
-
 ## Overview  
 False teachers (early Gnostics) were spreading confusion — claiming to have special knowledge while denying Jesus’ true humanity and divinity.  
 John writes to expose deception and affirm that real believers are marked by faith in Christ, obedience to God, and genuine love for others.  

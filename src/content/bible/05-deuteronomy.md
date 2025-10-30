@@ -6,16 +6,6 @@ genre: 'Law'
 group: 'Pentateuch'
 ---
 
-# Deuteronomy  
-*The God Who Reminds and Renews*
-
-> “Be strong and courageous. Do not be afraid... for the Lord your God goes with you; He will never leave you nor forsake you.” — **Deuteronomy 31:6**
-
-Deuteronomy is Moses’ final message to Israel — a heartfelt reminder to remember what God has done, obey His Word, and stay faithful as they enter the Promised Land.  
-It’s a book about renewal: renewed covenant, renewed vision, renewed hearts.
-
----
-
 ## Overview  
 The word *Deuteronomy* means “second law,” not because it introduces new laws, but because Moses restates and reinforces what God already commanded.  
 After 40 years in the wilderness, the old generation has passed, and a new one is about to enter Canaan.  

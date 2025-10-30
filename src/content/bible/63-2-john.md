@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 2 John  
-*The God Who Guards Truth Through Love*
-
-> “It has given me great joy to find some of your children walking in the truth, just as the Father commanded us.” — **2 John 4**
-
-2 John is a short, heartfelt letter from an elder who has seen both truth defended and truth distorted.  
-John urges believers to hold tightly to the truth of Christ’s teaching while continuing to walk in love.  
-It’s a balance many still need today — truth without love becomes harsh, and love without truth becomes hollow.
-
----
-
 ## Overview  
 False teachers were traveling from town to town, spreading ideas that denied Jesus’ divinity and humanity.  
 John writes to remind believers — represented here as a “chosen lady and her children” — to love one another, hold fast to sound teaching, and avoid supporting those who reject Christ’s truth.  

@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# Ruth  
-*The God Who Redeems and Restores*
-
-> “Where you go, I will go, and where you stay, I will stay. Your people will be my people and your God my God.” — **Ruth 1:16**
-
-Ruth is a story of hope in hard times — a picture of God’s faithfulness when life feels empty.  
-Amid the darkness of the Judges era, God shines a light through the loyalty of a young widow and His quiet plan of redemption that would lead to the coming of Christ.
-
----
-
 ## Overview  
 The Book of Ruth takes place during the time of the Judges, when “everyone did what was right in their own eyes.”  
 While the nation struggled with rebellion, one ordinary family’s story shows how God works behind the scenes — turning tragedy into blessing.  

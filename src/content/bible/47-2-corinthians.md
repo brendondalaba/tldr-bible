@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 2 Corinthians  
-*The God Who Strengthens the Weak*
-
-> “My grace is sufficient for you, for My power is made perfect in weakness.” — **2 Corinthians 12:9**
-
-2 Corinthians is Paul at his most personal.  
-He writes as a wounded pastor defending his integrity and reminding believers that God’s power shines brightest in human weakness.  
-It’s a message for every believer who has felt weary, misunderstood, or burdened — hope that God’s grace is enough, no matter what.
-
----
-
 ## Overview  
 After sending a strong corrective letter (1 Corinthians), Paul now writes to comfort, restore, and encourage the Corinthian believers.  
 He defends his ministry, shares his struggles, and reminds them that suffering for Christ produces lasting fruit.  

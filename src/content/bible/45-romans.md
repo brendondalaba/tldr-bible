@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Romans  
-*The God Who Saves by Grace Alone*
-
-> “For I am not ashamed of the gospel, because it is the power of God that brings salvation to everyone who believes.” — **Romans 1:16**
-
-Romans is Paul’s masterpiece — a Spirit-inspired explanation of how God rescues, redeems, and restores sinners through faith in Jesus Christ.  
-It lays the foundation of the Gospel: that we are saved by grace through faith, not by works, and that this grace transforms every part of our lives.  
-It’s both theological and deeply personal — a roadmap from guilt to glory.
-
----
-
 ## Overview  
 Written to believers in Rome whom Paul had not yet met, this letter explains the core truths of Christianity.  
 Paul walks through humanity’s problem (sin), God’s solution (Jesus), and the Spirit’s power to make us new.  

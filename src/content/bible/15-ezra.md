@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# Ezra  
-*The God Who Restores His People and Rebuilds What Was Broken*
-
-> “The hand of the Lord my God was on me.” — **Ezra 7:28**
-
-Ezra is a story of comeback and renewal. After decades in exile, God stirs the hearts of kings and people alike to return to Jerusalem, rebuild the temple, and restore worship.  
-It’s a book about repentance, obedience, and the faithfulness of a God who always brings His people home.
-
----
-
 ## Overview  
 Ezra picks up where 2 Chronicles ends. God moves the Persian king Cyrus to issue a decree allowing the Jews to return and rebuild the temple.  
 Two main leaders emerge: **Zerubbabel**, who leads the first return and rebuilds the temple, and **Ezra**, who later leads a second group to restore God’s Word and proper worship.  

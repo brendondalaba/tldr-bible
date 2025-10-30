@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Galatians  
-*The God Who Sets Us Free*
-
-> “It is for freedom that Christ has set us free.” — **Galatians 5:1**
-
-Galatians is a fiery letter written to believers who were drifting back into legalism — trying to earn through religion what Jesus had already given through grace.  
-Paul reminds them (and us) that the Gospel is not about what we do for God, but what God has done for us through Jesus Christ.  
-Freedom, not bondage, is the mark of true faith.
-
----
-
 ## Overview  
 Paul founded the churches in Galatia during his missionary journeys.  
 After he left, false teachers (the Judaizers) came in, insisting that Gentile believers must follow Jewish laws — especially circumcision — to be saved.  

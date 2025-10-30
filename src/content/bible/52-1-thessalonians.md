@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 1 Thessalonians  
-*The God Who Strengthens and Sustains His People*
-
-> “The Lord Himself will descend from heaven with a shout… and so we will be with the Lord forever.” — **1 Thessalonians 4:16–17**
-
-1 Thessalonians is one of Paul’s warmest letters — written to new believers standing firm under pressure.  
-Despite persecution, the church in Thessalonica had become a model of faith and endurance.  
-Paul writes to encourage them to keep growing, stay pure, and live with joyful expectation of Jesus’ return.
-
----
-
 ## Overview  
 The Thessalonian church was young — barely months old — when persecution forced Paul to leave the city.  
 Worried about their faith, he sent Timothy to check on them, and Timothy’s good report moved Paul to write this letter.  

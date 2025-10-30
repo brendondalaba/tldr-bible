@@ -6,16 +6,6 @@ genre: 'Wisdom'
 group: 'Wisdom Literature'
 ---
 
-# Psalms  
-*The God Who Hears, Heals, and Dwells Among His People*
-
-> “The Lord is my shepherd; I shall not want.” — **Psalm 23:1**
-
-Psalms is the songbook of the Bible — 150 Spirit-inspired poems and prayers that give voice to joy, sorrow, worship, and wonder.  
-It teaches us that God welcomes honesty, meets us in our weakness, and is worthy of praise in every season of life.
-
----
-
 ## Overview  
 The Book of Psalms spans centuries, written by kings, prophets, and worshippers who poured out their hearts to God.  
 It reveals the full range of human experience — from deep despair to unshakable trust.  

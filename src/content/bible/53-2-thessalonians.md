@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 2 Thessalonians  
-*The God Who Keeps His Promises*
-
-> “But the Lord is faithful, and He will strengthen you and guard you from the evil one.” — **2 Thessalonians 3:3**
-
-2 Thessalonians was written to a faithful but frightened church.  
-False teachers had confused believers about the Day of the Lord, claiming it had already happened.  
-Paul writes to reassure them that God’s plan is still unfolding — Jesus *will* return, justice *will* be done, and until then, believers are to stand firm, work diligently, and trust His faithfulness.
-
----
-
 ## Overview  
 After hearing that some in Thessalonica were shaken by false reports about Christ’s return, Paul follows up his first letter with deeper teaching and correction.  
 He commends their growing faith, comforts them in persecution, and clarifies what must take place before the Day of the Lord.  

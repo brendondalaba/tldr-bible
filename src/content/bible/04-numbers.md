@@ -6,16 +6,6 @@ genre: 'Law'
 group: 'Pentateuch'
 ---
 
-# Numbers  
-*The God Who Leads Faithfully*
-
-> “The Lord is slow to anger, abounding in love and forgiving sin and rebellion.” — **Numbers 14:18**
-
-Numbers tells the story of Israel’s long journey through the wilderness — from Mount Sinai to the edge of the Promised Land.  
-It’s a book about testing, trust, and the faithfulness of a God who leads His people even when they wander.
-
----
-
 ## Overview  
 Numbers records how God organized His people into a nation, guided them through the desert, and taught them to depend on Him.  
 The title comes from the two censuses (counts) taken — one at the beginning of the journey and one near the end.  

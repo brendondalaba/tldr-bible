@@ -6,15 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# Joshua  
-*The God Who Fulfills His Promises*
-
-> “Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.” — **Joshua 1:9**
-
-Joshua is the story of promise fulfilled. After forty years in the wilderness, God leads His people into the land He promised to Abraham. It’s a book about courage, faith, and obedience — and a reminder that God always keeps His word.
-
----
-
 ## Overview  
 Joshua continues right where Deuteronomy ends. Moses has died, and Joshua is now leading Israel.  
 The people finally cross the Jordan River, conquer the land of Canaan, and settle in their inheritance.  

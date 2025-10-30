@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Haggai  
-*The God Who Calls Us to Rebuild*
-
-> “Be strong, all you people of the land, declares the Lord, and work. For I am with you.” — **Haggai 2:4**
-
-Haggai is a wake-up call to stop delaying what matters most.  
-After returning from exile, God’s people became distracted — focused on rebuilding their own homes while neglecting His temple.  
-Through Haggai, God reminds them that His presence and blessing return when His priorities come first.
-
----
-
 ## Overview  
 Sixteen years after the first exiles returned from Babylon, the rebuilding of the temple had stalled.  
 The people faced discouragement, opposition, and misplaced priorities.  

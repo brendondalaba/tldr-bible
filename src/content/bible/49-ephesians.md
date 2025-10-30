@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Ephesians  
-*The God Who Unites Heaven and Earth*
-
-> “For we are His workmanship, created in Christ Jesus for good works.” — **Ephesians 2:10**
-
-Ephesians lifts our eyes from earthly struggles to eternal realities.  
-It reminds us that the Christian life starts not with what we do, but with what God has already done.  
-We are blessed, chosen, forgiven, and sealed in Christ — called to walk in unity, love, and spiritual power.
-
----
-
 ## Overview  
 Written while Paul was imprisoned in Rome, Ephesians is a circular letter meant to strengthen churches across Asia Minor.  
 It’s divided into two main parts: **what God has done for us (chapters 1–3)** and **how we should live in response (chapters 4–6)**.  

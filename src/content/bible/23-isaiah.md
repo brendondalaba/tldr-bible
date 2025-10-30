@@ -6,16 +6,6 @@ genre: 'Prophecy'
 group: 'Major Prophets'
 ---
 
-# Isaiah  
-*The God Who Saves and Reigns Forever*
-
-> “Though your sins are like scarlet, they shall be as white as snow.” — **Isaiah 1:18**
-
-Isaiah is a book of warning and hope — judgment for rebellion, and redemption for the repentant.  
-Through vivid prophecy, Isaiah reveals the coming Messiah who will bear our sins, heal our wounds, and establish an everlasting kingdom of righteousness.
-
----
-
 ## Overview  
 Isaiah’s ministry spanned the reigns of four kings in Judah, during a time of moral decline and political chaos.  
 God called Isaiah to speak truth to a nation that had turned away — warning of judgment through Assyria and Babylon, yet offering incredible hope of restoration.  

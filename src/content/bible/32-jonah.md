@@ -6,16 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Jonah  
-*The God of Relentless Mercy*
-
-> “Salvation belongs to the Lord.” — **Jonah 2:9**
-
-Jonah is more than a story about a man and a great fish — it’s about a great God with even greater compassion.  
-Through Jonah’s reluctance and rebellion, we see that God’s mercy reaches both the disobedient prophet and the undeserving sinner.
-
----
-
 ## Overview  
 God calls Jonah, a prophet from Israel, to go to **Nineveh**, the capital of Assyria — Israel’s enemy — and warn them of coming judgment.  
 Instead of obeying, Jonah runs in the opposite direction.  

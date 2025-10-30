@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Major Prophets'
 ---
 
-# Ezekiel  
-*The God Who Restores His Glory Among His People*
-
-> “I will give you a new heart and put a new spirit in you.” — **Ezekiel 36:26**
-
-Ezekiel is a book of visions and hope.  
-While living among the exiles in Babylon, Ezekiel receives powerful revelations of God’s glory, judgment, and future restoration.  
-Through vivid imagery and Spirit-filled prophecy, he reminds God’s people that though they’ve been scattered and broken, God has not abandoned them — He will bring new life.
-
----
-
 ## Overview  
 Ezekiel served as both prophet and priest during the Babylonian exile.  
 His ministry began when Israel had lost everything — their land, their temple, and their hope.  

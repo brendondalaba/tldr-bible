@@ -6,16 +6,6 @@ genre: 'Wisdom'
 group: 'Wisdom Literature'
 ---
 
-# Proverbs  
-*The God Who Teaches Us How to Live Wisely*
-
-> “Trust in the Lord with all your heart and lean not on your own understanding.” — **Proverbs 3:5**
-
-Proverbs is God’s handbook for wise living. It turns faith into action — showing us how to think, speak, work, and relate in ways that honor God.  
-It’s not about perfection but direction — walking daily in God’s wisdom rather than the world’s foolishness.
-
----
-
 ## Overview  
 Written mostly by King Solomon, Proverbs gathers short, memorable sayings inspired by the Holy Spirit.  
 Each proverb is a snapshot of truth — simple yet profound, guiding everything from relationships to finances to character.  

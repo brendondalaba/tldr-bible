@@ -6,17 +6,6 @@ genre: 'Gospel'
 group: 'Gospels'
 ---
 
-# Luke  
-*The God Who Came Near*
-
-> “For the Son of Man came to seek and to save what was lost.” — **Luke 19:10**
-
-Luke’s Gospel reveals the heart of Jesus in motion — healing, forgiving, teaching, and reaching out to the overlooked.  
-It’s the story of God’s compassion wrapped in humanity.  
-Through careful detail and eyewitness accounts, Luke presents Jesus as both the Savior of the world and the perfect example of grace and truth.
-
----
-
 ## Overview  
 Luke was a physician, historian, and companion of Paul.  
 His Gospel focuses on Jesus’ compassion, showing how He touched the untouchable and welcomed the outcast.  

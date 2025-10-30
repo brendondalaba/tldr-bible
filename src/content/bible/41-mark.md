@@ -6,17 +6,6 @@ genre: 'Gospel'
 group: 'Gospels'
 ---
 
-# Mark  
-*The Servant King in Action*
-
-> “For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.” — **Mark 10:45**
-
-Mark is the Gospel of action.  
-It doesn’t dwell long on long speeches or genealogy — it moves fast, showing Jesus healing, teaching, casting out demons, and ultimately laying down His life.  
-Here, we see Jesus as both the powerful **Son of God** and the humble **Servant** who came to meet humanity’s deepest need.
-
----
-
 ## Overview  
 Mark gives us the most concise and fast-paced account of Jesus’ life.  
 Written for Roman readers, it emphasizes what Jesus *did* more than what He *said*.  

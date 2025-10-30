@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Malachi  
-*The God Who Calls Our Hearts Back*
-
-> “Return to Me, and I will return to you,” says the Lord Almighty. — **Malachi 3:7**
-
-Malachi closes the Old Testament with a wake-up call — not to the rebellious, but to the *religious* who have grown cold.  
-It’s a book for people who go through the motions yet have lost the fire of love and reverence for God.  
-Through correction and promise, God reminds His people that He still desires their hearts — and that His Messiah is coming soon.
-
----
-
 ## Overview  
 After the temple was rebuilt and worship restored, the people of Judah drifted into complacency.  
 Their sacrifices were careless, their priests were corrupt, and their marriages unfaithful.  

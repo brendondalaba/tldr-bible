@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Nahum  
-*The God Who Avenges Evil and Protects His People*
-
-> “The Lord is good, a refuge in times of trouble. He cares for those who trust in Him.” — **Nahum 1:7**
-
-Nahum reveals the other side of God’s character — His righteous anger against evil.  
-Where Jonah showed Nineveh’s opportunity for mercy, Nahum shows God’s justice when repentance fades.  
-It reminds us that God’s patience has purpose, but not permanence — He will not overlook cruelty forever.
-
----
-
 ## Overview  
 About a century after Jonah preached to Nineveh, the Assyrian Empire had returned to violence and arrogance.  
 They oppressed nations and brutalized Israel.  

@@ -6,17 +6,6 @@ genre: 'Apocalyptic'
 group: 'Prophecy'
 ---
 
-# Revelation  
-*The God Who Wins in the End*
-
-> “Behold, He is coming with the clouds, and every eye will see Him.” — **Revelation 1:7**
-
-Revelation is a book of unveiling — not just of the future, but of **Jesus Christ Himself**.  
-Through visions given to the Apostle John, God pulls back the curtain to show how history will culminate in the victory of the Lamb.  
-It reminds believers that no matter how dark the world becomes, **Jesus wins**, and those who belong to Him share in that victory.
-
----
-
 ## Overview  
 Written to seven struggling churches in Asia Minor, Revelation brings both comfort and conviction.  
 It reveals Christ as the risen, reigning King — the Alpha and Omega — and warns believers not to compromise with a corrupt world.  

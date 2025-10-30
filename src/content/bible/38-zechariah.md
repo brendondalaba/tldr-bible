@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Zechariah  
-*The God Who Restores and Reigns*
-
-> “Not by might, nor by power, but by My Spirit, says the Lord of hosts.” — **Zechariah 4:6**
-
-Zechariah is a message of encouragement for weary builders and waiting hearts.  
-Amid unfinished work and uncertain times, God reminds His people that His promises stand — He is not done rebuilding, redeeming, or reigning.  
-Through visions, symbols, and prophecies, Zechariah points both backward to restoration and forward to the coming King: Jesus Christ.
-
----
-
 ## Overview  
 Zechariah ministered alongside Haggai after the exile, encouraging God’s people to finish rebuilding the temple and renew their hope.  
 Through a series of visions, he shows that God’s presence is returning to dwell among them — but the promise stretches beyond Jerusalem to a future day when the Messiah will bring salvation, victory, and peace to the whole world.  

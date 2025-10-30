@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Hebrews  
-*The God Who Is Greater Than All*
-
-> “Let us then approach the throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need.” — **Hebrews 4:16**
-
-Hebrews bridges the Old and New Testaments.  
-It explains how everything in the Law, temple, and priesthood pointed to Jesus — who fulfills it all perfectly.  
-It’s a call to maturity and endurance, urging believers not to drift back into religion or ritual, but to cling to Christ, who is better in every way.
-
----
-
 ## Overview  
 The book of Hebrews was written to Jewish believers who were weary under persecution and tempted to return to their old religious ways.  
 The writer shows them — and us — that Jesus is the ultimate revelation of God’s plan: greater than angels, Moses, priests, or sacrifices.  

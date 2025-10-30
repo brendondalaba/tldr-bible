@@ -6,16 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Amos  
-*The God Who Demands Justice and True Worship*
-
-> “Let justice roll on like a river, righteousness like a never-failing stream.” — **Amos 5:24**
-
-Amos reminds us that real faith isn’t shown in rituals or words — it’s proven in how we live.  
-Through this shepherd-turned-prophet, God confronts hypocrisy, injustice, and complacency, showing that true worship must flow into compassion and righteousness.
-
----
-
 ## Overview  
 Amos was a humble shepherd from Judah whom God sent to speak to the wealthy, self-satisfied northern kingdom of Israel.  
 Though Israel prospered materially, its heart was far from God.  

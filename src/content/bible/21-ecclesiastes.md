@@ -6,17 +6,6 @@ genre: 'Wisdom'
 group: 'Wisdom Literature'
 ---
 
-# Ecclesiastes  
-*The God Who Gives Meaning to Life*
-
-> “Fear God and keep His commandments, for this is the duty of all mankind.” — **Ecclesiastes 12:13**
-
-Ecclesiastes is Solomon’s honest look back at life “under the sun” — life without God at the center.  
-After chasing wisdom, pleasure, work, and success, he concludes that everything apart from God is meaningless.  
-It’s a sobering, beautiful reminder that true joy and purpose are found only in living for Him.
-
----
-
 ## Overview  
 Written near the end of Solomon’s life, Ecclesiastes reads like a journal of reflection from a man who had everything — and found it empty without God.  
 He explores the limits of human wisdom and the temporary nature of worldly pursuits.  

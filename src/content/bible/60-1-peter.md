@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 1 Peter  
-*The God Who Gives Hope in Suffering*
-
-> “But you are a chosen people, a royal priesthood, a holy nation, God’s special possession, that you may declare the praises of Him who called you out of darkness into His wonderful light.” — **1 Peter 2:9**
-
-1 Peter was written to strengthen Christians who were suffering for their faith.  
-Rather than offering escape, Peter reminds them that trials refine faith and make them more like Jesus.  
-It’s a call to stand firm in hope, live holy lives, and reflect Christ’s love even in the midst of hardship.
-
----
-
 ## Overview  
 Peter writes to scattered believers across Asia Minor facing growing persecution.  
 He encourages them that suffering for Christ is not meaningless — it’s part of sharing in His glory.  

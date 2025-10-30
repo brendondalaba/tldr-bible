@@ -6,18 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Titus  
-*The God Who Builds by Grace*
-
-> “For the grace of God has appeared that offers salvation to all people.” — **Titus 2:11**
-
-Titus is a short but powerful letter about how grace shapes both belief and behavior.  
-Paul writes to his trusted co-worker Titus, who was leading young churches on the island of Crete — a culture known for corruption and self-indulgence.  
-Paul’s message: true faith produces visible change.  
-Sound doctrine and godly living go hand in hand in a healthy, Spirit-led church.
-
----
-
 ## Overview  
 Paul had left Titus in Crete to strengthen the new believers and appoint leaders.  
 The churches were growing, but false teachers and cultural immorality were threatening their stability.  

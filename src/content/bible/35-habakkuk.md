@@ -6,18 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Habakkuk  
-*The God Who Turns Our Questions into Faith*
-
-> “The righteous will live by his faith.” — **Habakkuk 2:4**
-
-Habakkuk is the story of a man who wrestles with God — not in rebellion, but in faith.  
-He looks around and sees injustice, violence, and evil thriving, and he cries out, “God, where are You?”  
-Instead of silence, God answers — not how Habakkuk expected, but in a way that deepens trust.  
-By the end, the prophet moves from confusion to confidence, from fear to faith, declaring that even when everything falls apart, *God is enough.*
-
----
-
 ## Overview  
 Unlike most prophets who speak to people for God, Habakkuk speaks to God for the people.  
 He questions why God allows evil to go unpunished — only to learn that God will use even a wicked nation (Babylon) as His tool for judgment.  

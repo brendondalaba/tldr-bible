@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 3 John  
-*The God Who Rewards Faithful Service*
-
-> “Dear friend, you are faithful in what you are doing for the brothers and sisters, even though they are strangers to you.” — **3 John 5**
-
-3 John is the most personal of John’s letters — a note of encouragement to a believer named **Gaius**, who lived out his faith through generous love and truth.  
-John commends Gaius for showing hospitality to God’s servants, warns against a prideful leader named Diotrephes, and praises another faithful man, Demetrius.  
-It’s a simple but timeless message: truth and humility matter more than power or position.
-
----
-
 ## Overview  
 While 2 John warns against welcoming false teachers, 3 John encourages believers to support faithful ones.  
 Gaius had been caring for traveling missionaries and teachers, while Diotrephes — an arrogant church leader — was rejecting John’s authority and mistreating true servants of Christ.  

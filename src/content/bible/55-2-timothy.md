@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 2 Timothy  
-*The God Who Finishes What He Starts*
-
-> “I have fought the good fight, I have finished the race, I have kept the faith.” — **2 Timothy 4:7**
-
-2 Timothy is Paul’s farewell letter — his final message before martyrdom.  
-From a Roman prison, the aging apostle passes the torch to Timothy, calling him to endure hardship, guard the Gospel, and continue the mission.  
-It’s both sobering and stirring — a reminder that God’s Word and God’s work never stop, even when His servants do.
-
----
-
 ## Overview  
 Paul writes knowing his time is short.  
 False teachers are spreading confusion, persecution is intensifying, and Timothy is growing weary.  

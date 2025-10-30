@@ -5,14 +5,6 @@ verse: '"In the beginning, God…" — Genesis 1:1'
 genre: 'Law'
 group: 'Pentateuch'
 ---
-# Genesis  
-*The Beginning of Everything*
-
-> “In the beginning, God…” — **Genesis 1:1**
-
-Genesis is where everything starts — creation, humanity, sin, and God’s plan to make things right again. If you understand Genesis, the rest of the Bible starts to click into place.
-
----
 
 ## Overview  
 Genesis means *beginnings*. It tells how God created the world, how people turned from Him, and how He began His plan to save us. It’s the opening chapter of God’s story of redemption — how He restores what was lost.

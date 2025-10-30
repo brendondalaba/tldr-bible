@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 2 Peter  
-*The God Who Calls Us to Grow and Stand Firm*
-
-> “His divine power has given us everything we need for a godly life through our knowledge of Him who called us by His own glory and goodness.” — **2 Peter 1:3**
-
-2 Peter is both a farewell and a warning.  
-Knowing his death was near, Peter writes to remind believers to grow in godliness, guard against deception, and stay anchored in the truth.  
-It’s a bold call to maturity — urging followers of Jesus to live with purity and perseverance as they look forward to His return.
-
----
-
 ## Overview  
 False teachers were spreading corruption in the early Church, denying Christ’s return and twisting Scripture for personal gain.  
 Peter’s response: hold tight to what’s true, remember what’s eternal, and keep growing in grace.  

@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 1 Timothy  
-*The God Who Calls and Equips His Servants*
-
-> “Fight the good fight of the faith. Take hold of the eternal life to which you were called.” — **1 Timothy 6:12**
-
-1 Timothy is a letter from an older pastor to a younger one.  
-Paul writes to Timothy — his spiritual son — with wisdom for leading God’s people in a culture drifting from truth.  
-It’s about keeping the Gospel central, guarding sound doctrine, and living as an example of faith, love, and purity.
-
----
-
 ## Overview  
 After leaving Timothy in Ephesus to guide the church there, Paul writes to strengthen and instruct him.  
 False teachers were spreading confusion, some leaders were mishandling authority, and the church needed order rooted in truth.  

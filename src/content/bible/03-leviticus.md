@@ -6,15 +6,6 @@ genre: 'Law'
 group: 'Pentateuch'
 ---
 
-# Leviticus  
-*The God Who Makes Us Holy*
-
-> “Be holy, because I, the Lord your God, am holy.” — **Leviticus 19:2**
-
-Leviticus can seem like a hard read at first — full of rules, offerings, and rituals — but it’s actually a powerful picture of how a holy God makes a way for sinful people to live close to Him. It’s not about religion; it’s about relationship through holiness and grace.
-
----
-
 ## Overview  
 Leviticus picks up right after Exodus. God has delivered His people from Egypt, and now He teaches them how to live as His own.  
 It explains the system of sacrifices, priests, and purity laws that allowed the Israelites to worship and stay in covenant with Him.  

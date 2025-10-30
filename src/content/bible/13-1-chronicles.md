@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# 1 Chronicles  
-*The God Who Establishes His Kingdom Through Worship and Covenant*
-
-> “Yours, Lord, is the greatness and the power and the glory and the majesty and the splendor... Everything in heaven and earth is yours.” — **1 Chronicles 29:11**
-
-1 Chronicles retells the story of King David — not focusing on his failures, but on God’s covenant promises, David’s heart of worship, and the preparation for God’s temple.  
-It’s a book of remembrance and renewal, calling God’s people to worship Him with whole hearts.
-
----
-
 ## Overview  
 1 Chronicles opens with genealogies tracing God’s faithfulness from Adam to Israel, reminding readers of their heritage in God’s story.  
 The narrative then centers on David’s reign — his rise, victories, worship, and plans for the temple.  

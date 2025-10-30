@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Hosea  
-*The God Who Loves the Unfaithful*
-
-> “I will heal their backsliding, I will love them freely.” — **Hosea 14:4**
-
-Hosea’s story is a living picture of God’s love toward His people.  
-Through the prophet’s painful marriage to an unfaithful wife, God reveals His own faithful heart — one that refuses to give up on those who wander away.  
-Even in judgment, His mercy is still reaching out, calling His people back home.
-
----
-
 ## Overview  
 God calls Hosea to marry **Gomer**, a woman who would be unfaithful to him.  
 Their marriage becomes a symbol of Israel’s spiritual adultery — chasing idols instead of remaining loyal to God.  

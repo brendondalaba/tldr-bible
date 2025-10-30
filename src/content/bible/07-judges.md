@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# Judges  
-*The God Who Rescues Again and Again*
-
-> “In those days Israel had no king; everyone did what was right in their own eyes.” — **Judges 21:25**
-
-Judges is a sobering yet hopeful book. It shows what happens when God’s people forget Him — and how God, in mercy, keeps rescuing them anyway.  
-It’s the story of a nation in cycles of sin and salvation, reminding us that God’s grace is greater than our failures.
-
----
-
 ## Overview  
 Judges picks up after Joshua’s death. Without strong leadership, Israel drifts into disobedience and idolatry.  
 God allows neighboring nations to oppress them, but when they cry out, He raises up deliverers — called “judges” — to rescue and restore them.  

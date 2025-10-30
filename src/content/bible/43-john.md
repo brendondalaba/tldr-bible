@@ -6,17 +6,6 @@ genre: 'Gospel'
 group: 'Gospels'
 ---
 
-# John  
-*The God Who Became Flesh*
-
-> “In the beginning was the Word, and the Word was with God, and the Word was God.” — **John 1:1**
-
-The Gospel of John is the story of Jesus from heaven’s perspective.  
-It reveals His divine identity as the eternal Son of God — the Word made flesh — who came to bring light, truth, and eternal life to all who believe.  
-More than miracles or parables, John focuses on relationship: knowing Jesus personally as Savior, Lord, and Life itself.
-
----
-
 ## Overview  
 John’s Gospel was written to show that Jesus is the Christ, the Son of God — and that believing in Him brings eternal life (John 20:31).  
 While Matthew, Mark, and Luke emphasize what Jesus *did*, John reveals who Jesus *is.*  

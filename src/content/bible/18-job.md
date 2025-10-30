@@ -6,17 +6,6 @@ genre: 'Wisdom'
 group: 'Wisdom Literature'
 ---
 
-# Job  
-*The God Who Reigns in Suffering and Redeems the Broken*
-
-> “Though He slay me, yet will I trust in Him.” — **Job 13:15**
-
-Job is one of the most profound books in the Bible — a story of faith tested by fire.  
-It wrestles with the hardest question of all: *Why do the righteous suffer?*  
-Through Job’s pain and God’s revelation, we learn that even in silence, confusion, and loss, God’s wisdom and sovereignty never fail.
-
----
-
 ## Overview  
 Job was a man known for righteousness and integrity. Yet suddenly, he loses everything — his wealth, family, and health.  
 Unaware of the spiritual battle behind the scenes, Job struggles to understand why God allowed his suffering.  

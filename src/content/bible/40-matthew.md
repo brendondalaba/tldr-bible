@@ -6,17 +6,6 @@ genre: 'Gospel'
 group: 'Gospels'
 ---
 
-# Matthew  
-*The King Has Come*
-
-> “You shall call His name Jesus, for He will save His people from their sins.” — **Matthew 1:21**
-
-Matthew opens the New Testament with the news Israel had been waiting for — the Messiah is here.  
-Through Jesus Christ, God’s promises to Abraham and David are fulfilled, His kingdom is inaugurated, and His people are called to live under His righteous rule.  
-It’s a book of fulfillment, discipleship, and kingdom purpose.
-
----
-
 ## Overview  
 Written primarily for a Jewish audience, Matthew shows that Jesus is the promised **Messiah**, the rightful **King of the Jews**, and the ultimate fulfillment of God’s covenant promises.  
 It connects the Old and New Testaments, quoting the prophets often to show how Jesus completed what they foretold.  

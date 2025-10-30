@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# 2 Chronicles  
-*The God Who Revives and Restores His People*
-
-> “If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven... and heal their land.” — **2 Chronicles 7:14**
-
-2 Chronicles continues the story of Israel’s kings, focusing on Judah — the southern kingdom — and God’s enduring presence in the temple.  
-It’s a story of revival and decline, judgment and mercy, reminding us that every generation must choose humility, prayer, and obedience.
-
----
-
 ## Overview  
 Beginning with Solomon’s reign, 2 Chronicles highlights the construction and dedication of the temple — the center of Israel’s worship.  
 After Solomon’s death, the kingdom divides, and the narrative follows the kings of Judah (David’s descendants).  

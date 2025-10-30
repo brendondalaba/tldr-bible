@@ -6,18 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Jude  
-*The God Who Keeps Us From Falling*
-
-> “Contend for the faith that was once for all entrusted to God’s holy people.” — **Jude 3**
-
-Jude is a short, urgent letter about defending the truth.  
-False teachers had slipped into the church, twisting grace into license and denying Christ’s authority.  
-Jude reminds believers that faith must be guarded and lived out with both conviction and compassion.  
-He ends with one of the most beautiful doxologies in Scripture — a reminder that God Himself keeps His people from falling.
-
----
-
 ## Overview  
 Jude, the half-brother of Jesus, originally planned to write about the shared joy of salvation.  
 But seeing the threat of false teaching, he instead writes to warn believers to stand firm, live holy, and keep building one another up in faith.  

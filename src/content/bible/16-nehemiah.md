@@ -6,17 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# Nehemiah  
-*The God Who Rebuilds Walls and Strengthens Hearts*
-
-> “The joy of the Lord is your strength.” — **Nehemiah 8:10**
-
-Nehemiah is a story of rebuilding — not just physical walls, but spiritual resolve.  
-God raises up one man with vision, prayer, and perseverance to lead His people in restoring what had been broken.  
-It’s a reminder that no ruin is beyond repair when God’s people work together under His direction.
-
----
-
 ## Overview  
 Set about thirteen years after Ezra’s arrival in Jerusalem, Nehemiah follows the next stage of restoration.  
 When Nehemiah hears that Jerusalem’s walls are still in ruins, he weeps, prays, and acts.  

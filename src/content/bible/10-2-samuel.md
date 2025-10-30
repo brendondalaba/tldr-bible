@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# 2 Samuel  
-*The God Who Reigns with Mercy and Justice*
-
-> “Your house and your kingdom will endure forever before me; your throne will be established forever.” — **2 Samuel 7:16**
-
-2 Samuel tells the story of David’s rise to the throne, his victories, his failures, and God’s unbreakable covenant with him.  
-It’s a powerful reminder that while human kings fail, God’s mercy and promises never do.
-
----
-
 ## Overview  
 Following Saul’s death, David becomes king and unites Israel into one kingdom.  
 He defeats Israel’s enemies, brings the Ark of the Covenant to Jerusalem, and establishes it as the nation’s capital.  

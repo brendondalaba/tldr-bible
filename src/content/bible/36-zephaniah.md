@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Zephaniah  
-*The God Who Judges to Restore*
-
-> “The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you.” — **Zephaniah 3:17**
-
-Zephaniah is both sobering and hopeful.  
-It warns of the coming *Day of the Lord* — a time of judgment against sin and pride — but it also promises that after refining comes rejoicing.  
-God’s justice makes way for joy, and His judgment clears the path for revival.
-
----
-
 ## Overview  
 Zephaniah preached during a time of spiritual decline in Judah.  
 The people had turned to idols and mixed true worship with false gods.  

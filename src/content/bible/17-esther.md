@@ -6,16 +6,6 @@ genre: 'History'
 group: 'Historical Books'
 ---
 
-# Esther  
-*The God Who Works Behind the Scenes*
-
-> “And who knows but that you have come to your royal position for such a time as this?” — **Esther 4:14**
-
-Esther tells the story of God’s unseen protection over His people during exile.  
-Though His name is never mentioned in the book, His presence is everywhere — guiding events, reversing evil plans, and showing that no circumstance is beyond His control.
-
----
-
 ## Overview  
 Set in Persia during the reign of King Xerxes (Ahasuerus), Esther follows a young Jewish woman who becomes queen.  
 When a wicked official named Haman plots to destroy the Jews, Esther risks her life to stand before the king and intercede for her people.  

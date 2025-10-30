@@ -6,16 +6,6 @@ genre: 'Wisdom'
 group: 'Wisdom Literature'
 ---
 
-# Song of Solomon  
-*The God Who Delights in Covenant Love*
-
-> “I am my beloved’s and my beloved is mine.” — **Song of Solomon 6:3**
-
-Song of Solomon (also called *Song of Songs*) is a poetic celebration of love between a bride and her groom.  
-It honors romantic love as a gift from God — pure, passionate, and committed — while also symbolizing the deeper spiritual love between God and His people.
-
----
-
 ## Overview  
 Written as a dialogue between a bride (the Shulammite woman) and her beloved (often seen as Solomon), this book paints love as something sacred and beautiful when expressed within the boundaries of commitment.  
 On a spiritual level, it reflects Christ’s love for His Church — personal, faithful, and full of delight.  

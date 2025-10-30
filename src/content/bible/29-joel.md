@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Joel  
-*The God Who Restores and Pours Out His Spirit*
-
-> “I will pour out My Spirit on all people.” — **Joel 2:28**
-
-Joel is a book of awakening.  
-A devastating locust plague becomes the backdrop for a call to repentance and renewal.  
-Through Joel, God promises not only to restore what was lost, but to pour out His Spirit on all who turn to Him — a prophecy fulfilled in the New Testament and still alive today.
-
----
-
 ## Overview  
 When a swarm of locusts devastates the land, Joel calls the people to see it as more than a natural disaster — it’s a warning from God to return to Him.  
 He declares that repentance will bring restoration, and restoration will lead to revival.  

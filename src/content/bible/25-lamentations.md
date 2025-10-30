@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Major Prophets'
 ---
 
-# Lamentations  
-*The God Whose Mercies Are New Every Morning*
-
-> “Because of the Lord’s great love we are not consumed, for His compassions never fail. They are new every morning; great is Your faithfulness.” — **Lamentations 3:22–23**
-
-Lamentations is a collection of poetic laments written after Jerusalem’s destruction in 586 BC.  
-It expresses deep grief over sin, suffering, and loss — yet also declares hope in God’s steadfast love.  
-It teaches us how to mourn with faith and find mercy even in the ashes.
-
----
-
 ## Overview  
 Traditionally written by the prophet Jeremiah, Lamentations is a series of five poems describing the devastation of Jerusalem after Babylon’s invasion.  
 The city that once flourished now lies in ruins.  

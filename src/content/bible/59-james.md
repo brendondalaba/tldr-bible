@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# James  
-*The God Who Grows Faith Through Action*
-
-> “Faith by itself, if it is not accompanied by action, is dead.” — **James 2:17**
-
-James is a straight-talking, practical letter about what it means to live out genuine faith.  
-It reminds believers that Christianity isn’t just about believing the right things — it’s about doing the right things.  
-Through trials, temptations, and everyday decisions, real faith produces humility, endurance, and obedience.
-
----
-
 ## Overview  
 Written by **James**, the half-brother of Jesus and leader of the Jerusalem church, this letter is one of the most practical in the New Testament.  
 It was written to Jewish believers scattered by persecution who needed to be reminded that true wisdom and maturity come from living what they believe.  

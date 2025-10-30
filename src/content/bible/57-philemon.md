@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# Philemon  
-*The God Who Reconciles and Restores*
-
-> “Perhaps the reason he was separated from you for a little while was that you might have him back forever — no longer as a slave, but better than a slave, as a dear brother.” — **Philemon 15–16**
-
-Philemon is Paul’s most personal letter — a heartfelt plea for mercy and reconciliation.  
-It shows that the Gospel doesn’t just change what we believe; it changes how we treat people.  
-Through Christ, broken relationships can be healed, and social barriers can be torn down by love.
-
----
-
 ## Overview  
 Philemon was a wealthy Christian in Colossae and a friend of Paul.  
 One of his servants, **Onesimus**, had run away — possibly after wronging him — and later encountered Paul in prison, where he became a believer.  

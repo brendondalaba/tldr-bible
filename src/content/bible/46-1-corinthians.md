@@ -6,17 +6,6 @@ genre: 'Epistle'
 group: 'Letters'
 ---
 
-# 1 Corinthians  
-*The God Who Brings Order to the Chaos*
-
-> “Let all that you do be done in love.” — **1 Corinthians 16:14**
-
-The Corinthian church had problems — division, pride, immorality, confusion about worship, and spiritual gifts out of balance.  
-Paul writes not to shame them, but to correct and restore them with truth and love.  
-Through his words, God calls His people back to holiness, unity, and maturity — reminding them that the Gospel changes how we live together as the Church.
-
----
-
 ## Overview  
 Corinth was a wealthy, immoral port city known for idol worship and indulgence.  
 The young church there struggled to break free from the culture around it.  

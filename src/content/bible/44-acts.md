@@ -6,17 +6,6 @@ genre: 'History'
 group: 'Church History'
 ---
 
-# Acts  
-*The God Who Empowers His People*
-
-> “But you will receive power when the Holy Spirit comes on you; and you will be My witnesses…” — **Acts 1:8**
-
-Acts is the continuation of what Jesus began — only now through His Spirit-filled Church.  
-It’s the story of how the Gospel spread from Jerusalem to the ends of the earth, transforming lives, cities, and nations.  
-This book marks the birth of the Church, the power of the Spirit, and the unstoppable advance of God’s kingdom.
-
----
-
 ## Overview  
 Written as a sequel to Luke’s Gospel, Acts picks up right after Jesus’ resurrection and ascension.  
 It begins with the outpouring of the Holy Spirit at Pentecost, launching the Church’s mission to make disciples of all nations.  

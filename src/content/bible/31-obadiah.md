@@ -6,16 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Obadiah  
-*The God Who Humbles the Proud and Protects His People*
-
-> “The day of the Lord is near for all nations. As you have done, it will be done to you.” — **Obadiah 1:15**
-
-Obadiah is a brief but bold prophecy about pride, betrayal, and divine justice.  
-It declares that God will bring down the arrogant and lift up the humble — showing that no nation or person is beyond His reach or His care.
-
----
-
 ## Overview  
 Obadiah’s prophecy focuses on **Edom**, a nation descended from Esau (Jacob’s brother).  
 When Jerusalem was attacked, Edom stood by — even rejoicing and taking advantage of Israel’s suffering.  

@@ -6,17 +6,6 @@ genre: 'Prophecy'
 group: 'Minor Prophets'
 ---
 
-# Micah  
-*The God of Justice and Mercy*
-
-> “He has shown you, O man, what is good; and what does the Lord require of you but to do justly, to love mercy, and to walk humbly with your God?” — **Micah 6:8**
-
-Micah is a message of warning and hope.  
-God’s prophet exposes the corruption of His people and their leaders — but also announces one of the clearest prophecies of the coming Messiah.  
-It’s a call to live humbly, love mercy, and trust in the God who will one day make all things right.
-
----
-
 ## Overview  
 Micah served during a time of great moral decay.  
 While the rich oppressed the poor and justice was twisted, religion continued outwardly — but hearts were far from God.  
