@@ -4,7 +4,6 @@ description: 'The Beginning of Everything'
 verse: '"In the beginning, God…" — Genesis 1:1'
 genre: 'Law'
 group: 'Pentateuch'
-
 ---
 # Genesis  
 *The Beginning of Everything*
