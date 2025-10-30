@@ -11,32 +11,22 @@ Written primarily for a Jewish audience, Matthew shows that Jesus is the promise
 It connects the Old and New Testaments, quoting the prophets often to show how Jesus completed what they foretold.  
 Matthew also gives us the **Sermon on the Mount**, the **Great Commission**, and a vivid picture of what life looks like under the rule of King Jesus — a life marked by humility, mercy, and obedience.
 
----
-
 ## Author  
 **Matthew (Levi)** — a former tax collector turned disciple of Jesus.  
 After encountering Christ, he left his old life behind to follow Him and later recorded this Gospel under the inspiration of the Holy Spirit.
-
----
 
 ## Era / Date  
 Written between **A.D. 60–70**, likely from Antioch or Palestine.  
 It captures Jesus’ ministry, death, and resurrection from a distinctly Jewish perspective.
 
----
-
 ## Audience  
 Written for **Jewish believers and seekers**, showing that Jesus is the long-promised Messiah who fulfills the Law and the Prophets.  
 For modern readers, Matthew lays the foundation for understanding Jesus as King, Savior, and teacher of a new kingdom way of life.
-
----
 
 ## Historical / Cultural Context  
 Israel was under Roman occupation, longing for deliverance.  
 Many expected a political savior — but Jesus came first to deliver from sin.  
 Matthew’s Gospel carefully traces Jesus’ lineage, teachings, and miracles to show that He is not just a man of power, but God incarnate — Immanuel, “God with us.”
-
----
 
 ## Purpose  
 - To prove that Jesus is the promised Messiah and King  
@@ -45,13 +35,9 @@ Matthew’s Gospel carefully traces Jesus’ lineage, teachings, and miracles to
 - To teach what it means to follow Jesus as a true disciple  
 - To send believers into the world with His authority and message  
 
----
-
 ## Genre  
 **Gospel narrative and teaching**  
 Matthew blends biography, parables, sermons, and prophecy to reveal Jesus as both teacher and King.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Matthew blends biography, parables, sermons, and prophecy to reveal Jesus as bot
 | **Discipleship** | Following Jesus means obedience, humility, and sacrifice. |
 | **Authority of Christ** | Jesus has authority over sickness, sin, nature, and death. |
 | **The Great Commission** | His followers are sent to make disciples of all nations. |
-
----
 
 ## Structure  
 
@@ -92,8 +76,6 @@ Matthew blends biography, parables, sermons, and prophecy to reveal Jesus as bot
 - The resurrection and Great Commission.  
 - “All authority in heaven and on earth has been given to Me.”  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -104,8 +86,6 @@ Matthew blends biography, parables, sermons, and prophecy to reveal Jesus as bot
 | **Matthew 11:28–30** | “Come to Me… and I will give you rest.” |
 | **Matthew 16:16** | Peter’s confession: “You are the Christ, the Son of the living God.” |
 | **Matthew 28:19–20** | The Great Commission — the King’s final command. |
-
----
 
 ## Connection to Christ  
 
@@ -118,8 +98,6 @@ Matthew blends biography, parables, sermons, and prophecy to reveal Jesus as bot
 | **The Passover Lamb (26:26–28)** | His blood establishes a new covenant of forgiveness. |
 | **The Risen Lord (28:6)** | His resurrection confirms His eternal kingship. |
 
----
-
 ## Application  
 Matthew calls us to follow the King and live out His kingdom on earth.  
 - **Embrace His Authority:** Jesus is not just Savior — He is King.  
@@ -127,7 +105,5 @@ Matthew calls us to follow the King and live out His kingdom on earth.
 - **Build on the Word:** The wise builder obeys, not just hears.  
 - **Carry the Mission:** You are sent with His authority to make disciples.  
 - **Stay Expectant:** The King who came once will come again.  
-
----
 
 > *Matthew reminds us that the waiting is over — the King has come. The promises of old find their “Yes” and “Amen” in Jesus Christ, the Messiah who reigns forever.*

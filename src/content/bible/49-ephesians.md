@@ -11,30 +11,20 @@ Written while Paul was imprisoned in Rome, Ephesians is a circular letter meant 
 It’s divided into two main parts: **what God has done for us (chapters 1–3)** and **how we should live in response (chapters 4–6)**.  
 Paul paints a picture of the Church as the body, bride, and temple of Christ — united under one Lord and filled with one Spirit.
 
----
-
 ## Author  
 **The Apostle Paul**, written during his first Roman imprisonment around **A.D. 60–62**.  
 It’s one of the “Prison Epistles,” along with Philippians, Colossians, and Philemon.
 
----
-
 ## Era / Date  
 Written around **A.D. 60–62**, during Paul’s imprisonment in Rome.
-
----
 
 ## Audience  
 Addressed to the **churches in Ephesus** and nearby regions, made up of both Jewish and Gentile believers.  
 For modern readers, Ephesians reveals who we are in Christ and how to live out that identity in everyday life.
 
----
-
 ## Historical / Cultural Context  
 Ephesus was a major port city known for wealth, trade, and idol worship — especially the temple of Artemis.  
 The Church lived amid spiritual darkness, yet Paul reminded them that Christ’s power and authority are far greater than any demonic or worldly force.
-
----
 
 ## Purpose  
 - To remind believers of their identity and blessings in Christ  
@@ -42,13 +32,9 @@ The Church lived amid spiritual darkness, yet Paul reminded them that Christ’s
 - To explain how grace transforms both relationships and lifestyles  
 - To equip believers for spiritual warfare through God’s armor  
 
----
-
 ## Genre  
 **Doctrinal and practical letter**  
 Ephesians blends deep theology with daily application — belief and behavior intertwined.
-
----
 
 ## Key Themes  
 
@@ -60,8 +46,6 @@ Ephesians blends deep theology with daily application — belief and behavior in
 | **The Church as Christ’s Body** | We are His hands and feet on earth. |
 | **Spiritual Warfare** | Stand firm in God’s armor and strength. |
 | **Maturity in Love** | Growing together into the fullness of Christ. |
-
----
 
 ## Structure  
 
@@ -76,8 +60,6 @@ Ephesians blends deep theology with daily application — belief and behavior in
 - Instructions for holy living, relationships, and households.  
 - The armor of God — standing firm against spiritual forces.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -89,8 +71,6 @@ Ephesians blends deep theology with daily application — belief and behavior in
 | **Ephesians 4:3–6** | Unity through one Spirit and one Lord. |
 | **Ephesians 6:10–11** | “Put on the full armor of God.” — strength for spiritual battle. |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -101,8 +81,6 @@ Ephesians blends deep theology with daily application — belief and behavior in
 | **The Bridegroom (5:25–27)** | Christ loves and purifies His Church. |
 | **The Armor of God (6:10–17)** | Jesus equips believers with His own victory and truth. |
 
----
-
 ## Application  
 Ephesians invites us to live from our position, not for it — resting in grace and walking in purpose.  
 - **Know Who You Are:** Your identity is in Christ, not your past.  
@@ -110,7 +88,5 @@ Ephesians invites us to live from our position, not for it — resting in grace 
 - **Walk in Love:** Reflect Christ in your relationships.  
 - **Stand Strong:** Spiritual victory comes through God’s power, not ours.  
 - **Grow Up in Faith:** Maturity means becoming more like Jesus.  
-
----
 
 > *Ephesians reminds us that salvation is not the finish line — it’s the starting point. You’ve been raised, equipped, and empowered to live as God’s masterpiece in a world that desperately needs His light.*

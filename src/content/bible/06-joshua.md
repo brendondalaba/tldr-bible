@@ -11,25 +11,17 @@ Joshua continues right where Deuteronomy ends. Moses has died, and Joshua is now
 The people finally cross the Jordan River, conquer the land of Canaan, and settle in their inheritance.  
 Through every battle and victory, God shows that His promises never fail — but His blessings come through faith and obedience.
 
----
-
 ## Author  
 **Joshua**, Moses’ successor, is traditionally believed to have written most of this book.  
 It records both God’s commands and Israel’s journey into the Promised Land, with possible later additions by priests or scribes after Joshua’s death.
-
----
 
 ## Era / Date  
 Written around **1400–1370 BC**, shortly after Israel entered Canaan.  
 The events span roughly **25 years**, from Joshua’s commissioning to his death.
 
----
-
 ## Audience  
 Written to the Israelites as they began life in the Promised Land — a reminder that victory comes from trusting and obeying God.  
 For today’s readers, Joshua teaches how to step into God’s promises with faith and courage.
-
----
 
 ## Historical / Cultural Context  
 Canaan was a land filled with idolatry, violence, and corruption.  
@@ -37,21 +29,15 @@ God commanded Israel to drive out these nations, not out of cruelty, but to pres
 The conquest of Canaan was both judgment on sin and mercy for future generations.  
 Through it all, God showed His power to fulfill promises and defend His people against impossible odds.
 
----
-
 ## Purpose  
 - To show that **God is faithful** to His promises  
 - To demonstrate that **obedience brings victory**  
 - To record Israel’s **inheritance and division of the land**  
 - To remind believers that **God fights for those who trust Him**
 
----
-
 ## Genre  
 **Historical narrative** with spiritual lessons of faith and courage.  
 It’s both a war record and a testimony of God’s unshakable faithfulness.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ It’s both a war record and a testimony of God’s unshakable faithfulness.
 | **Holiness and Separation** | God calls His people to remain pure in a corrupt world. |
 | **Rest and Inheritance** | The Promised Land represents rest in God’s provision. |
 | **Covenant Renewal** | God’s people recommit to His covenant before Joshua’s death. |
-
----
 
 ## Structure  
 
@@ -87,8 +71,6 @@ It’s both a war record and a testimony of God’s unshakable faithfulness.
 - Covenant renewal at Shechem  
 - “As for me and my house, we will serve the Lord.” (24:15)
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -98,8 +80,6 @@ It’s both a war record and a testimony of God’s unshakable faithfulness.
 | **Joshua 6:20** | Jericho’s walls fall — obedience brings victory. |
 | **Joshua 21:45** | “Not one of all the Lord’s good promises failed.” |
 | **Joshua 24:15** | A call to personal commitment: “As for me and my house, we will serve the Lord.” |
-
----
 
 ## Connection to Christ  
 
@@ -111,8 +91,6 @@ It’s both a war record and a testimony of God’s unshakable faithfulness.
 | **Commander of the Lord’s Army** | A pre-incarnate appearance of Christ guiding Joshua (Josh. 5:13–15). |
 | **Covenant Renewal** | Jesus brings a new covenant written on our hearts. |
 
----
-
 ## Application  
 Joshua shows that faith in action leads to victory.  
 - **Courage:** God’s promises are worth stepping into, even when they look impossible.  
@@ -120,7 +98,5 @@ Joshua shows that faith in action leads to victory.
 - **Faithfulness:** Remember what God has done and keep following Him.  
 - **Commitment:** Serving God is a daily choice — for you and your household.  
 - **Rest:** True peace isn’t found in land or success, but in God’s presence.  
-
----
 
 > *Joshua calls us to live boldly, trust God fully, and step into the promises He’s already prepared. The same God who parted the Jordan still leads His people into victory today.*

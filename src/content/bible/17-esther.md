@@ -12,31 +12,21 @@ When a wicked official named Haman plots to destroy the Jews, Esther risks her l
 Through her courage and God’s providence, the Jews are saved, and their enemies are defeated.  
 Esther reminds us that even when God seems silent, He’s still moving powerfully behind the scenes.
 
----
-
 ## Author  
 The author is **unknown**, though Jewish tradition attributes it to **Mordecai**, Esther’s cousin and guardian.  
 It was likely written soon after the events it describes, during the Persian Empire.
 
----
-
 ## Era / Date  
 Takes place around **483–473 BC**, during King Xerxes’ reign — between the time of **Ezra 6** and **Nehemiah 7**.
-
----
 
 ## Audience  
 Written for the **Jewish people living in exile**, to celebrate God’s deliverance and to explain the origin of the Feast of Purim.  
 For believers today, Esther shows that God’s plans prevail even when He appears hidden or distant.
 
----
-
 ## Historical / Cultural Context  
 The Persian Empire ruled over 127 provinces, including many Jewish exiles.  
 Despite living far from Jerusalem and the temple, God’s people were still under His care.  
 Persia was a world of wealth, politics, and intrigue — yet even in that environment, God placed His people in positions of influence to fulfill His purposes.
-
----
 
 ## Purpose  
 - To reveal God’s providence and sovereignty even when unseen  
@@ -44,13 +34,9 @@ Persia was a world of wealth, politics, and intrigue — yet even in that enviro
 - To record how God preserved His people from annihilation  
 - To remind believers that God positions His people with purpose  
 
----
-
 ## Genre  
 **Historical narrative**  
 Esther reads like a dramatic true story — filled with suspense, irony, and divine timing.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Esther reads like a dramatic true story — filled with suspense, irony, and div
 | **Identity and Purpose** | God places His people where He needs them most. |
 | **Deliverance and Celebration** | God’s victory leads to the Feast of Purim, still celebrated today. |
 | **God’s Hidden Hand** | Even when unseen, He is always present and active. |
-
----
 
 ## Structure  
 
@@ -86,8 +70,6 @@ Esther reads like a dramatic true story — filled with suspense, irony, and div
 ### 4. Epilogue (Ch. 10)
 - Mordecai honored; peace and prosperity follow  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -97,8 +79,6 @@ Esther reads like a dramatic true story — filled with suspense, irony, and div
 | **Esther 6:1** | “That night the king could not sleep.” Divine timing at work. |
 | **Esther 9:22** | God turns mourning into joy and deliverance into celebration. |
 | **Esther 10:3** | Mordecai honored — God exalts the humble and faithful. |
-
----
 
 ## Connection to Christ  
 
@@ -110,8 +90,6 @@ Esther reads like a dramatic true story — filled with suspense, irony, and div
 | **Hidden Hand of God** | Just as in Esther, God’s plan through Christ was unseen until revealed. |
 | **Celebration of Purim** | Symbolic of the joy and freedom found in Christ’s redemption. |
 
----
-
 ## Application  
 Esther teaches that God’s silence is not absence — He is always working for His glory and our good.  
 - **Trust His Timing:** Every detail fits into His greater plan.  
@@ -119,7 +97,5 @@ Esther teaches that God’s silence is not absence — He is always working for 
 - **Stand Firm:** Faithfulness may be risky, but God rewards obedience.  
 - **Celebrate God’s Faithfulness:** Remember and rejoice in His deliverance.  
 - **Look for God’s Hand:** Even in the ordinary, He’s moving powerfully.  
-
----
 
 > *Esther reminds us that God is never absent — only unseen. He positions His people, reverses evil, and turns despair into deliverance for those who trust Him.*

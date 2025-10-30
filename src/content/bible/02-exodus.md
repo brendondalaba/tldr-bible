@@ -10,32 +10,22 @@ group: 'Pentateuch'
 Exodus means *departure*. It tells how God delivered Israel from Egypt, made a covenant with them at Mount Sinai, and showed them how to live in His presence.  
 It’s a book about salvation, leadership, worship, and learning to trust the God who saves.
 
----
-
 ## Author  
 Written by **Moses**, the leader God chose to bring His people out of Egypt.  
 Moses recorded the events he witnessed and the commands God gave, including the Ten Commandments and the instructions for the Tabernacle.
-
----
 
 ## Era / Date  
 Written around **1440–1400 BC**, shortly after Israel’s escape from Egypt.  
 The events cover roughly **80 years**, from Moses’ birth to the completion of the Tabernacle in the wilderness.
 
----
-
 ## Audience  
 Originally written to the Israelites who had just been freed from slavery. They needed to know who their God was and how to live as His people.  
 For believers today, Exodus reveals what it means to be rescued by God and guided by His presence.
-
----
 
 ## Historical / Cultural Context  
 Egypt was the world’s most powerful empire, built on idol worship and false gods. Pharaoh was seen as divine.  
 By sending plagues and parting the sea, **God showed His power over every false god and human authority**.  
 Israel’s deliverance wasn’t just political freedom — it was spiritual freedom, calling them to serve the one true God who reigns over all.
-
----
 
 ## Purpose  
 - To show that **God hears and rescues His people**  
@@ -43,13 +33,9 @@ Israel’s deliverance wasn’t just political freedom — it was spiritual free
 - To establish **God’s covenant** with His chosen nation  
 - To teach **how to live and worship in God’s presence**
 
----
-
 ## Genre  
 **Historical narrative with divine instruction**  
 Exodus records real events while also revealing God’s character and His pattern for salvation and worship.
-
----
 
 ## Key Themes  
 
@@ -61,8 +47,6 @@ Exodus records real events while also revealing God’s character and His patter
 | **Worship** | True freedom leads to worship, not just escape. |
 | **Leadership** | God raises up and equips ordinary people like Moses. |
 | **Faith and Obedience** | Trusting and obeying God brings guidance and blessing. |
-
----
 
 ## Structure  
 
@@ -82,8 +66,6 @@ Exodus records real events while also revealing God’s character and His patter
 - The golden calf and repentance  
 - God’s glory filling the Tabernacle  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -93,8 +75,6 @@ Exodus records real events while also revealing God’s character and His patter
 | **Exodus 14:14** | God fights for His people when they trust Him. |
 | **Exodus 19:5–6** | God calls Israel to be His treasured possession and holy nation. |
 | **Exodus 33:14** | “My presence will go with you, and I will give you rest.” |
-
----
 
 ## Connection to Christ  
 
@@ -107,8 +87,6 @@ Exodus records real events while also revealing God’s character and His patter
 | **Manna and Water** | Jesus is the Bread of Life and Living Water. |
 | **The Covenant** | Jesus brings a new and better covenant through His sacrifice. |
 
----
-
 ## Application  
 Exodus reflects the journey every believer takes:  
 - **Freedom:** God delivers us from bondage and sin.  
@@ -116,7 +94,5 @@ Exodus reflects the journey every believer takes:
 - **Presence:** God doesn’t just save us — He stays with us.  
 - **Worship:** True freedom leads to worship and obedience.  
 - **Purpose:** Like Israel, we’re called to live as His people and reflect His glory.  
-
----
 
 > *Exodus shows that God still delivers, leads, and dwells with His people. The same God who split the sea still makes a way for those who trust Him today.*

@@ -12,32 +12,22 @@ Unaware of the spiritual battle behind the scenes, Job struggles to understand w
 Friends offer shallow answers, but God eventually speaks — not to explain, but to reveal His greatness.  
 In the end, Job’s faith is refined, and God restores him, proving that His purposes reach far beyond what we can see.
 
----
-
 ## Author  
 The author is **unknown**, though Job may be one of the oldest books in Scripture.  
 Jewish tradition attributes it to **Moses**, but others suggest it was written by an ancient poet or historian guided by the Holy Spirit.
-
----
 
 ## Era / Date  
 Likely set in the **Patriarchal period** (around the time of Abraham, 2000–1800 BC).  
 The events take place in **Uz**, a region east of Israel, outside the covenant nation — showing that God’s care extends beyond borders.
 
----
-
 ## Audience  
 Originally written for those grappling with suffering and divine justice.  
 For readers today, Job reminds us that faith doesn’t depend on answers — it depends on trust in who God is.
-
----
 
 ## Historical / Cultural Context  
 Ancient people often believed suffering was always a result of sin.  
 Job’s story challenges that idea, revealing a deeper truth: God’s purposes go beyond human understanding.  
 It offers hope to anyone who’s ever asked “Why?” — showing that God’s character, not circumstances, is our foundation.
-
----
 
 ## Purpose  
 - To explore why the righteous suffer in a broken world  
@@ -45,13 +35,9 @@ It offers hope to anyone who’s ever asked “Why?” — showing that God’s 
 - To expose the limits of human understanding and self-righteousness  
 - To teach that faith in suffering brings refinement and reward  
 
----
-
 ## Genre  
 **Poetic wisdom literature**  
 Job mixes prose narrative (in chapters 1–2 and 42) with poetic dialogues that wrestle with deep questions of life and faith.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Job mixes prose narrative (in chapters 1–2 and 42) with poetic dialogues that 
 | **Suffering and Testing** | Trials refine faith like gold. |
 | **Comfort and Restoration** | God’s mercy restores what’s been lost. |
 | **The Redeemer** | Job looks forward to a living Redeemer who will stand at the end. |
-
----
 
 ## Structure  
 
@@ -88,8 +72,6 @@ Job mixes prose narrative (in chapters 1–2 and 42) with poetic dialogues that 
 - His friends rebuked  
 - Job’s intercession and blessing  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -99,8 +81,6 @@ Job mixes prose narrative (in chapters 1–2 and 42) with poetic dialogues that 
 | **Job 19:25–26** | “I know that my Redeemer lives.” A prophetic glimpse of Christ. |
 | **Job 23:10** | “He knows the way that I take; when He has tested me, I will come forth as gold.” |
 | **Job 42:5** | “My ears had heard of You, but now my eyes have seen You.” — suffering leads to deeper revelation. |
-
----
 
 ## Connection to Christ  
 
@@ -112,8 +92,6 @@ Job mixes prose narrative (in chapters 1–2 and 42) with poetic dialogues that 
 | **Restoration After Suffering** | Jesus’ resurrection restores all creation. |
 | **God’s Justice and Mercy** | The cross unites both perfectly — suffering brings redemption. |
 
----
-
 ## Application  
 Job teaches us that suffering is not meaningless when we trust the God who redeems.  
 - **Trust God’s Character:** Even when you can’t trace His hand, trust His heart.  
@@ -121,7 +99,5 @@ Job teaches us that suffering is not meaningless when we trust the God who redee
 - **Refuse Simplistic Answers:** Faith is deeper than formulas.  
 - **Hold Onto Hope:** God’s silence is never abandonment.  
 - **Expect Restoration:** Every loss surrendered to God becomes ground for future grace.  
-
----
 
 > *Job reminds us that faith is not proven in comfort but in crisis. When everything falls apart, God remains — and that’s enough.*

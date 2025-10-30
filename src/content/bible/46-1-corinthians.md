@@ -12,31 +12,21 @@ The young church there struggled to break free from the culture around it.
 Paul addresses real issues — factions, sexual sin, lawsuits, and confusion about marriage, food, worship, and the resurrection.  
 But throughout it all, his message is clear: *Christ is the foundation. Love is the standard. The cross is the center.*
 
----
-
 ## Author  
 **The Apostle Paul**, who founded the church in Corinth during his second missionary journey (around **A.D. 50–52**).  
 He wrote this letter from **Ephesus** about **A.D. 55** after hearing reports of problems and receiving questions from the believers there.
 
----
-
 ## Era / Date  
 Written around **A.D. 55**, during Paul’s third missionary journey.
-
----
 
 ## Audience  
 Addressed to the **church in Corinth**, a diverse group of believers struggling to grow in holiness and unity.  
 For believers today, 1 Corinthians shows that the Gospel must shape how we think, live, and treat one another.
 
----
-
 ## Historical / Cultural Context  
 Corinth was a center of commerce, wealth, and moral corruption — similar to modern-day big cities.  
 Many new believers brought cultural baggage into the church, leading to division and confusion.  
 Paul’s letter provides practical correction rooted in eternal truth — calling them to live by the Spirit, not the world.
-
----
 
 ## Purpose  
 - To correct divisions and call the church to unity in Christ  
@@ -44,13 +34,9 @@ Paul’s letter provides practical correction rooted in eternal truth — callin
 - To teach the proper use of spiritual gifts and order in worship  
 - To affirm the truth and importance of Christ’s resurrection  
 
----
-
 ## Genre  
 **Pastoral letter and corrective teaching**  
 Blends firm correction with fatherly encouragement — truth spoken in love.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Blends firm correction with fatherly encouragement — truth spoken in love.
 | **Wisdom from God** | The cross is the true wisdom — not human opinion. |
 | **Order in Worship** | The Spirit leads in power *and* peace. |
 | **The Resurrection** | The foundation of our faith and eternal hope. |
-
----
 
 ## Structure  
 
@@ -88,8 +72,6 @@ Blends firm correction with fatherly encouragement — truth spoken in love.
 - The resurrection is central — without it, faith is meaningless.  
 - Hope of our future resurrection and final victory in Christ.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -101,8 +83,6 @@ Blends firm correction with fatherly encouragement — truth spoken in love.
 | **1 Corinthians 13:1–3** | Without love, everything else is meaningless. |
 | **1 Corinthians 15:55–57** | “Thanks be to God! He gives us the victory through Jesus Christ.” |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -113,8 +93,6 @@ Blends firm correction with fatherly encouragement — truth spoken in love.
 | **The Head of the Body (12:27)** | The Church exists and thrives through Him. |
 | **The Risen Lord (15:20)** | Jesus’ resurrection secures ours forever. |
 
----
-
 ## Application  
 1 Corinthians is a call to maturity — to live Spirit-led lives marked by humility, purity, and love.  
 - **Stay United:** Don’t let pride divide what Christ died to unite.  
@@ -122,7 +100,5 @@ Blends firm correction with fatherly encouragement — truth spoken in love.
 - **Love First:** Gifts and knowledge mean nothing without love.  
 - **Honor God in Worship:** Let the Spirit lead with order and peace.  
 - **Stand Firm in Hope:** The resurrection means your labor is never in vain.  
-
----
 
 > *1 Corinthians reminds us that the Church isn’t perfect — but it’s God’s. His grace brings order to our chaos, love to our division, and power to our weakness.*

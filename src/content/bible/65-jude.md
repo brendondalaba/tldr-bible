@@ -11,31 +11,21 @@ Jude, the half-brother of Jesus, originally planned to write about the shared jo
 But seeing the threat of false teaching, he instead writes to warn believers to stand firm, live holy, and keep building one another up in faith.  
 This letter is a spiritual wake-up call — a reminder that truth is worth defending and holiness is worth pursuing.
 
----
-
 ## Author  
 **Jude (or Judas)** — the half-brother of Jesus and brother of James (leader of the Jerusalem church).  
 He humbly identifies himself as “a servant of Jesus Christ.”
 
----
-
 ## Era / Date  
 Written around **A.D. 65–80**, during a time when heresy and false teaching were spreading widely.
-
----
 
 ## Audience  
 Addressed to early **Jewish and Gentile believers**, warning them against false teachers within the church.  
 For believers today, Jude calls us to discernment, spiritual strength, and unwavering devotion to God’s truth.
 
----
-
 ## Historical / Cultural Context  
 The early church faced growing moral compromise and doctrinal distortion.  
 False teachers claimed freedom in Christ meant freedom to sin — rejecting authority and leading others astray.  
 Jude draws on Old Testament and Jewish historical examples to show how God always deals with rebellion and preserves the faithful.
-
----
 
 ## Purpose  
 - To urge believers to defend the true faith  
@@ -43,13 +33,9 @@ Jude draws on Old Testament and Jewish historical examples to show how God alway
 - To call Christians to live holy and compassionate lives  
 - To remind believers that God preserves His people to the end  
 
----
-
 ## Genre  
 **Warning and encouragement**  
 Prophetic in tone — bold, urgent, and full of vivid imagery.
-
----
 
 ## Key Themes  
 
@@ -61,8 +47,6 @@ Prophetic in tone — bold, urgent, and full of vivid imagery.
 | **Holiness and Purity** | True grace leads to obedience, not indulgence. |
 | **God’s Preservation** | God keeps His people secure until the end. |
 | **Mercy and Mission** | Show compassion while staying unspotted by sin. |
-
----
 
 ## Structure  
 
@@ -85,8 +69,6 @@ Prophetic in tone — bold, urgent, and full of vivid imagery.
 - Praise to the God who keeps us from falling and presents us blameless with joy.  
 - A triumphant declaration of God’s glory and power forever.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -96,8 +78,6 @@ Prophetic in tone — bold, urgent, and full of vivid imagery.
 | **Jude 20–21** | Build your faith, pray in the Spirit, stay in God’s love. |
 | **Jude 22–23** | Show mercy to the doubting and rescue others from danger. |
 | **Jude 24–25** | God is able to keep us from falling and bring us into glory. |
-
----
 
 ## Connection to Christ  
 
@@ -109,8 +89,6 @@ Prophetic in tone — bold, urgent, and full of vivid imagery.
 | **The Source of Mercy (v. 21–23)** | Christ empowers us to show compassion without compromise. |
 | **The Eternal Glory (v. 25)** | All praise belongs to Him who reigns forever. |
 
----
-
 ## Application  
 Jude calls believers to be both courageous and compassionate.  
 - **Stand Firm:** Guard truth in a world of compromise.  
@@ -118,7 +96,5 @@ Jude calls believers to be both courageous and compassionate.
 - **Show Mercy:** Love those who struggle, but reject sin’s influence.  
 - **Stay Pure:** Let grace produce holiness, not indulgence.  
 - **Trust God’s Keeping Power:** He will hold you fast until the end.  
-
----
 
 > *Jude reminds us that truth is worth fighting for — but we fight with love, humility, and confidence in the God who keeps us from falling and presents us faultless with great joy.*

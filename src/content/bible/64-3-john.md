@@ -11,30 +11,20 @@ While 2 John warns against welcoming false teachers, 3 John encourages believers
 Gaius had been caring for traveling missionaries and teachers, while Diotrephes — an arrogant church leader — was rejecting John’s authority and mistreating true servants of Christ.  
 John writes to affirm Gaius, expose pride, and celebrate integrity in leadership.
 
----
-
 ## Author  
 **The Apostle John**, again referring to himself as “the elder,” likely writing from **Ephesus** near the end of his life.
 
----
-
 ## Era / Date  
 Written around **A.D. 85–95**, close in time to 1 and 2 John.
-
----
 
 ## Audience  
 Addressed to **Gaius**, a beloved friend and faithful believer known for his hospitality and truthfulness.  
 For readers today, 3 John shows how integrity, humility, and generosity advance the Gospel more than position or pride ever could.
 
----
-
 ## Historical / Cultural Context  
 Traveling teachers and missionaries in the early church depended on the hospitality of local believers.  
 While Gaius welcomed them warmly, Diotrephes — a self-centered leader — refused them and even spread malicious talk against John.  
 This letter affirms true partnership in ministry and warns against power-hungry leadership.
-
----
 
 ## Purpose  
 - To commend Gaius for faithful hospitality and support of Gospel workers  
@@ -42,13 +32,9 @@ This letter affirms true partnership in ministry and warns against power-hungry 
 - To model humility, truth, and servant-hearted leadership  
 - To encourage discernment in who we partner with in ministry  
 
----
-
 ## Genre  
 **Personal letter of commendation and correction**  
 Pastoral, relational, and focused on integrity in action.
-
----
 
 ## Key Themes  
 
@@ -59,8 +45,6 @@ Pastoral, relational, and focused on integrity in action.
 | **Godly Leadership** | True authority serves; false authority dominates. |
 | **Discernment and Character** | Who you support reveals what you value. |
 | **Integrity and Example** | Live and lead in a way that points others to Jesus. |
-
----
 
 ## Structure  
 
@@ -77,8 +61,6 @@ Pastoral, relational, and focused on integrity in action.
 - Demetrius is well spoken of and faithful to the truth.  
 - John hopes to visit soon and encourages ongoing fellowship in peace.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -88,8 +70,6 @@ Pastoral, relational, and focused on integrity in action.
 | **3 John 9–10** | Diotrephes’ prideful control contrasts true servant leadership. |
 | **3 John 11** | “Do not imitate what is evil, but what is good.” |
 | **3 John 12** | Demetrius is an example of integrity and good reputation. |
-
----
 
 ## Connection to Christ  
 
@@ -101,8 +81,6 @@ Pastoral, relational, and focused on integrity in action.
 | **The Judge of Pride (v. 10)** | Christ opposes the proud but lifts the humble. |
 | **The Example of Integrity (v. 12)** | Jesus embodies the flawless example we follow. |
 
----
-
 ## Application  
 3 John challenges believers to serve faithfully and discern wisely.  
 - **Walk in Truth:** Let integrity define your reputation.  
@@ -110,7 +88,5 @@ Pastoral, relational, and focused on integrity in action.
 - **Reject Pride:** Godly leadership serves, not controls.  
 - **Encourage the Faithful:** Stand with those advancing the Gospel.  
 - **Imitate Goodness:** Let your life reflect Christ’s humility and truth.  
-
----
 
 > *3 John reminds us that the measure of faith isn’t title or power — it’s truth, love, and humble service. When we walk in truth and serve in love, we reflect the heart of Christ to the world.*

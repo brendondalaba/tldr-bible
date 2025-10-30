@@ -12,30 +12,20 @@ It reveals Christ as the risen, reigning King — the Alpha and Omega — and wa
 The book moves from present reality to ultimate destiny: the defeat of evil, the return of Christ, and the renewal of creation.  
 It’s not a code to crack, but a call to endure, worship, and hope.
 
----
-
 ## Author  
 **The Apostle John**, exiled on the island of **Patmos** for preaching the Gospel, receives this revelation from Jesus.
 
----
-
 ## Era / Date  
 Written around **A.D. 95–96**, during the reign of Emperor Domitian — a time of intense persecution.
-
----
 
 ## Audience  
 Addressed to the **seven churches of Asia Minor** (modern-day Turkey): Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.  
 For believers today, Revelation strengthens our endurance and fuels our hope — Jesus reigns, and His kingdom will come in full.
 
----
-
 ## Historical / Cultural Context  
 Christians were being marginalized, imprisoned, and executed for refusing to worship the emperor.  
 John’s vision reminds them (and us) that the kingdoms of this world are temporary, but Christ’s rule is eternal.  
 Every symbol points to a deeper truth: behind earthly chaos stands the Lamb who is sovereign and victorious.
-
----
 
 ## Purpose  
 - To reveal Jesus Christ as the victorious Lord over history  
@@ -44,13 +34,9 @@ Every symbol points to a deeper truth: behind earthly chaos stands the Lamb who 
 - To assure that evil will be judged and God’s people vindicated  
 - To inspire worship, endurance, and hope  
 
----
-
 ## Genre  
 **Apocalyptic prophecy and pastoral encouragement**  
 Revelation uses symbols and visions to communicate spiritual reality — real truth shown through vivid imagery.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Revelation uses symbols and visions to communicate spiritual reality — real tr
 | **Endurance and Faithfulness** | Believers must overcome through steadfast faith. |
 | **Worship and Victory** | Heaven resounds with praise to the Lamb. |
 | **New Creation** | God will renew heaven and earth forever. |
-
----
 
 ## Structure  
 
@@ -94,8 +78,6 @@ Revelation uses symbols and visions to communicate spiritual reality — real tr
 - No more death, pain, or darkness.  
 - “Behold, I am making all things new.”  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -107,8 +89,6 @@ Revelation uses symbols and visions to communicate spiritual reality — real tr
 | **Revelation 21:4** | God wipes away every tear — no more death or sorrow. |
 | **Revelation 22:20** | “He who testifies says, ‘Surely I am coming soon.’” Amen — come, Lord Jesus! |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -119,8 +99,6 @@ Revelation uses symbols and visions to communicate spiritual reality — real tr
 | **The Judge and King (19:11–16)** | Jesus reigns in righteousness and glory. |
 | **The Light of the City (21:23)** | His presence is the eternal light of the new creation. |
 
----
-
 ## Application  
 Revelation calls believers to live ready, worship boldly, and endure faithfully.  
 - **Keep Watch:** The King is coming — live like it’s soon.  
@@ -128,7 +106,5 @@ Revelation calls believers to live ready, worship boldly, and endure faithfully.
 - **Worship Fully:** The Lamb is worthy of your whole life.  
 - **Endure with Hope:** Suffering is temporary; victory is eternal.  
 - **Look Forward:** God’s story ends with restoration, not ruin.  
-
----
 
 > *Revelation reminds us that history is not spiraling out of control — it’s marching toward the return of the King. The Lamb who was slain will reign forever, and His people will reign with Him.*

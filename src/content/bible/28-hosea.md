@@ -12,32 +12,22 @@ Their marriage becomes a symbol of Israel’s spiritual adultery — chasing ido
 Yet despite betrayal, God tells Hosea to pursue her again, showing that His love is covenantal, not conditional.  
 The book moves from warning and heartbreak to forgiveness and restoration, echoing the Gospel long before Christ came.
 
----
-
 ## Author  
 **Hosea**, a prophet from the northern kingdom of Israel.  
 He served during the final decades before Israel’s fall to Assyria, around **755–715 BC**.  
 His name means *“salvation.”*
 
----
-
 ## Era / Date  
 Written during the reigns of **Uzziah, Jotham, Ahaz, and Hezekiah** (Judah) and **Jeroboam II** (Israel), roughly **755–715 BC** — a time of material prosperity but moral decay.
-
----
 
 ## Audience  
 Written primarily to the **northern kingdom of Israel**, exposing their unfaithfulness to God.  
 For believers today, Hosea reveals the depth of God’s mercy and His desire for restored relationship with His people.
 
----
-
 ## Historical / Cultural Context  
 Israel was thriving economically but crumbling spiritually — worshiping Baal and trusting political alliances instead of God.  
 Through Hosea, God shows that spiritual adultery leads to destruction, but His love never quits.  
 This was a shocking message in a culture where loyalty to one’s nation and gods was everything — Hosea’s message cut to the heart.
-
----
 
 ## Purpose  
 - To expose Israel’s spiritual unfaithfulness  
@@ -45,13 +35,9 @@ This was a shocking message in a culture where loyalty to one’s nation and god
 - To warn of judgment but promise future restoration  
 - To show that repentance opens the way for healing and renewal  
 
----
-
 ## Genre  
 **Prophetic narrative and poetic symbolism**  
 Hosea’s personal life mirrors God’s message — blending story, prophecy, and poetry to reveal divine love in vivid form.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Hosea’s personal life mirrors God’s message — blending story, prophecy, an
 | **Repentance and Renewal** | True turning brings healing and forgiveness. |
 | **Faithful Pursuit** | God seeks His people even when they run. |
 | **Restoration of Relationship** | Love wins in the end. |
-
----
 
 ## Structure  
 
@@ -82,8 +66,6 @@ Hosea’s personal life mirrors God’s message — blending story, prophecy, an
 - Call to repentance and promise of restoration.  
 - “I will heal their backsliding” — the book ends with hope.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -93,8 +75,6 @@ Hosea’s personal life mirrors God’s message — blending story, prophecy, an
 | **Hosea 6:1–3** | “Let us return to the Lord” — repentance leads to revival. |
 | **Hosea 11:8–9** | God’s compassion triumphs over His anger. |
 | **Hosea 14:4** | God freely heals and restores those who return to Him. |
-
----
 
 ## Connection to Christ  
 
@@ -106,8 +86,6 @@ Hosea’s personal life mirrors God’s message — blending story, prophecy, an
 | **God’s Mercy and Justice** | The cross satisfies both perfectly. |
 | **Healing and Restoration** | Salvation brings renewal and a new heart. |
 
----
-
 ## Application  
 Hosea shows that God’s love doesn’t end when we fail — it pursues us until we’re restored.  
 - **Acknowledge Sin:** Healing starts with honesty before God.  
@@ -115,7 +93,5 @@ Hosea shows that God’s love doesn’t end when we fail — it pursues us until
 - **Receive His Love:** God’s mercy is greater than your mistakes.  
 - **Reflect His Grace:** Love others with the same compassion God shows you.  
 - **Rest in Redemption:** You belong to a God who never stops calling you back.  
-
----
 
 > *Hosea reminds us that no matter how far we wander, God’s love runs farther. He doesn’t just forgive — He restores the relationship completely.*

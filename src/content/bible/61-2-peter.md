@@ -11,30 +11,20 @@ False teachers were spreading corruption in the early Church, denying Christ’s
 Peter’s response: hold tight to what’s true, remember what’s eternal, and keep growing in grace.  
 This letter balances urgency and assurance — growth in Christ is the best defense against falling away.
 
----
-
 ## Author  
 **The Apostle Peter**, written shortly before his death, likely in prison in Rome.
 
----
-
 ## Era / Date  
 Written around **A.D. 66–68**, near the end of Peter’s life.
-
----
 
 ## Audience  
 Addressed to the same general group of believers as 1 Peter — churches scattered throughout Asia Minor — and to all who have received faith in Christ.  
 For believers today, 2 Peter warns against spiritual complacency and reminds us to pursue truth with perseverance.
 
----
-
 ## Historical / Cultural Context  
 False teachers were infiltrating the Church, promoting immorality and denying the promise of Christ’s return.  
 Peter exposes their deception and reminds the Church that God’s timing is perfect and His judgment is sure.  
 The tone is urgent — Peter’s final words carry the weight of eternity.
-
----
 
 ## Purpose  
 - To encourage growth in spiritual maturity  
@@ -42,13 +32,9 @@ The tone is urgent — Peter’s final words carry the weight of eternity.
 - To remind believers of God’s promises and patience  
 - To stir up faith, endurance, and anticipation of Christ’s coming  
 
----
-
 ## Genre  
 **Final exhortation and prophetic warning**  
 Personal, passionate, and powerful — Peter’s last written legacy.
-
----
 
 ## Key Themes  
 
@@ -60,8 +46,6 @@ Personal, passionate, and powerful — Peter’s last written legacy.
 | **Divine Power and Grace** | Everything needed for godly living is found in Christ. |
 | **Judgment and Mercy** | God’s justice is sure, and His patience offers time to repent. |
 | **Spiritual Perseverance** | Stay faithful and unshaken to the end. |
-
----
 
 ## Structure  
 
@@ -80,8 +64,6 @@ Personal, passionate, and powerful — Peter’s last written legacy.
 - The day of the Lord will come unexpectedly, bringing judgment and renewal.  
 - Live holy and godly lives as you look forward to the new heavens and new earth.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -93,8 +75,6 @@ Personal, passionate, and powerful — Peter’s last written legacy.
 | **2 Peter 3:10–11** | The day of the Lord will come; live in holiness and reverence. |
 | **2 Peter 3:18** | “Grow in the grace and knowledge of our Lord and Savior Jesus Christ.” |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -105,8 +85,6 @@ Personal, passionate, and powerful — Peter’s last written legacy.
 | **The Patient Savior (3:9)** | Christ’s delay is an act of mercy, not neglect. |
 | **The Eternal Lord (3:18)** | Jesus reigns now and forever in glory. |
 
----
-
 ## Application  
 2 Peter urges believers to keep growing, keep watching, and keep standing on truth.  
 - **Grow in Grace:** Spiritual maturity protects against deception.  
@@ -114,7 +92,5 @@ Personal, passionate, and powerful — Peter’s last written legacy.
 - **Stay Pure:** Live holy lives while waiting for His return.  
 - **Trust God’s Timing:** Delay is mercy — God’s promises never fail.  
 - **Stand Firm:** Hold fast to faith until the day He comes.  
-
----
 
 > *2 Peter reminds us that faith isn’t a one-time decision — it’s a lifelong pursuit. Growth in Christ guards against deception and prepares us for His glorious return.*

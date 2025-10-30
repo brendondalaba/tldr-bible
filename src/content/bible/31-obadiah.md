@@ -12,31 +12,21 @@ When Jerusalem was attacked, Edom stood by — even rejoicing and taking advanta
 Through Obadiah, God promises that Edom’s pride will lead to its downfall, while His people will one day be restored.  
 The message is clear: God opposes the proud but protects the faithful.
 
----
-
 ## Author  
 **Obadiah**, whose name means *“Servant of the Lord.”*  
 Nothing else is known about him personally, but his words carry timeless truth about God’s justice and faithfulness.
 
----
-
 ## Era / Date  
 Likely written **around 586 BC**, shortly after the fall of Jerusalem to Babylon — the same event Edom exploited for its own gain.
-
----
 
 ## Audience  
 Written to **Edom** (for judgment) and to **Judah** (for comfort).  
 For believers today, Obadiah warns against pride and reminds us that God defends His people and brings justice in His time.
 
----
-
 ## Historical / Cultural Context  
 Edom and Israel had a long history of tension dating back to Jacob and Esau.  
 When Babylon invaded Jerusalem, Edom not only refused to help but also looted the city and attacked fleeing survivors.  
 God’s response was decisive — pride would bring Edom down, but He would restore Zion and establish His kingdom forever.
-
----
 
 ## Purpose  
 - To condemn Edom’s pride and betrayal  
@@ -44,13 +34,9 @@ God’s response was decisive — pride would bring Edom down, but He would rest
 - To comfort God’s people with the promise of restoration  
 - To show that human pride always leads to downfall  
 
----
-
 ## Genre  
 **Prophetic oracle of judgment and restoration**  
 Though only one chapter, Obadiah speaks with intensity and precision — a courtroom declaration of divine justice.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Though only one chapter, Obadiah speaks with intensity and precision — a court
 | **God’s Sovereignty** | No one escapes His authority. |
 | **Restoration of Israel** | God’s people will possess their inheritance again. |
 | **Reversal of Fortunes** | The proud fall; the faithful rise. |
-
----
 
 ## Structure  
 
@@ -77,8 +61,6 @@ Though only one chapter, Obadiah speaks with intensity and precision — a court
 - Israel will be restored, and God’s kingdom will prevail.  
 - “The kingdom will be the Lord’s.” — a declaration of ultimate victory.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -88,8 +70,6 @@ Though only one chapter, Obadiah speaks with intensity and precision — a court
 | **Obadiah 1:15** | “The day of the Lord is near for all nations.” — God’s justice is universal. |
 | **Obadiah 1:17** | Deliverance will come from Mount Zion — restoration for God’s people. |
 | **Obadiah 1:21** | “The kingdom will be the Lord’s.” — God reigns forever. |
-
----
 
 ## Connection to Christ  
 
@@ -101,8 +81,6 @@ Though only one chapter, Obadiah speaks with intensity and precision — a court
 | **The Humbling of the Proud** | Christ exalts the humble and resists the proud. |
 | **The Kingdom Belongs to the Lord** | Jesus reigns as King of kings and Lord of lords. |
 
----
-
 ## Application  
 Obadiah teaches us that pride is the root of downfall — but humility invites God’s favor.  
 - **Stay Humble:** God honors the lowly but brings down the proud.  
@@ -110,7 +88,5 @@ Obadiah teaches us that pride is the root of downfall — but humility invites G
 - **Refuse to Rejoice in Others’ Pain:** Compassion reflects the heart of Christ.  
 - **Remember God’s Sovereignty:** Every kingdom will bow to His.  
 - **Live for His Kingdom:** In the end, “the kingdom will be the Lord’s.”  
-
----
 
 > *Obadiah reminds us that pride blinds, betrayal breaks, but God still builds His kingdom. When the dust settles, only one throne will stand — the Lord’s.*

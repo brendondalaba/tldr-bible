@@ -11,24 +11,16 @@ Judges picks up after Joshua’s death. Without strong leadership, Israel drifts
 God allows neighboring nations to oppress them, but when they cry out, He raises up deliverers — called “judges” — to rescue and restore them.  
 The book covers roughly 300 years of Israel’s history, showing both the consequences of sin and the mercy of a God who never gives up on His people.
 
----
-
 ## Author  
 Traditionally attributed to **Samuel**, the final judge and prophet of Israel, though the exact author is uncertain.  
 It was likely written during the early monarchy, looking back on this turbulent period as a warning and lesson for future generations.
 
----
-
 ## Era / Date  
 Written around **1050 BC**, covering events from about **1375–1050 BC**, between Joshua’s death and the rise of Saul, Israel’s first king.
-
----
 
 ## Audience  
 Written to the Israelites during the early days of their monarchy, reminding them of the dangers of forgetting God.  
 For believers today, Judges shows the importance of staying faithful — and the grace of a God who restores even when we fall.
-
----
 
 ## Historical / Cultural Context  
 After Joshua, Israel was a loose collection of tribes without central government or consistent leadership.  
@@ -36,21 +28,15 @@ Surrounded by Canaanite nations full of idol worship, violence, and moral corrup
 Every time they turned away from God, chaos followed — until He raised up a judge to deliver them.  
 Judges shows what happens when God’s people live by their own standards instead of His.
 
----
-
 ## Purpose  
 - To show the consequences of forgetting God  
 - To reveal God’s mercy through repeated deliverance  
 - To highlight the need for righteous leadership  
 - To point forward to the coming King who would save His people completely
 
----
-
 ## Genre  
 **Historical narrative** — filled with real events, real people, and deep moral lessons.  
 It reads like a cycle of failure and redemption — a mirror of the human heart apart from God.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ It reads like a cycle of failure and redemption — a mirror of the human heart 
 | **Spiritual Compromise** | Partial obedience leads to complete downfall. |
 | **God’s Faithfulness** | His covenant love remains, even when His people are unfaithful. |
 | **Need for a King** | The chaos of Judges reveals Israel’s need for godly leadership — ultimately fulfilled in Christ. |
-
----
 
 ## Structure  
 
@@ -81,8 +65,6 @@ It reads like a cycle of failure and redemption — a mirror of the human heart 
 - Civil war among the tribes  
 - “Everyone did what was right in his own eyes.”  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -92,8 +74,6 @@ It reads like a cycle of failure and redemption — a mirror of the human heart 
 | **Judges 7:2** | Victory belongs to God, not human strength. |
 | **Judges 16:28** | Samson’s final prayer shows repentance and God’s mercy. |
 | **Judges 21:25** | The summary of the age — life without God leads to chaos. |
-
----
 
 ## Connection to Christ  
 
@@ -105,8 +85,6 @@ It reads like a cycle of failure and redemption — a mirror of the human heart 
 | **Cycle of Sin** | Jesus breaks the endless cycle by changing our hearts. |
 | **Need for a King** | Jesus is the righteous King Israel longed for. |
 
----
-
 ## Application  
 Judges teaches that when we drift from God, life unravels — but His mercy always invites us back.  
 - **Stay Faithful:** Compromise leads to bondage. Stay close to God’s Word.  
@@ -114,7 +92,5 @@ Judges teaches that when we drift from God, life unravels — but His mercy alwa
 - **Recognize Patterns:** Learn from failure — don’t repeat it.  
 - **Trust His Mercy:** God’s love runs deeper than your mistakes.  
 - **Follow the True King:** Only Jesus can bring lasting freedom.  
-
----
 
 > *Judges reminds us that without God, everyone does what seems right — and it leads to ruin. But with Him, there’s always hope, healing, and victory through His mercy.*

@@ -11,31 +11,21 @@ Written mostly by King Solomon, Proverbs gathers short, memorable sayings inspir
 Each proverb is a snapshot of truth — simple yet profound, guiding everything from relationships to finances to character.  
 Its main message: **wisdom begins with the fear of the Lord**, a deep respect and reverence for who God is.
 
----
-
 ## Author  
 Primarily **Solomon**, son of David and king of Israel (1 Kings 4:32).  
 Other contributors include **Agur** (Proverbs 30) and **King Lemuel** (Proverbs 31, taught by his mother).  
 These sayings were collected over time, likely completed during or after Solomon’s reign.
 
----
-
 ## Era / Date  
 Written around **970–700 BC**, during Israel’s united monarchy and early divided kingdom years.
-
----
 
 ## Audience  
 Written for **young men** entering adulthood — but its wisdom applies to all ages, genders, and seasons.  
 For today’s readers, Proverbs shows how godly wisdom transforms ordinary life.
 
----
-
 ## Historical / Cultural Context  
 Ancient wisdom literature was common in many nations, but Proverbs stands apart — its wisdom begins not with human logic, but with **the fear of the Lord**.  
 Israel’s kings and parents used these sayings to teach moral and spiritual discernment for daily life.
-
----
 
 ## Purpose  
 - To teach godly wisdom and moral integrity  
@@ -43,13 +33,9 @@ Israel’s kings and parents used these sayings to teach moral and spiritual dis
 - To show that obedience brings blessing  
 - To guide believers toward a life that honors God in every decision  
 
----
-
 ## Genre  
 **Wisdom literature — poetic, practical, and instructional**  
 Proverbs uses parallel lines, vivid imagery, and repetition to make truth easy to remember and apply.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Proverbs uses parallel lines, vivid imagery, and repetition to make truth easy t
 | **Relationships** | Wisdom governs friendships, marriage, and community. |
 | **Pride and Humility** | Pride leads to downfall; humility brings honor. |
 | **Generosity and Justice** | God blesses those who care for others. |
-
----
 
 ## Structure  
 
@@ -86,8 +70,6 @@ Proverbs uses parallel lines, vivid imagery, and repetition to make truth easy t
 ### 5. Words of Agur and Lemuel (Ch. 30–31)
 - Humility, godliness, and the virtuous woman  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -99,8 +81,6 @@ Proverbs uses parallel lines, vivid imagery, and repetition to make truth easy t
 | **Proverbs 16:9** | “In their hearts humans plan their course, but the Lord establishes their steps.” |
 | **Proverbs 31:30** | Godly character is worth more than beauty or charm. |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -110,8 +90,6 @@ Proverbs uses parallel lines, vivid imagery, and repetition to make truth easy t
 | **The Teacher of Truth** | Jesus’ parables mirror the simplicity and power of Proverbs. |
 | **The Path of Life** | Jesus is the way of wisdom — the narrow road that leads to life. |
 
----
-
 ## Application  
 Proverbs turns belief into behavior — faith that shows up in how we live.  
 - **Seek God First:** Real wisdom begins with knowing Him.  
@@ -120,7 +98,5 @@ Proverbs turns belief into behavior — faith that shows up in how we live.
 - **Work Diligently:** Excellence honors God.  
 - **Stay Teachable:** Wisdom grows in humble hearts.  
 - **Walk with the Wise:** The people around you shape your direction.  
-
----
 
 > *Proverbs reminds us that wisdom isn’t just knowledge — it’s obedience. When we walk in God’s wisdom, we reflect His character and experience His blessing.*

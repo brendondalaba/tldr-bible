@@ -12,25 +12,17 @@ His ministry began when Israel had lost everything — their land, their temple,
 Through dramatic visions, symbolic acts, and divine messages, Ezekiel shows that God’s glory had left the temple because of sin, but one day it would return.  
 He also promises a coming renewal — new hearts, a new covenant, and the Spirit’s presence dwelling among God’s people again.
 
----
-
 ## Author  
 **Ezekiel**, son of Buzi, a priest taken into exile in Babylon around 597 BC.  
 He began his prophetic ministry at age 30 — the same age priests began their temple service.
-
----
 
 ## Era / Date  
 Written between **593–571 BC**, during Israel’s captivity in Babylon.  
 Ezekiel’s prophecies span from the early years of exile through the fall of Jerusalem.
 
----
-
 ## Audience  
 Written to **Jewish exiles** in Babylon who had lost hope of returning home.  
 For believers today, Ezekiel reveals God’s faithfulness to restore, renew, and dwell among His people again.
-
----
 
 ## Historical / Cultural Context  
 The Babylonian Empire had conquered Jerusalem and deported many Israelites.  
@@ -38,21 +30,15 @@ In exile, the people believed God had forsaken them.
 Ezekiel’s visions challenged that idea — God was not confined to the temple or to one land. His glory could move, and His Spirit could still work, even in exile.  
 This message was revolutionary: **God’s presence isn’t limited by location — it’s defined by relationship.**
 
----
-
 ## Purpose  
 - To reveal God’s holiness and sovereignty among the nations  
 - To explain that exile was the result of sin, not abandonment  
 - To give hope of spiritual renewal and restoration  
 - To promise the coming of the Holy Spirit and a restored kingdom  
 
----
-
 ## Genre  
 **Prophetic narrative and apocalyptic vision**  
 Ezekiel combines symbolic actions, parables, and supernatural imagery to communicate God’s message with clarity and power.
-
----
 
 ## Key Themes  
 
@@ -64,8 +50,6 @@ Ezekiel combines symbolic actions, parables, and supernatural imagery to communi
 | **The Holy Spirit** | Ezekiel foretells the Spirit’s indwelling presence. |
 | **Resurrection and Hope** | The valley of dry bones shows God’s power to bring life from death. |
 | **God’s Sovereignty** | He rules over history, nations, and the future of His people. |
-
----
 
 ## Structure  
 
@@ -88,8 +72,6 @@ Ezekiel combines symbolic actions, parables, and supernatural imagery to communi
 - God’s glory returns  
 - The river of life flows from His presence — a picture of renewal  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -100,8 +82,6 @@ Ezekiel combines symbolic actions, parables, and supernatural imagery to communi
 | **Ezekiel 36:26–27** | The new covenant promise: a new heart and Spirit within us. |
 | **Ezekiel 37:5** | “I will make breath enter you, and you will come to life.” |
 | **Ezekiel 43:5** | God’s glory returns to dwell with His people forever. |
-
----
 
 ## Connection to Christ  
 
@@ -114,8 +94,6 @@ Ezekiel combines symbolic actions, parables, and supernatural imagery to communi
 | **Temple Vision** | Jesus is the true temple where God’s presence dwells. |
 | **River of Life** | Flows from Christ, bringing healing and life to the world (John 7:38, Rev. 22:1). |
 
----
-
 ## Application  
 Ezekiel reminds us that God’s power to restore is greater than any ruin.  
 - **Invite God’s Spirit to Work:** Only He can transform hearts of stone into hearts of flesh.  
@@ -123,7 +101,5 @@ Ezekiel reminds us that God’s power to restore is greater than any ruin.
 - **Stay Hopeful:** Even in exile seasons, God is working to renew.  
 - **Worship His Glory:** His presence still fills hearts, homes, and nations.  
 - **Look Forward:** Jesus’ return will complete the restoration Ezekiel foresaw.  
-
----
 
 > *Ezekiel shows us that God’s presence isn’t lost — it’s moving toward renewal. When He breathes new life, dry bones rise, and His glory fills the earth once again.*

@@ -12,31 +12,21 @@ After he left, false teachers (the Judaizers) came in, insisting that Gentile be
 Paul writes urgently to defend the true Gospel and to remind believers that faith in Christ is enough.  
 Galatians stands as a timeless warning against turning Christianity into rule-keeping instead of relationship.
 
----
-
 ## Author  
 **The Apostle Paul**, who wrote with deep passion and authority.  
 This is one of his earliest letters, written around **A.D. 48–49** from **Antioch** after his first missionary journey.
 
----
-
 ## Era / Date  
 Written around **A.D. 48–49**, likely the earliest of Paul’s epistles.
-
----
 
 ## Audience  
 Written to the **churches of Galatia** — believers in the region of modern-day Turkey.  
 For believers today, Galatians calls us to hold fast to grace, resist performance-based faith, and walk in the freedom of the Spirit.
 
----
-
 ## Historical / Cultural Context  
 The early Church struggled to define how Jewish and Gentile believers fit together.  
 Some insisted on keeping the Law of Moses as a condition of salvation.  
 Paul confronts this head-on: salvation is not Jesus *plus* the Law — it’s Jesus *only.*
-
----
 
 ## Purpose  
 - To defend the Gospel of grace against legalism  
@@ -44,13 +34,9 @@ Paul confronts this head-on: salvation is not Jesus *plus* the Law — it’s Je
 - To call believers to live in freedom through the Spirit  
 - To reaffirm that true righteousness comes from Christ alone  
 
----
-
 ## Genre  
 **Doctrinal and corrective letter**  
 Galatians combines theological clarity with passionate appeal — grace taught with urgency.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Galatians combines theological clarity with passionate appeal — grace taught w
 | **Life in the Spirit** | The Spirit empowers holy living, not human effort. |
 | **Unity in the Gospel** | In Christ, all believers are equal — Jew or Gentile. |
 | **The Cross as the Center** | The cross ends striving and begins new life. |
-
----
 
 ## Structure  
 
@@ -82,8 +66,6 @@ Galatians combines theological clarity with passionate appeal — grace taught w
 - The fruit of the Spirit replaces the works of the flesh.  
 - Bear one another’s burdens and walk in love.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -95,8 +77,6 @@ Galatians combines theological clarity with passionate appeal — grace taught w
 | **Galatians 5:1** | Christ sets us free to live in grace, not bondage. |
 | **Galatians 5:22–23** | The fruit of the Spirit — love, joy, peace, and more. |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -107,8 +87,6 @@ Galatians combines theological clarity with passionate appeal — grace taught w
 | **The Giver of the Spirit (3:14)** | Jesus sends the Holy Spirit as our helper and guide. |
 | **The Cross (6:14)** | Boasting only in the cross — where true life begins. |
 
----
-
 ## Application  
 Galatians reminds us that Christianity is not about trying harder — it’s about trusting deeper.  
 - **Rest in Grace:** You don’t have to earn what Jesus already paid for.  
@@ -116,7 +94,5 @@ Galatians reminds us that Christianity is not about trying harder — it’s abo
 - **Live by the Spirit:** True holiness comes from within.  
 - **Stay Centered on the Cross:** It’s the anchor of your identity.  
 - **Love and Serve:** Freedom in Christ expresses itself through love.  
-
----
 
 > *Galatians reminds us that grace is not the starting point of the Christian life — it’s the whole thing. The cross sets us free to live in the power of the Spirit, not the pressure of performance.*

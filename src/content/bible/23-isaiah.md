@@ -11,33 +11,23 @@ Isaiah’s ministry spanned the reigns of four kings in Judah, during a time of 
 God called Isaiah to speak truth to a nation that had turned away — warning of judgment through Assyria and Babylon, yet offering incredible hope of restoration.  
 The second half of the book overflows with promises of comfort, salvation, and the coming of Christ — the Servant, the Savior, and the King.
 
----
-
 ## Author  
 **Isaiah son of Amoz**, a prophet in Jerusalem.  
 He ministered for about 60 years, from roughly **740–680 BC**, during the reigns of Uzziah, Jotham, Ahaz, and Hezekiah.  
 His name means *“The Lord is salvation.”*
 
----
-
 ## Era / Date  
 Written between **740 and 680 BC**, during Judah’s decline before the Babylonian exile.  
 Isaiah witnessed both national crisis and divine revelation, bridging the gap between warning and future hope.
-
----
 
 ## Audience  
 Written to **Judah and Jerusalem**, calling them to repentance and faith in the Holy One of Israel.  
 For believers today, Isaiah shows that salvation and hope come through God alone — not through power, politics, or religion.
 
----
-
 ## Historical / Cultural Context  
 Judah faced constant threat from Assyria and Babylon while falling deeper into idolatry and injustice.  
 In that darkness, God revealed through Isaiah His ultimate plan — a coming Redeemer who would bring light to the nations and restore all things.  
 Isaiah’s words still echo today as the clearest Old Testament portrait of Jesus Christ.
-
----
 
 ## Purpose  
 - To call God’s people to repentance and holiness  
@@ -45,13 +35,9 @@ Isaiah’s words still echo today as the clearest Old Testament portrait of Jesu
 - To reveal God’s plan of redemption through the coming Messiah  
 - To assure Israel (and all nations) that God’s promises will prevail  
 
----
-
 ## Genre  
 **Prophetic writing — a mix of poetry, vision, and narrative**  
 Isaiah combines judgment and comfort, earthly events and eternal hope, showing God’s character and His plan for salvation.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Isaiah combines judgment and comfort, earthly events and eternal hope, showing G
 | **Trust in God Alone** | Human power fails — only God saves. |
 | **Comfort and Restoration** | God forgives and renews all who return to Him. |
 | **Global Salvation** | The Messiah’s redemption extends to all nations. |
-
----
 
 ## Structure  
 
@@ -81,8 +65,6 @@ Isaiah combines judgment and comfort, earthly events and eternal hope, showing G
 - Promises of restoration, joy, and new creation  
 - The coming of the eternal kingdom under the Messiah  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -93,8 +75,6 @@ Isaiah combines judgment and comfort, earthly events and eternal hope, showing G
 | **Isaiah 40:31** | “Those who hope in the Lord will renew their strength.” |
 | **Isaiah 53:5–6** | The suffering Servant — a perfect picture of Christ’s sacrifice. |
 | **Isaiah 61:1–2** | The mission of the Messiah — fulfilled by Jesus in Luke 4. |
-
----
 
 ## Connection to Christ  
 
@@ -107,8 +87,6 @@ Isaiah combines judgment and comfort, earthly events and eternal hope, showing G
 | **The Spirit-Anointed Savior (61:1–2)** | Jesus fulfills this prophecy in His ministry. |
 | **Eternal King (9:6–7)** | Jesus reigns forever on David’s throne. |
 
----
-
 ## Application  
 Isaiah calls us to awe, repentance, and hope — to see God as holy and His salvation as our only anchor.  
 - **Stand in Awe of His Holiness:** God is glorious and pure — worship Him with reverence.  
@@ -116,7 +94,5 @@ Isaiah calls us to awe, repentance, and hope — to see God as holy and His salv
 - **Turn from Sin:** Repentance opens the door to restoration.  
 - **Rest in Redemption:** Christ carried your sin — you are forgiven.  
 - **Live as a Light:** The same God who sent Isaiah calls you to shine His truth today.  
-
----
 
 > *Isaiah reminds us that our holy God is also our saving God. In Jesus Christ, the promised Immanuel, judgment gives way to mercy, and death is swallowed up in victory.*

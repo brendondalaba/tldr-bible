@@ -12,24 +12,16 @@ The city that once flourished now lies in ruins.
 But even amid pain and despair, Jeremiah declares that God’s mercy has not ended — He remains faithful, even when everything else falls apart.  
 It’s a book about learning to grieve rightly while trusting the God who restores.
 
----
-
 ## Author  
 **Jeremiah**, the “weeping prophet,” is widely recognized as the author.  
 He witnessed Jerusalem’s fall firsthand and poured his heart out to God in poetry and tears.
 
----
-
 ## Era / Date  
 Written around **586 BC**, immediately after the fall of Jerusalem and the destruction of the temple.
-
----
 
 ## Audience  
 Written to the **Jewish exiles and survivors** of Jerusalem’s destruction, helping them process grief and turn back to God.  
 For believers today, it offers comfort and perspective in seasons of suffering, loss, or national decline.
-
----
 
 ## Historical / Cultural Context  
 Jerusalem had been warned repeatedly to repent, but the people ignored God’s prophets.  
@@ -37,21 +29,15 @@ When Babylon invaded, the city was destroyed, the temple burned, and many were t
 Lamentations became Israel’s funeral song — a national cry of repentance and a confession that God’s judgment was just.  
 Yet it also became a song of hope: even after devastation, God’s covenant love endures.
 
----
-
 ## Purpose  
 - To express grief over Jerusalem’s destruction and the people’s sin  
 - To teach repentance and humility before God  
 - To show that hope remains even in suffering  
 - To affirm God’s faithfulness and mercy despite judgment  
 
----
-
 ## Genre  
 **Poetic lament and acrostic poetry**  
 Each chapter (except the fifth) follows a Hebrew acrostic pattern — a sign of order and reflection even amid chaos.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Each chapter (except the fifth) follows a Hebrew acrostic pattern — a sign of 
 | **Restoration** | God’s compassion leads to renewal. |
 | **Prayer and Honesty** | True faith cries out honestly to God. |
 | **Faithfulness of God** | His character never changes, even when everything else does. |
-
----
 
 ## Structure  
 
@@ -88,8 +72,6 @@ Each chapter (except the fifth) follows a Hebrew acrostic pattern — a sign of 
 - The nation pleads for mercy and renewal.  
 - Ends with hope that God will restore again.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -99,8 +81,6 @@ Each chapter (except the fifth) follows a Hebrew acrostic pattern — a sign of 
 | **Lamentations 3:22–23** | “Great is Your faithfulness.” — hope in the middle of despair. |
 | **Lamentations 3:31–32** | “The Lord will not cast off forever… He will show compassion.” |
 | **Lamentations 5:21** | “Restore us to Yourself, Lord, that we may return.” — the heart of repentance. |
-
----
 
 ## Connection to Christ  
 
@@ -112,8 +92,6 @@ Each chapter (except the fifth) follows a Hebrew acrostic pattern — a sign of 
 | **Faithful Mercy** | Christ is the ultimate display of God’s steadfast love. |
 | **“Restore Us” Prayer** | Fulfilled in salvation and new life through Christ. |
 
----
-
 ## Application  
 Lamentations teaches us to lament — not to despair, but to trust.  
 - **Be Honest with God:** He welcomes your raw, unfiltered emotions.  
@@ -121,7 +99,5 @@ Lamentations teaches us to lament — not to despair, but to trust.
 - **Remember His Mercy:** Even in chaos, His compassions never fail.  
 - **Hold Onto Hope:** God’s faithfulness outlasts every season of loss.  
 - **Pray for Restoration:** God still rebuilds hearts, homes, and nations that return to Him.  
-
----
 
 > *Lamentations reminds us that even in our darkest nights, God’s mercy dawns anew. The tears we shed in repentance become the soil where hope grows again.*

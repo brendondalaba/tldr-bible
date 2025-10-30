@@ -12,31 +12,21 @@ Though Israel prospered materially, its heart was far from God.
 Amos boldly declared that worship without justice was empty — God wanted hearts that reflected His character.  
 The book ends with both warning and hope: after judgment, God promises to restore His people and bless them again.
 
----
-
 ## Author  
 **Amos**, a shepherd and fig farmer from Tekoa in Judah.  
 He wasn’t a professional prophet but was called by God to deliver a strong message of truth to Israel.
 
----
-
 ## Era / Date  
 Written around **760–750 BC**, during the reign of **Jeroboam II** in Israel — a time of national prosperity but spiritual corruption.
-
----
 
 ## Audience  
 Directed primarily to **the northern kingdom of Israel**, who enjoyed comfort and wealth but ignored justice, honesty, and humility.  
 For believers today, Amos reminds us that faith without compassion and obedience is hollow.
 
----
-
 ## Historical / Cultural Context  
 Israel had become complacent, enjoying luxury while oppressing the poor and ignoring God’s commands.  
 Religious ceremonies continued, but the people’s hearts were cold.  
 Amos exposes the gap between appearance and reality — God desires righteousness, not just religious activity.
-
----
 
 ## Purpose  
 - To expose hypocrisy and social injustice  
@@ -45,13 +35,9 @@ Amos exposes the gap between appearance and reality — God desires righteousnes
 - To remind believers that true worship includes justice and mercy  
 - To reveal God’s promise of future restoration for the faithful remnant  
 
----
-
 ## Genre  
 **Prophetic oracles and poetic judgment**  
 Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in self-righteousness.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 | **Humility and Repentance** | God honors those who turn from pride. |
 | **Restoration and Hope** | Judgment is not the end — mercy follows repentance. |
 | **God’s Sovereignty** | He rules over all nations, not just Israel. |
-
----
 
 ## Structure  
 
@@ -80,8 +64,6 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 - The priest Amaziah opposes Amos.  
 - Ends with hope: God will restore the fallen “house of David.”  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -91,8 +73,6 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 | **Amos 5:24** | True worship is expressed through justice and righteousness. |
 | **Amos 7:8** | The plumb line — God measures His people by His standard, not theirs. |
 | **Amos 9:11–12** | Promise of restoration through the rebuilt house of David — fulfilled in Christ. |
-
----
 
 ## Connection to Christ  
 
@@ -104,8 +84,6 @@ Amos uses vivid imagery and straightforward rebuke to wake up a nation asleep in
 | **Mercy for All Nations** | Salvation extends beyond Israel to all who believe. |
 | **Justice and Grace United** | The cross satisfies both God’s justice and His mercy. |
 
----
-
 ## Application  
 Amos reminds us that what God desires most is integrity — faith that produces justice, humility, and love.  
 - **Live What You Believe:** True worship transforms daily life.  
@@ -113,7 +91,5 @@ Amos reminds us that what God desires most is integrity — faith that produces 
 - **Reject Hypocrisy:** God values obedience over performance.  
 - **Repent Quickly:** Sin tolerated becomes sin judged.  
 - **Hold to Hope:** God’s mercy restores what His judgment refines.  
-
----
 
 > *Amos calls us to wake up — to stop playing church and start living truth. God’s people should be known not by words, but by righteousness that flows like a river.*

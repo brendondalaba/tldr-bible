@@ -9,32 +9,22 @@ group: 'Pentateuch'
 ## Overview  
 Genesis means *beginnings*. It tells how God created the world, how people turned from Him, and how He began His plan to save us. It’s the opening chapter of God’s story of redemption — how He restores what was lost.
 
----
-
 ## Author  
 Most believe **Moses** wrote Genesis, along with the next four books of the Bible.  
 He wasn’t alive for these events, but God revealed them through His Spirit and through stories passed down faithfully by God’s people.
-
----
 
 ## Era / Date  
 Written around **1440–1400 BC**, when Israel was traveling through the desert after leaving Egypt.  
 The events in Genesis stretch from **Creation to the death of Joseph**, covering thousands of years.
 
----
-
 ## Audience  
 Originally written for the Israelites — people just learning who God really is after generations in Egypt.  
 Today, Genesis helps every believer understand our origin, our purpose, and God’s heart for relationship with us.
-
----
 
 ## Historical / Cultural Context  
 When Genesis was written, other cultures had stories about how the world began — full of violence and many gods.  
 Genesis boldly declares that there is **one good, powerful Creator** who made everything on purpose.  
 The early believers (the patriarchs) lived as travelers and strangers, showing us that faith means trusting God even when we can’t see the full picture.
-
----
 
 ## Purpose  
 - To show that **God is Creator**, in charge of everything.  
@@ -42,13 +32,9 @@ The early believers (the patriarchs) lived as travelers and strangers, showing u
 - To reveal **God’s rescue plan** starting with Abraham’s family.  
 - To teach that **God chooses and blesses people by grace**, not because they deserve it.
 
----
-
 ## Genre  
 Genesis is **a true story written in narrative form** — a historical account with deep spiritual meaning.  
 It’s not a myth or made-up story; it’s the inspired record of how God began His relationship with humanity.
-
----
 
 ## Key Themes  
 
@@ -61,8 +47,6 @@ It’s not a myth or made-up story; it’s the inspired record of how God began 
 | **God’s Sovereignty** | He rules over all events and uses them for His plan. |
 | **Faith and Obedience** | God blesses those who trust and follow Him. |
 | **Hope for a Savior** | God promises that one day someone will defeat evil forever (Genesis 3:15). |
-
----
 
 ## Structure  
 
@@ -81,8 +65,6 @@ It’s not a myth or made-up story; it’s the inspired record of how God began 
 
 God’s plan starts broad with the whole world, then narrows to one family through whom He’ll bless all nations.
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -92,8 +74,6 @@ God’s plan starts broad with the whole world, then narrows to one family throu
 | **Genesis 3:15** | The first promise that a Savior will come. |
 | **Genesis 12:1-3** | God’s promise to Abraham to bless all nations through him. |
 | **Genesis 50:20** | “You meant it for evil, but God meant it for good.” — God’s control over every story. |
-
----
 
 ## Connection to Christ  
 
@@ -106,8 +86,6 @@ God’s plan starts broad with the whole world, then narrows to one family throu
 | **Isaac** | The beloved son given up — a picture of Jesus’ sacrifice. |
 | **Joseph** | Rejected, then raised up to save others — just like Christ. |
 
----
-
 ## Application  
 Genesis isn’t just old history — it’s the start of your story too.  
 - **Identity:** You were created by God, on purpose and for a purpose.  
@@ -116,7 +94,5 @@ Genesis isn’t just old history — it’s the start of your story too.
 - **Obedience:** Following God brings blessing and direction.  
 - **Holiness:** Sin always has consequences — guard your heart.  
 - **Legacy:** A life of faith impacts generations after you.  
-
----
 
 > *Genesis calls us back to God’s original design — closeness with Him, clarity in who we are, and confidence in His plan. Don’t just read it; let it change how you live and walk with God.*

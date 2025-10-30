@@ -11,25 +11,17 @@ The word *Deuteronomy* means “second law,” not because it introduces new law
 After 40 years in the wilderness, the old generation has passed, and a new one is about to enter Canaan.  
 Moses reviews their journey, calls them to obedience, and reminds them that blessing follows faithfulness.  
 
----
-
 ## Author  
 **Moses** wrote Deuteronomy near the end of his life, as Israel camped east of the Jordan River.  
 These are his final sermons and instructions, later completed by Joshua after Moses’ death.
-
----
 
 ## Era / Date  
 Written around **1400 BC**, just before Israel entered the Promised Land.  
 The book covers a brief period — likely within the final months of Moses’ life.
 
----
-
 ## Audience  
 Written for the next generation of Israelites — those who grew up in the wilderness and were about to take possession of the land God promised to Abraham.  
 For believers today, Deuteronomy calls us to remember God’s faithfulness and live with wholehearted devotion to Him.
-
----
 
 ## Historical / Cultural Context  
 The Israelites were surrounded by nations with false gods, corrupt morals, and violence.  
@@ -37,21 +29,15 @@ Before entering that world, God reminded them who they were — **His chosen peo
 This book prepared them to be a light among nations and warned that forgetting God would lead to trouble.  
 It’s a timeless message for every generation: remember where God brought you from, and don’t drift from Him when things go well.
 
----
-
 ## Purpose  
 - To **renew Israel’s covenant** with God  
 - To remind them of **God’s faithfulness** and discipline  
 - To prepare the new generation for **obedient living** in the land  
 - To urge God’s people to **love and obey Him wholeheartedly**
 
----
-
 ## Genre  
 **Covenant renewal and farewell address**  
 Deuteronomy is a series of sermons filled with passion, memory, and hope — not dry law, but heartfelt guidance from a leader who deeply loved God and His people.
-
----
 
 ## Key Themes  
 
@@ -63,8 +49,6 @@ Deuteronomy is a series of sermons filled with passion, memory, and hope — not
 | **Blessing and Curse** | Obedience brings life; rebellion brings loss. |
 | **Leadership Transition** | Moses passes the mantle to Joshua. |
 | **The Word of God** | God’s Word is life — to be remembered, taught, and lived out. |
-
----
 
 ## Structure  
 
@@ -83,8 +67,6 @@ Deuteronomy is a series of sermons filled with passion, memory, and hope — not
 - Moses commissions Joshua and blesses the tribes  
 - Moses’ death on Mount Nebo  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -94,8 +76,6 @@ Deuteronomy is a series of sermons filled with passion, memory, and hope — not
 | **Deuteronomy 10:12–13** | What God desires: fear Him, love Him, and walk in His ways. |
 | **Deuteronomy 30:19–20** | “Choose life.” Every choice draws us closer to or farther from God. |
 | **Deuteronomy 31:6** | God’s abiding presence gives courage for every challenge. |
-
----
 
 ## Connection to Christ  
 
@@ -107,8 +87,6 @@ Deuteronomy is a series of sermons filled with passion, memory, and hope — not
 | **“Choose Life”** | Eternal life is found in Christ, the way, the truth, and the life. |
 | **The Word of God** | Jesus resisted temptation in the wilderness by quoting Deuteronomy (Matt. 4). |
 
----
-
 ## Application  
 Deuteronomy reminds us that faith isn’t just about rules — it’s about relationship.  
 - **Remember:** Don’t forget God’s faithfulness in past seasons.  
@@ -116,7 +94,5 @@ Deuteronomy reminds us that faith isn’t just about rules — it’s about rela
 - **Teach:** Pass God’s truth to the next generation.  
 - **Choose Life:** Every day is a chance to follow God’s way.  
 - **Trust:** God’s presence never leaves those who walk with Him.  
-
----
 
 > *Deuteronomy calls believers to remember God’s goodness, walk in His ways, and choose life daily — trusting that His Word and presence lead to true freedom and blessing.*

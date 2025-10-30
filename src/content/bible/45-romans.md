@@ -12,31 +12,21 @@ Paul walks through humanity’s problem (sin), God’s solution (Jesus), and the
 Romans answers the biggest questions: Why do we need salvation? How are we made right with God? And how should we live as a result?  
 It’s not just a letter to the Romans — it’s a message for the entire Church.
 
----
-
 ## Author  
 **The Apostle Paul**, formerly Saul of Tarsus — once a persecutor of Christians, now a passionate ambassador for Christ.  
 He wrote Romans while in **Corinth** around **A.D. 57**.
 
----
-
 ## Era / Date  
 Written around **A.D. 57**, during Paul’s third missionary journey, before his trip to Jerusalem and later imprisonment.
-
----
 
 ## Audience  
 Addressed to the **believers in Rome**, a mix of Jewish and Gentile Christians learning to live out unity in the Gospel.  
 For believers today, Romans grounds our faith in truth — teaching us who we are in Christ and how to live in the freedom of His grace.
 
----
-
 ## Historical / Cultural Context  
 Rome was the heart of the world’s power — a place of influence, diversity, and moral decay.  
 The early Church there faced tension between Jewish law-keepers and Gentile believers.  
 Paul writes to unite them under one truth: salvation is not through heritage or law but through Christ alone.
-
----
 
 ## Purpose  
 - To clearly explain the Gospel of grace and justification by faith  
@@ -44,13 +34,9 @@ Paul writes to unite them under one truth: salvation is not through heritage or 
 - To show how grace produces holiness, not lawlessness  
 - To teach how faith in Christ leads to transformed living  
 
----
-
 ## Genre  
 **Theological letter and doctrinal teaching**  
 Romans is both a spiritual constitution and a love letter — explaining God’s justice, mercy, and plan for all who believe.
-
----
 
 ## Key Themes  
 
@@ -62,8 +48,6 @@ Romans is both a spiritual constitution and a love letter — explaining God’s
 | **Life in the Spirit** | The Holy Spirit empowers us to live victoriously. |
 | **Unity in Christ** | Jew and Gentile alike are one in God’s plan. |
 | **God’s Sovereignty** | His plan of salvation is wise, just, and unstoppable. |
-
----
 
 ## Structure  
 
@@ -88,8 +72,6 @@ Romans is both a spiritual constitution and a love letter — explaining God’s
 - Practical love, humility, and unity in the Church.  
 - Final greetings and encouragements.  
 
----
-
 ## Key Verses  
 
 | Passage | Why It Matters |
@@ -102,8 +84,6 @@ Romans is both a spiritual constitution and a love letter — explaining God’s
 | **Romans 8:38–39** | Nothing can separate us from God’s love. |
 | **Romans 12:1–2** | Offer your body as a living sacrifice — be transformed. |
 
----
-
 ## Connection to Christ  
 
 | Foreshadow | Fulfilled in Jesus |
@@ -114,8 +94,6 @@ Romans is both a spiritual constitution and a love letter — explaining God’s
 | **The Spirit-Giver (8:1–17)** | Christ sends the Spirit to empower and assure believers. |
 | **The Cornerstone of Salvation (10:9–13)** | Confession of Jesus as Lord brings eternal life. |
 
----
-
 ## Application  
 Romans is the blueprint for every believer’s walk — grounded in grace and powered by the Spirit.  
 - **Receive Grace Fully:** Stop striving; trust in Christ’s finished work.  
@@ -123,7 +101,5 @@ Romans is the blueprint for every believer’s walk — grounded in grace and po
 - **Walk in the Spirit:** Let the Spirit renew your mind and lead your life.  
 - **Love Deeply:** Grace transforms how we treat others.  
 - **Stand Firm:** Nothing can separate you from God’s love in Christ Jesus.  
-
----
 
 > *Romans reminds us that the Gospel isn’t just information — it’s transformation. We are not made better by effort, but made new by grace.*
