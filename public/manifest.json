@@ -1,0 +1,21 @@
+{
+  "name": "TL;DR Bible",
+  "short_name": "TL;DR Bible",
+  "description": "Quick Bible summaries for all 66 books",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
