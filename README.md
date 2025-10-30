@@ -5,8 +5,10 @@ A modern, interactive website that provides concise summaries of all 66 books of
 ## ✨ Features
 
 - **Complete Coverage**: Summaries for all 66 books of the Bible (Old and New Testament)
+- **Key Verses**: Each book features an inspirational verse displayed prominently on the page
 - **Genre Color Coding**: Visual organization by biblical genre (Law, History, Wisdom, Prophecy, Gospels, Letters, etc.)
-- **Clean Design**: Modern, responsive interface built with Astro
+- **Comprehensive Content**: Overview, author, era, audience, historical context, purpose, themes, and structure for each book
+- **Clean Design**: Modern, responsive interface built with Astro and Tailwind CSS
 - **Fast Performance**: Static site generation for optimal loading speeds
 - **Easy Navigation**: Browse all books from the home page, click to read detailed summaries
 
@@ -42,6 +44,22 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## � Content Structure
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Each Bible book summary includes:
+- **Title & Description**: Clear identification and thematic summary
+- **Key Verse**: An inspirational verse from the book
+- **Overview**: Core message and significance
+- **Author & Era**: Historical context and dating
+- **Audience**: Original and modern readers
+- **Purpose**: Why the book was written
+- **Genre**: Literary style and type
+- **Key Themes**: Major theological and narrative themes
+- **Structure**: Book outline and organization
+
+## 🛠️ Tech Stack
+
+- **[Astro](https://astro.build)**: Static site framework
+- **[Tailwind CSS](https://tailwindcss.com)**: Utility-first CSS framework
+- **TypeScript**: Type-safe development
+- **Content Collections**: Type-safe markdown content management
