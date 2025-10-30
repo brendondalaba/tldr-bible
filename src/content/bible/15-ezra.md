@@ -1,6 +1,7 @@
 ---
 title: 'Ezra'
-description: 'Return from exile and rebuilding the temple'
+description: 'The God Who Restores His People and Rebuilds What Was Broken'
+verse: '"The hand of the Lord my God was on me." — Ezra 7:28'
 genre: 'History'
 group: 'Historical Books'
 ---

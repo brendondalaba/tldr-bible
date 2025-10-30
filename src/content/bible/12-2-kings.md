@@ -1,6 +1,7 @@
 ---
 title: '2 Kings'
-description: 'The decline and fall of Israel and Judah'
+description: 'The God Who Warns, Judges, and Still Redeems'
+verse: '"The Lord was gracious to them, had compassion and showed concern for them because of His covenant..." — 2 Kings 13:23'
 genre: 'History'
 group: 'Historical Books'
 ---

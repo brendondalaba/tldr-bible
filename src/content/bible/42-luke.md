@@ -1,6 +1,7 @@
 ---
 title: 'Luke'
-description: 'Jesus as the perfect human and Savior of all'
+description: 'The God Who Came Near'
+verse: '"For the Son of Man came to seek and to save what was lost." — Luke 19:10'
 genre: 'Gospel'
 group: 'Gospels'
 ---

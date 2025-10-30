@@ -1,6 +1,7 @@
 ---
 title: 'Galatians'
-description: 'Freedom through faith, not works of law'
+description: 'The God Who Sets Us Free'
+verse: '"It is for freedom that Christ has set us free." — Galatians 5:1'
 genre: 'Epistle'
 group: 'Letters'
 ---

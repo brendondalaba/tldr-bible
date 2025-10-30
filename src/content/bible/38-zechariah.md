@@ -1,6 +1,7 @@
 ---
 title: 'Zechariah'
-description: 'Visions of restoration and the coming King'
+description: 'The God Who Restores and Reigns'
+verse: '"Not by might, nor by power, but by My Spirit, says the Lord of hosts." — Zechariah 4:6'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

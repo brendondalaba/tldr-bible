@@ -1,6 +1,7 @@
 ---
 title: '2 John'
-description: 'Walking in truth and love'
+description: 'The God Who Guards Truth Through Love'
+verse: '"It has given me great joy to find some of your children walking in the truth, just as the Father commanded us." — 2 John 4'
 genre: 'Epistle'
 group: 'Letters'
 ---

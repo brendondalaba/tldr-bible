@@ -1,6 +1,7 @@
 ---
 title: '2 Samuel'
-description: "David's reign and God's covenant promises"
+description: 'The God Who Reigns with Mercy and Justice'
+verse: '"Your house and your kingdom will endure forever before me; your throne will be established forever." — 2 Samuel 7:16'
 genre: 'History'
 group: 'Historical Books'
 ---

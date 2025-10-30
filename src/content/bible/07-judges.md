@@ -1,6 +1,7 @@
 ---
 title: 'Judges'
-description: 'Cycles of sin, oppression, and deliverance'
+description: 'The God Who Rescues Again and Again'
+verse: '"In those days Israel had no king; everyone did what was right in their own eyes." — Judges 21:25'
 genre: 'History'
 group: 'Historical Books'
 ---

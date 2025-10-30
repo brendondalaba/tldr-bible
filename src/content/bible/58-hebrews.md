@@ -1,6 +1,7 @@
 ---
 title: 'Hebrews'
-description: 'The superiority of Christ and the new covenant'
+description: 'The God Who Is Greater Than All'
+verse: '"Let us then approach the throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need." — Hebrews 4:16'
 genre: 'Epistle'
 group: 'Letters'
 ---

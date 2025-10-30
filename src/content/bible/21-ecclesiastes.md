@@ -1,6 +1,7 @@
 ---
 title: 'Ecclesiastes'
-description: 'The search for meaning in life'
+description: 'The God Who Gives Meaning to Life'
+verse: '"Fear God and keep His commandments, for this is the duty of all mankind." — Ecclesiastes 12:13'
 genre: 'Wisdom'
 group: 'Wisdom Literature'
 ---

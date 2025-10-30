@@ -1,6 +1,7 @@
 ---
 title: '1 Thessalonians'
-description: 'Living in light of Christ''s return'
+description: 'The God Who Strengthens and Sustains His People'
+verse: '"The Lord Himself will descend from heaven with a shout… and so we will be with the Lord forever." — 1 Thessalonians 4:16–17'
 genre: 'Epistle'
 group: 'Letters'
 ---

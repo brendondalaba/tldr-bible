@@ -1,6 +1,7 @@
 ---
 title: '1 Samuel'
-description: 'From judges to kings - Samuel, Saul, and David'
+description: 'The God Who Raises Up and Brings Down'
+verse: '"The Lord does not look at the things people look at. People look at the outward appearance, but the Lord looks at the heart." — 1 Samuel 16:7'
 genre: 'History'
 group: 'Historical Books'
 ---

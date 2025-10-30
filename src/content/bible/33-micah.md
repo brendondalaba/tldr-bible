@@ -1,6 +1,7 @@
 ---
 title: 'Micah'
-description: 'Justice, mercy, and humble walking with God'
+description: 'The God of Justice and Mercy'
+verse: '"He has shown you, O man, what is good; and what does the Lord require of you but to do justly, to love mercy, and to walk humbly with your God?" — Micah 6:8'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

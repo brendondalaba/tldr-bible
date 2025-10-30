@@ -1,6 +1,7 @@
 ---
 title: '1 Kings'
-description: "Solomon's wisdom and the divided kingdom"
+description: 'The God Who Honors Devotion and Judges Division'
+verse: '"If you walk before me in integrity of heart and uprightness... I will establish your royal throne over Israel forever." — 1 Kings 9:4–5'
 genre: 'History'
 group: 'Historical Books'
 ---

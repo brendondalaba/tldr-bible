@@ -48,7 +48,10 @@ const { Content } = await entry.render();
 						</span>
 					</div>
 					<h1 class="text-5xl sm:text-6xl font-bold text-slate-900 mb-4">{entry.data.title}</h1>
-					<p class="text-xl text-slate-600 leading-relaxed">{entry.data.description}</p>
+					<p class="text-xl text-slate-600 leading-relaxed mb-6">{entry.data.description}</p>
+					<blockquote class="text-base text-slate-500 italic border-l-4 border-slate-300 pl-4 inline-block text-left">
+						{entry.data.verse}
+					</blockquote>
 				</div>
 			</div>
 		</header>

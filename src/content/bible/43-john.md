@@ -1,6 +1,7 @@
 ---
 title: 'John'
-description: 'Jesus as the eternal Word and Son of God'
+description: 'The God Who Became Flesh'
+verse: '"In the beginning was the Word, and the Word was with God, and the Word was God." — John 1:1'
 genre: 'Gospel'
 group: 'Gospels'
 ---

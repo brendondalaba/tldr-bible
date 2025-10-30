@@ -1,6 +1,7 @@
 ---
 title: '2 Corinthians'
-description: "Defense of Paul's apostolic ministry"
+description: 'The God Who Strengthens the Weak'
+verse: '"My grace is sufficient for you, for My power is made perfect in weakness." — 2 Corinthians 12:9'
 genre: 'Epistle'
 group: 'Letters'
 ---

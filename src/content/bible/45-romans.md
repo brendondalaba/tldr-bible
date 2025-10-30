@@ -1,6 +1,7 @@
 ---
 title: 'Romans'
-description: 'The gospel of righteousness through faith'
+description: 'The God Who Saves by Grace Alone'
+verse: '"For I am not ashamed of the gospel, because it is the power of God that brings salvation to everyone who believes." — Romans 1:16'
 genre: 'Epistle'
 group: 'Letters'
 ---

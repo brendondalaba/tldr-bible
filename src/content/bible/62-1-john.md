@@ -1,6 +1,7 @@
 ---
 title: '1 John'
-description: 'Assurance of salvation and the love of God'
+description: 'The God Who Gives Assurance Through Love and Truth'
+verse: '"We love because He first loved us." — 1 John 4:19'
 genre: 'Epistle'
 group: 'Letters'
 ---

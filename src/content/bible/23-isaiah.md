@@ -1,6 +1,7 @@
 ---
 title: 'Isaiah'
-description: 'Prophecies of judgment and the coming Messiah'
+description: 'The God Who Saves and Reigns Forever'
+verse: '"Though your sins are like scarlet, they shall be as white as snow." — Isaiah 1:18'
 genre: 'Prophecy'
 group: 'Major Prophets'
 ---

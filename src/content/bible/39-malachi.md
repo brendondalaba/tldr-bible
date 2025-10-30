@@ -1,6 +1,7 @@
 ---
 title: 'Malachi'
-description: 'The final prophetic warning'
+description: 'The God Who Calls Our Hearts Back'
+verse: '"Return to Me, and I will return to you," says the Lord Almighty. — Malachi 3:7'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

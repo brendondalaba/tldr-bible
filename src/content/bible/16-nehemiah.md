@@ -1,6 +1,7 @@
 ---
 title: 'Nehemiah'
-description: 'Rebuilding the walls of Jerusalem'
+description: 'The God Who Rebuilds Walls and Strengthens Hearts'
+verse: '"The joy of the Lord is your strength." — Nehemiah 8:10'
 genre: 'History'
 group: 'Historical Books'
 ---

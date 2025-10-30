@@ -1,6 +1,7 @@
 ---
 title: 'Habakkuk'
-description: 'Wrestling with divine justice'
+description: 'The God Who Turns Our Questions into Faith'
+verse: '"The righteous will live by his faith." — Habakkuk 2:4'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

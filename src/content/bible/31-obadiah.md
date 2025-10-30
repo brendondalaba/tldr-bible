@@ -1,6 +1,7 @@
 ---
 title: 'Obadiah'
-description: 'Judgment against Edom'
+description: 'The God Who Humbles the Proud and Protects His People'
+verse: '"The day of the Lord is near for all nations. As you have done, it will be done to you." — Obadiah 1:15'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

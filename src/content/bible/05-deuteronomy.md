@@ -1,6 +1,7 @@
 ---
 title: 'Deuteronomy'
-description: 'Moses restates the Law before entering Canaan'
+description: 'The God Who Reminds and Renews'
+verse: '"Be strong and courageous. Do not be afraid... for the Lord your God goes with you; He will never leave you nor forsake you." — Deuteronomy 31:6'
 genre: 'Law'
 group: 'Pentateuch'
 ---

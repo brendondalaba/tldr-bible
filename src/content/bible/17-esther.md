@@ -1,6 +1,7 @@
 ---
 title: 'Esther'
-description: "God's providence in preserving His people"
+description: 'The God Who Works Behind the Scenes'
+verse: '"And who knows but that you have come to your royal position for such a time as this?" — Esther 4:14'
 genre: 'History'
 group: 'Historical Books'
 ---

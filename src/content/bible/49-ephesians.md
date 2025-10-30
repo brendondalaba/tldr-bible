@@ -1,6 +1,7 @@
 ---
 title: 'Ephesians'
-description: 'Unity and blessings in Christ'
+description: 'The God Who Unites Heaven and Earth'
+verse: '"For we are His workmanship, created in Christ Jesus for good works." — Ephesians 2:10'
 genre: 'Epistle'
 group: 'Letters'
 ---

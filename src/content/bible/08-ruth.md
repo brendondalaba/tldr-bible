@@ -1,6 +1,7 @@
 ---
 title: 'Ruth'
-description: 'A story of loyalty, redemption, and providence'
+description: 'The God Who Redeems and Restores'
+verse: '"Where you go, I will go, and where you stay, I will stay. Your people will be my people and your God my God." — Ruth 1:16'
 genre: 'History'
 group: 'Historical Books'
 ---

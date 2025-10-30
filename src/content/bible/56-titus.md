@@ -1,6 +1,7 @@
 ---
 title: 'Titus'
-description: 'Establishing godly order in churches'
+description: 'The God Who Builds by Grace'
+verse: '"For the grace of God has appeared that offers salvation to all people." — Titus 2:11'
 genre: 'Epistle'
 group: 'Letters'
 ---

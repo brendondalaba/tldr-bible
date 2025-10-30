@@ -1,6 +1,7 @@
 ---
 title: 'Genesis'
-description: 'The book of beginnings - creation, fall, and the patriarchs'
+description: 'The Beginning of Everything'
+verse: '"In the beginning, God…" — Genesis 1:1'
 genre: 'Law'
 group: 'Pentateuch'
 

@@ -1,6 +1,7 @@
 ---
 title: 'Nahum'
-description: "Prophecy of Nineveh's destruction"
+description: 'The God Who Avenges Evil and Protects His People'
+verse: '"The Lord is good, a refuge in times of trouble. He cares for those who trust in Him." — Nahum 1:7'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

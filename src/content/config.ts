@@ -5,6 +5,7 @@ const bibleCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    verse: z.string(),
     genre: z.string(),
     group: z.string(),
   }),

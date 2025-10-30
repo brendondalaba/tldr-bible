@@ -1,6 +1,7 @@
 ---
 title: 'Joel'
-description: 'The day of the Lord and outpouring of the Spirit'
+description: 'The God Who Restores and Pours Out His Spirit'
+verse: '"I will pour out My Spirit on all people." — Joel 2:28'
 genre: 'Prophecy'
 group: 'Minor Prophets'
 ---

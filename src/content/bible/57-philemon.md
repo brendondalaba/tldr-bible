@@ -1,6 +1,7 @@
 ---
 title: 'Philemon'
-description: 'A personal appeal for forgiveness and reconciliation'
+description: 'The God Who Reconciles and Restores'
+verse: '"Perhaps the reason he was separated from you for a little while was that you might have him back forever — no longer as a slave, but better than a slave, as a dear brother." — Philemon 15–16'
 genre: 'Epistle'
 group: 'Letters'
 ---

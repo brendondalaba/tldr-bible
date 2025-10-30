@@ -1,6 +1,7 @@
 ---
 title: 'Matthew'
-description: 'Jesus as the promised Messiah and King'
+description: 'The King Has Come'
+verse: '"You shall call His name Jesus, for He will save His people from their sins." — Matthew 1:21'
 genre: 'Gospel'
 group: 'Gospels'
 ---

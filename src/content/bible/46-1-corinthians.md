@@ -1,6 +1,7 @@
 ---
 title: '1 Corinthians'
-description: 'Addressing division and disorder in the church'
+description: 'The God Who Brings Order to the Chaos'
+verse: '"Let all that you do be done in love." — 1 Corinthians 16:14'
 genre: 'Epistle'
 group: 'Letters'
 ---

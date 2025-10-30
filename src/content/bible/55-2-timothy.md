@@ -1,6 +1,7 @@
 ---
 title: '2 Timothy'
-description: "Paul's final charge to his protégé"
+description: 'The God Who Finishes What He Starts'
+verse: '"I have fought the good fight, I have finished the race, I have kept the faith." — 2 Timothy 4:7'
 genre: 'Epistle'
 group: 'Letters'
 ---

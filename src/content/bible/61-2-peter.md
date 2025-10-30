@@ -1,6 +1,7 @@
 ---
 title: '2 Peter'
-description: 'Growing in faith and resisting false teachers'
+description: 'The God Who Calls Us to Grow and Stand Firm'
+verse: '"His divine power has given us everything we need for a godly life through our knowledge of Him who called us by His own glory and goodness." — 2 Peter 1:3'
 genre: 'Epistle'
 group: 'Letters'
 ---

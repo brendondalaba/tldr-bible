@@ -1,6 +1,7 @@
 ---
 title: 'Philippians'
-description: 'Joy and partnership in the gospel'
+description: 'The God Who Gives Joy in Every Season'
+verse: '"Rejoice in the Lord always. I will say it again: Rejoice!" — Philippians 4:4'
 genre: 'Epistle'
 group: 'Letters'
 ---
