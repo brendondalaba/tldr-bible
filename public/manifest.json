@@ -1,6 +1,6 @@
 {
-  "name": "TL;DR Bible",
-  "short_name": "TL;DR Bible",
+  "name": "TLDR Bible",
+  "short_name": "TLDR Bible",
   "description": "Quick Bible summaries for all 66 books",
   "start_url": "/",
   "display": "standalone",
