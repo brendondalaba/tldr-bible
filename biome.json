@@ -11,7 +11,8 @@
       "**",
       "!node_modules",
       "!dist",
-      "!.astro"
+      "!.astro",
+      "!.claude/settings.local.json"
     ]
   },
   "formatter": {
@@ -52,10 +53,7 @@
         "noConsole": {
           "level": "warn",
           "options": {
-            "allow": [
-              "warn",
-              "error"
-            ]
+            "allow": ["warn", "error"]
           }
         }
       },
@@ -64,10 +62,7 @@
           "level": "warn",
           "fix": "safe",
           "options": {
-            "functions": [
-              "cn",
-              "clsx"
-            ]
+            "functions": ["cn", "clsx"]
           }
         }
       }
