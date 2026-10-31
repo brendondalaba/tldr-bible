@@ -1,0 +1,53 @@
+<button
+  type="button"
+  data-theme-toggle
+  class="inline-flex h-9 items-center whitespace-nowrap rounded-md border border-input px-3 text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
+>
+  System theme
+</button>
+
+<script>
+  type Theme = "system" | "light" | "dark";
+
+  const NEXT: Record<Theme, Theme> = {
+    system: "light",
+    light: "dark",
+    dark: "system",
+  };
+
+  const LABEL: Record<Theme, string> = {
+    system: "System theme",
+    light: "Light theme",
+    dark: "Dark theme",
+  };
+
+  const root = document.documentElement;
+
+  function getTheme(): Theme {
+    const theme = root.dataset.theme;
+    return theme === "light" || theme === "dark" ? theme : "system";
+  }
+
+  function setTheme(theme: Theme) {
+    if (theme === "system") delete root.dataset.theme;
+    else root.dataset.theme = theme;
+
+    try {
+      if (theme === "system") localStorage.removeItem("theme");
+      else localStorage.setItem("theme", theme);
+    } catch {
+      // Storage can be blocked (private mode); the theme still applies for this visit.
+    }
+  }
+
+  for (const button of document.querySelectorAll("[data-theme-toggle]")) {
+    button.textContent = LABEL[getTheme()];
+    button.addEventListener("click", () => {
+      const next = NEXT[getTheme()];
+      setTheme(next);
+      for (const other of document.querySelectorAll("[data-theme-toggle]")) {
+        other.textContent = LABEL[next];
+      }
+    });
+  }
+</script>

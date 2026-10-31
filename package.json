@@ -6,11 +6,25 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "biome check && astro check",
+    "lint": "biome check",
+    "format": "biome check --write"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.2",
-    "tailwindcss": "^4.1.16"
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.4",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^5.9.3",
+    "@biomejs/biome": "2.5.15"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.22.0"
   }
 }

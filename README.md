@@ -6,7 +6,7 @@ A modern, interactive website that provides concise summaries of all 66 books of
 
 - **Complete Coverage**: Summaries for all 66 books of the Bible (Old and New Testament)
 - **Key Verses**: Each book features an inspirational verse displayed prominently on the page
-- **Genre Color Coding**: Visual organization by biblical genre (Law, History, Wisdom, Prophecy, Gospels, Letters, etc.)
+- **Genre Color Coding (light and dark themes)**: Visual organization by biblical genre (Law, History, Wisdom, Prophecy, Gospels, Letters, etc.)
 - **Comprehensive Content**: Overview, author, era, audience, historical context, purpose, themes, and structure for each book
 - **Clean Design**: Modern, responsive interface built with Astro and Tailwind CSS
 - **Fast Performance**: Static site generation for optimal loading speeds
@@ -16,18 +16,21 @@ A modern, interactive website that provides concise summaries of all 66 books of
 
 ```text
 /
-├── public/              # Static assets
+├── public/                         # Static assets
 ├── src/
-│   ├── content/
-│   │   ├── config.ts   # Content collection configuration
-│   │   └── bible/      # All 66 Bible book summaries (.md files)
+│   ├── content.config.ts           # Content collection (glob loader)
+│   ├── content/bible/              # All 66 Bible book summaries (.md files)
+│   ├── components/
+│   │   ├── GenreBadge.astro        # Genre pill, colored by genre tokens
+│   │   └── ThemeToggle.astro       # System → light → dark
+│   ├── layouts/BaseLayout.astro    # Shared <head>, nav and footer
 │   ├── pages/
-│   │   ├── index.astro           # Home page with book grid
-│   │   └── bible/[...slug].astro # Dynamic book detail pages
-│   ├── styles/
-│   │   └── global.css            # Global styles
-│   └── utils/
-│       └── genreColors.ts        # Genre color scheme utilities
+│   │   ├── index.astro             # Home page with book grid
+│   │   ├── start-here.astro        # How to start reading the Bible
+│   │   └── bible/[...slug].astro   # Book detail pages
+│   └── styles/
+│       ├── tokens.css              # Design tokens (bd-style), incl. genre colors
+│       └── global.css              # Fonts + Markdown article styles
 └── package.json
 ```
 

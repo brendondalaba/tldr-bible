@@ -1,96 +1,64 @@
 ---
-import '../styles/global.css';
-import { getCollection } from 'astro:content';
-import { getGenreStyles } from '../utils/genreColors';
+import { getCollection } from "astro:content";
+import GenreBadge from "@/components/GenreBadge.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
-const allBooks = await getCollection('bible');
+// File names start with the book number (01-genesis ... 66-revelation).
+const books = (await getCollection("bible")).sort((a, b) =>
+  a.id.localeCompare(b.id)
+);
 
-// Sort books by filename (which has the number prefix)
-const sortedBooks = allBooks.sort((a, b) => a.id.localeCompare(b.id));
-
-// Split into Old Testament (1-39) and New Testament (40-66)
-const oldTestament = sortedBooks.slice(0, 39);
-const newTestament = sortedBooks.slice(39);
+const testaments = [
+  { name: "Old Testament", books: books.slice(0, 39) },
+  { name: "New Testament", books: books.slice(39) },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/manifest.json" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="theme-color" content="#1e293b" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="apple-mobile-web-app-title" content="TLDR Bible" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>TLDR Bible - Quick Bible Summaries</title>
-		<meta name="description" content="Concise breakdowns of every book of the Bible" />
-	</head>
-	<body class="bg-slate-50 min-h-screen">
-		<!-- Header -->
-		<header class="bg-white border-b border-slate-200">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-				<h1 class="text-4xl font-bold text-slate-900 mb-2">TLDR Bible</h1>
-				<p class="text-lg text-slate-600">Concise breakdowns of every book of the Bible</p>
-				<a href="/start-here" class="mt-6 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors">
-					New to the Bible? Start here
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-				</a>
-			</div>
-		</header>
+<BaseLayout
+  title="TLDR Bible - Quick Bible Summaries"
+  description="Concise breakdowns of every book of the Bible"
+>
+  <header class="border-b bg-surface">
+    <div class="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
+      <h1 class="font-semibold text-4xl tracking-tight sm:text-5xl">
+        TLDR Bible
+      </h1>
+      <p class="mt-4 max-w-prose text-lg text-muted-foreground leading-8">
+        Concise breakdowns of every book of the Bible
+      </p>
+      <a
+        href="/start-here"
+        class="mt-8 inline-flex h-10 items-center gap-2 rounded-md bg-primary px-4 font-medium text-primary-foreground transition-colors duration-150 hover:bg-primary/90"
+      >
+        New to the Bible? Start here
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
 
-		<!-- Main Content -->
-		<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-			<!-- Old Testament Section -->
-			<section class="mb-16">
-				<h2 class="text-3xl font-bold text-slate-900 mb-6">Old Testament</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-					{oldTestament.map((book) => (
-						<a
-							href={`/bible/${book.slug}`}
-							class="block bg-white rounded-lg border border-slate-200 p-5 hover:border-blue-500 hover:shadow-md transition-all duration-200"
-						>
-							<div class="flex items-start justify-between mb-2">
-								<h3 class="text-lg font-semibold text-slate-900">{book.data.title}</h3>
-								<span class="text-xs font-medium px-2 py-1 rounded" style={getGenreStyles(book.data.genre)}>
-									{book.data.genre}
-								</span>
-							</div>
-							<p class="text-sm text-slate-600 line-clamp-2">{book.data.description}</p>
-						</a>
-					))}
-				</div>
-			</section>
-
-			<!-- New Testament Section -->
-			<section>
-				<h2 class="text-3xl font-bold text-slate-900 mb-6">New Testament</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-					{newTestament.map((book) => (
-						<a
-							href={`/bible/${book.slug}`}
-							class="block bg-white rounded-lg border border-slate-200 p-5 hover:border-blue-500 hover:shadow-md transition-all duration-200"
-						>
-							<div class="flex items-start justify-between mb-2">
-								<h3 class="text-lg font-semibold text-slate-900">{book.data.title}</h3>
-								<span class="text-xs font-medium px-2 py-1 rounded" style={getGenreStyles(book.data.genre)}>
-									{book.data.genre}
-								</span>
-							</div>
-							<p class="text-sm text-slate-600 line-clamp-2">{book.data.description}</p>
-						</a>
-					))}
-				</div>
-			</section>
-		</main>
-
-		<!-- Footer -->
-		<footer class="bg-white border-t border-slate-200 mt-20">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-				<p class="text-center text-slate-600 text-sm">Made with ❤️ by Brendon Dalaba</p>
-			</div>
-		</footer>
-	</body>
-</html>
+  <div class="mx-auto w-full max-w-5xl space-y-16 px-4 py-16 sm:px-6">
+    {
+      testaments.map(testament => (
+        <section>
+          <h2 class="mb-6 font-semibold text-2xl">{testament.name}</h2>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {testament.books.map(book => (
+              <a
+                href={`/bible/${book.id}`}
+                class="block rounded-lg border bg-surface p-5 transition-colors duration-150 hover:border-primary"
+              >
+                <div class="mb-2 flex items-start justify-between gap-3">
+                  <h3 class="font-medium text-lg">{book.data.title}</h3>
+                  <GenreBadge genre={book.data.genre} class="shrink-0" />
+                </div>
+                <p class="line-clamp-2 text-muted-foreground text-sm">
+                  {book.data.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
