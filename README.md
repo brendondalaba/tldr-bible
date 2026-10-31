@@ -24,6 +24,7 @@ A modern, interactive website that provides concise summaries of all 66 books of
 │   │   ├── GenreBadge.astro        # Genre pill, colored by genre tokens
 │   │   └── ThemeToggle.astro       # System → light → dark
 │   ├── layouts/BaseLayout.astro    # Shared <head>, nav and footer
+│   ├── lib/bookSections.ts         # Splits a book into "At a glance" + sections
 │   ├── pages/
 │   │   ├── index.astro             # Home page with book grid
 │   │   ├── start-here.astro        # How to start reading the Bible

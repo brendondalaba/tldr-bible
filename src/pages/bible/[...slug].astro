@@ -1,19 +1,27 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import GenreBadge from "@/components/GenreBadge.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { GLANCE_ID, splitBook } from "@/lib/bookSections";
 
 export const getStaticPaths = (async () => {
-  const books = await getCollection("bible");
-  return books.map(book => ({
+  const books = (await getCollection("bible")).sort((a, b) =>
+    a.id.localeCompare(b.id)
+  );
+  return books.map((book, index) => ({
     params: { slug: book.id },
-    props: { book },
+    props: { book, prev: books[index - 1], next: books[index + 1] },
   }));
 }) satisfies GetStaticPaths;
 
-const { book } = Astro.props;
-const { Content } = await render(book);
+const { book, prev, next } = Astro.props;
+const { intro, facts, sections } = splitBook(book.rendered?.html ?? "");
+
+const toc = [
+  ...(facts.length > 0 ? [{ id: GLANCE_ID, label: "At a glance" }] : []),
+  ...sections.map(section => ({ id: section.id, label: section.title })),
+];
 ---
 
 <BaseLayout
@@ -21,36 +29,174 @@ const { Content } = await render(book);
   description={book.data.description}
 >
   <header class="border-b bg-surface">
-    <div
-      class="mx-auto w-full max-w-3xl px-4 py-12 text-center sm:px-6 sm:py-16"
-    >
-      <GenreBadge genre={book.data.genre} />
-      <h1 class="mt-4 font-semibold text-4xl tracking-tight sm:text-5xl">
+    <div class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-12">
+      <div class="flex items-center gap-3">
+        <GenreBadge genre={book.data.genre} />
+        <span class="text-muted-foreground text-sm">{book.data.group}</span>
+      </div>
+      <h1 class="mt-3 font-semibold text-3xl tracking-tight sm:text-5xl">
         {book.data.title}
       </h1>
-      <p class="mt-4 text-lg text-muted-foreground leading-8">
-        {book.data.description}
-      </p>
+      <p class="mt-1 text-muted-foreground sm:mt-2 sm:text-lg">{book.data.description}</p>
       <blockquote
-        class="mt-6 inline-block border-l-4 border-primary pl-4 text-left text-muted-foreground italic"
+        class="mt-4 max-w-prose border-primary border-l-4 pl-3 text-muted-foreground text-sm italic sm:mt-5 sm:pl-4 sm:text-base"
       >
         {book.data.verse}
       </blockquote>
     </div>
   </header>
 
-  <article class="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-    <div class="markdown-content">
-      <Content />
-    </div>
-  </article>
-
-  <div class="mx-auto w-full max-w-3xl px-4 pb-16 sm:px-6">
-    <a
-      href="/"
-      class="inline-flex items-center gap-2 font-medium text-primary hover:underline"
+  <!-- Phones and tablets: sticky, sideways-scrolling jump bar. -->
+  <nav
+    aria-label="On this page"
+    class="sticky top-0 z-10 border-b bg-surface/95 backdrop-blur lg:hidden"
+  >
+    <ul
+      class="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-2.5 [scrollbar-width:none] sm:px-6"
+      data-toc-bar
     >
-      <span aria-hidden="true">←</span> Back to all books
-    </a>
+      {
+        toc.map(item => (
+          <li class="shrink-0">
+            <a
+              href={`#${item.id}`}
+              data-toc-link={item.id}
+              class="toc-chip inline-flex h-8 items-center rounded-full border px-3 text-muted-foreground text-sm transition-colors duration-150"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <div
+    class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-8 lg:grid lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-12 lg:py-12"
+  >
+    <!-- Desktop: sticky sidebar. -->
+    <nav aria-label="On this page" class="hidden lg:block">
+      <div class="sticky top-8">
+        <p
+          class="mb-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider"
+        >
+          On this page
+        </p>
+        <ul class="space-y-1 border-l">
+          {
+            toc.map(item => (
+              <li>
+                <a
+                  href={`#${item.id}`}
+                  data-toc-link={item.id}
+                  class="toc-link -ml-px block border-transparent border-l-2 py-1 pl-3 text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </nav>
+
+    <article class="markdown-content min-w-0">
+      {intro && <Fragment set:html={intro} />}
+
+      {
+        facts.length > 0 && (
+          <section id={GLANCE_ID} class="at-a-glance">
+            <h2>At a glance</h2>
+            <dl>
+              {facts.map(fact => (
+                <div>
+                  <dt>{fact.label}</dt>
+                  <dd>
+                    <Fragment set:html={fact.lead} />
+                    {fact.more && (
+                      <details class="glance-more">
+                        <summary>More</summary>
+                        <Fragment set:html={fact.more} />
+                      </details>
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )
+      }
+
+      {
+        sections.map(section => (
+          <section id={section.id} class="book-section">
+            <h2>{section.title}</h2>
+            <Fragment set:html={section.html} />
+          </section>
+        ))
+      }
+    </article>
   </div>
+
+  <nav
+    aria-label="Other books"
+    class="mx-auto grid w-full max-w-5xl grid-cols-2 gap-3 px-4 pb-12 sm:px-6"
+  >
+    {
+      prev ? (
+        <a
+          href={`/bible/${prev.id}`}
+          class="rounded-lg border bg-surface p-4 transition-colors duration-150 hover:border-primary"
+        >
+          <span class="block text-muted-foreground text-xs">← Previous</span>
+          <span class="font-medium">{prev.data.title}</span>
+        </a>
+      ) : (
+        <span />
+      )
+    }
+    {
+      next && (
+        <a
+          href={`/bible/${next.id}`}
+          class="rounded-lg border bg-surface p-4 text-right transition-colors duration-150 hover:border-primary"
+        >
+          <span class="block text-muted-foreground text-xs">Next →</span>
+          <span class="font-medium">{next.data.title}</span>
+        </a>
+      )
+    }
+  </nav>
 </BaseLayout>
+
+<script>
+  // Highlight the section being read and keep its chip in view on phones.
+  const links = document.querySelectorAll<HTMLAnchorElement>("[data-toc-link]");
+  const bar = document.querySelector<HTMLElement>("[data-toc-bar]");
+  const sections = [...new Set([...links].map(link => link.dataset.tocLink))]
+    .map(id => (id ? document.getElementById(id) : null))
+    .filter(section => section !== null);
+
+  function setActive(id: string) {
+    for (const link of links) {
+      const active = link.dataset.tocLink === id;
+      if (active) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+
+      if (active && bar?.contains(link) && bar.offsetParent !== null) {
+        const left = link.offsetLeft - bar.clientWidth / 2 + link.clientWidth / 2;
+        bar.scrollTo({ left, behavior: "smooth" });
+      }
+    }
+  }
+
+  const observer = new IntersectionObserver(
+    entries => {
+      const visible = entries.filter(entry => entry.isIntersecting);
+      if (visible.length > 0) setActive(visible[0].target.id);
+    },
+    { rootMargin: "-20% 0px -70% 0px" }
+  );
+
+  for (const section of sections) observer.observe(section);
+</script>
