@@ -98,7 +98,7 @@ Mark uses vivid detail, fast transitions (“immediately”), and emotional dept
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **Isaiah’s Suffering Servant (Isa. 53)** | Jesus fulfills the prophecy through His life and death. |
 | **The Son of God with Authority (1:1)** | His miracles confirm His divine identity. |

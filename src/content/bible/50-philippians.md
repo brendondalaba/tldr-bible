@@ -104,7 +104,7 @@ Warm, personal, and filled with affection — Paul writes as a spiritual father 
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Servant King (2:5–11)** | Jesus humbles Himself and is exalted above all. |
 | **The Source of Joy (4:4)** | Joy flows from His presence, not our position. |

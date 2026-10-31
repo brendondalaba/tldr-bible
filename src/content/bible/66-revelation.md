@@ -110,7 +110,7 @@ Revelation uses symbols and visions to communicate spiritual reality — real tr
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Lamb Who Was Slain (5:6)** | Jesus’ sacrifice secures eternal victory. |
 | **The Faithful Witness (1:5)** | He reveals the truth and rules with justice. |

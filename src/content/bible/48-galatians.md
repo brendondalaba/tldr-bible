@@ -101,7 +101,7 @@ Galatians combines theological clarity with passionate appeal — grace taught w
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **Abraham’s Promise (3:8–9)** | Jesus fulfills God’s blessing to all nations. |
 | **The Curse of the Law (3:13)** | Christ redeems us by becoming a curse for us. |

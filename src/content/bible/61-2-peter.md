@@ -97,7 +97,7 @@ Personal, passionate, and powerful — Peter’s last written legacy.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Source of Divine Power (1:3)** | Jesus provides everything needed for godly living. |
 | **The Living Word (1:19–21)** | Christ is the ultimate revelation behind Scripture. |

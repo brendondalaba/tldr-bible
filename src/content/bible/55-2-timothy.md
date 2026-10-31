@@ -104,7 +104,7 @@ Part testimony, part mentorship — a letter written from chains but filled with
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Faithful Savior (1:12)** | Christ guards what we entrust to Him. |
 | **The Suffering Servant (2:8–10)** | Jesus endured the cross to bring salvation. |

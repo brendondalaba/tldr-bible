@@ -93,7 +93,7 @@ Pastoral, relational, and focused on integrity in action.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The True Shepherd (v. 11)** | Jesus models humble, servant-hearted leadership. |
 | **The Way of Truth (v. 3–4)** | Christ is the standard and source of all truth. |

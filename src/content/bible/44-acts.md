@@ -98,14 +98,27 @@ Acts reads like both history and mission manual — full of miracles, sermons, a
 | **Acts 2:4** | The Holy Spirit fills believers — the Church is born. |
 | **Acts 2:42–47** | A picture of early Christian community and unity. |
 | **Acts 4:12** | “There is no other name under heaven… by which we must be saved.” |
+| **Acts 8:14–17** | Samaritan believers, already baptized in water, later receive the Holy Spirit. |
 | **Acts 9:15** | Paul chosen as God’s instrument to reach the nations. |
+| **Acts 10:44–46** | The Spirit falls on Gentiles, and they speak in tongues — God welcomes the nations. |
 | **Acts 17:6** | “These men who have turned the world upside down have come here too.” |
+| **Acts 19:1–6** | Disciples in Ephesus are filled with the Spirit and speak in tongues and prophesy. |
 | **Acts 28:31** | The Gospel continues unhindered — God’s plan cannot be stopped. |
+
+## Reading Acts Well
+
+Acts is a **narrative** — it tells what happened. Not every detail is a command (casting lots, holding all possessions in common, or Paul's haircut vow aren't instructions for today).
+
+So how do you tell the difference? Look for what Luke **repeats and emphasizes**, and check it against the teaching in the rest of the New Testament.
+
+One pattern Luke repeats clearly is the **baptism in the Holy Spirit**: an experience of empowerment that follows salvation, given to every believer (Acts 2:38–39), and accompanied by speaking in other tongues (Acts 2:4; 10:44–46; 19:6). The Assemblies of God teaches this as normal for believers today — for power to live and witness boldly (Acts 1:8).
+
+If you have questions about being baptized in the Spirit, talk with your pastor — it's a gift to seek, not something to fear.
 
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Promised Spirit (1:8; 2:4)** | Jesus fulfills His promise to send the Helper. |
 | **The Head of the Church** | Christ leads His body through the Spirit. |

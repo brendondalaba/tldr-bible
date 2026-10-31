@@ -97,7 +97,7 @@ Short, personal, and focused — wisdom distilled into a few sentences of convic
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Incarnate Son (v. 7)** | Jesus came in the flesh as fully God and fully man. |
 | **The Source of Truth (v. 9)** | All truth flows from abiding in Christ’s teaching. |

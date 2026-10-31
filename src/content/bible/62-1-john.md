@@ -104,7 +104,7 @@ Warm yet direct — John writes as both shepherd and watchman.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Word of Life (1:1–2)** | Jesus is the eternal Word made flesh. |
 | **The Advocate (2:1)** | Christ intercedes for us when we sin. |

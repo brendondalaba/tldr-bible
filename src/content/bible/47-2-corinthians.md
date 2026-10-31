@@ -104,7 +104,7 @@ Blends testimony, theology, and heartfelt appeal.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The God of Comfort (1:3–4)** | Jesus embodies God’s compassion for the suffering. |
 | **The Radiance of Glory (3:18)** | Christ’s image is formed in us through the Spirit. |

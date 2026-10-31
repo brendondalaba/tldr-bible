@@ -99,7 +99,7 @@ A concise guide for building strong, Christ-centered communities of faith.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Grace of God (2:11)** | Jesus embodies God’s saving grace to all. |
 | **The Redeemer (2:14)** | Christ gave Himself to purify a people for His own possession. |
