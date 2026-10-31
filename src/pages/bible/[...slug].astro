@@ -1,92 +1,56 @@
 ---
-import '../../styles/global.css';
-import { getCollection, render } from 'astro:content';
-import type { GetStaticPaths } from 'astro';
-import { getGenreStyles } from '../../utils/genreColors';
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import GenreBadge from "@/components/GenreBadge.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export const getStaticPaths = (async () => {
-  const bibleEntries = await getCollection('bible');
-  return bibleEntries.map(entry => ({
-    params: { slug: entry.id },
-    props: { entry },
+  const books = await getCollection("bible");
+  return books.map(book => ({
+    params: { slug: book.id },
+    props: { book },
   }));
 }) satisfies GetStaticPaths;
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { book } = Astro.props;
+const { Content } = await render(book);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/manifest.json" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="theme-color" content="#1e293b" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="apple-mobile-web-app-title" content="TLDR Bible" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>{entry.data.title} - TLDR Bible</title>
-		<meta name="description" content={entry.data.description} />
-	</head>
-	<body class="bg-slate-50 min-h-screen">
-		<!-- Navigation -->
-		<nav class="bg-white border-b border-slate-200">
-			<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-				<a href="/" class="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors">
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-					</svg>
-					All Books
-				</a>
-				<a href="/start-here" class="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">How to read the Bible</a>
-			</div>
-		</nav>
+<BaseLayout
+  title={`${book.data.title} - TLDR Bible`}
+  description={book.data.description}
+>
+  <header class="border-b bg-surface">
+    <div
+      class="mx-auto w-full max-w-3xl px-4 py-12 text-center sm:px-6 sm:py-16"
+    >
+      <GenreBadge genre={book.data.genre} />
+      <h1 class="mt-4 font-semibold text-4xl tracking-tight sm:text-5xl">
+        {book.data.title}
+      </h1>
+      <p class="mt-4 text-lg text-muted-foreground leading-8">
+        {book.data.description}
+      </p>
+      <blockquote
+        class="mt-6 inline-block border-l-4 border-primary pl-4 text-left text-muted-foreground italic"
+      >
+        {book.data.verse}
+      </blockquote>
+    </div>
+  </header>
 
-		<!-- Hero Header -->
-		<header class="bg-white border-b border-slate-200">
-			<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-				<div class="text-center max-w-3xl mx-auto">
-					<div class="flex items-center justify-center gap-3 mb-4">
-						<span class="inline-block text-sm font-semibold px-3 py-1.5 rounded-md shadow-sm" style={getGenreStyles(entry.data.genre)}>
-							{entry.data.genre}
-						</span>
-					</div>
-					<h1 class="text-5xl sm:text-6xl font-bold text-slate-900 mb-4">{entry.data.title}</h1>
-					<p class="text-xl text-slate-600 leading-relaxed mb-6">{entry.data.description}</p>
-					<blockquote class="text-base text-slate-500 italic border-l-4 border-slate-300 pl-4 inline-block text-left">
-						{entry.data.verse}
-					</blockquote>
-				</div>
-			</div>
-		</header>
+  <article class="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <div class="markdown-content">
+      <Content />
+    </div>
+  </article>
 
-		<!-- Main Content -->
-		<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-			<article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-				<div class="px-6 sm:px-10 lg:px-16 py-12">
-					<div class="markdown-content">
-						<Content />
-					</div>
-				</div>
-			</article>
-		</main>
-
-		<!-- Footer -->
-		<footer class="bg-white border-t border-slate-200 mt-24">
-			<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-				<div class="text-center space-y-4">
-					<a href="/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors">
-						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-						</svg>
-						Back to all books
-					</a>
-					<p class="text-sm text-slate-500">Explore the Bible, one book at a time</p>
-				</div>
-			</div>
-		</footer>
-	</body>
-</html>
+  <div class="mx-auto w-full max-w-3xl px-4 pb-16 sm:px-6">
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 font-medium text-primary hover:underline"
+    >
+      <span aria-hidden="true">←</span> Back to all books
+    </a>
+  </div>
+</BaseLayout>

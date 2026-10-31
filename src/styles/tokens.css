@@ -1,0 +1,145 @@
+/*
+ * bd design tokens: the only place colors, fonts and radii are defined.
+ * Components use role utilities (bg-primary, text-muted-foreground, border-border, ...),
+ * never raw hex values or Tailwind palette colors (bg-blue-600).
+ *
+ * Each color is light-dark(<light>, <dark>). To re-skin a project, change the values
+ * here and nothing else. Every pair listed in docs/DESIGN.md meets WCAG AA; re-check
+ * contrast when you change them.
+ *
+ * Theme: follows the OS by default. data-theme="light" | "dark" on <html>
+ * (set by the theme toggle) overrides it.
+ */
+
+:root {
+  color-scheme: light dark;
+
+  --background: light-dark(oklch(0.99 0.002 255), oklch(0.17 0.01 255));
+  --foreground: light-dark(oklch(0.21 0.015 255), oklch(0.95 0.005 255));
+  --surface: light-dark(oklch(1 0 0), oklch(0.21 0.012 255));
+  --surface-foreground: var(--foreground);
+  --muted: light-dark(oklch(0.965 0.005 255), oklch(0.23 0.012 255));
+  --muted-foreground: light-dark(oklch(0.5 0.015 255), oklch(0.72 0.015 255));
+  --border: light-dark(oklch(0.91 0.007 255), oklch(0.3 0.012 255));
+  --input: light-dark(oklch(0.64 0.015 255), oklch(0.52 0.015 255));
+  --ring: light-dark(oklch(0.58 0.16 255), oklch(0.72 0.14 255));
+
+  --primary: light-dark(oklch(0.53 0.17 255), oklch(0.72 0.14 255));
+  --primary-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+  --secondary: light-dark(oklch(0.95 0.01 255), oklch(0.27 0.015 255));
+  --secondary-foreground: light-dark(oklch(0.25 0.02 255), oklch(0.92 0.008 255));
+  --accent: light-dark(oklch(0.95 0.022 255), oklch(0.28 0.05 255));
+  --accent-foreground: light-dark(oklch(0.4 0.11 255), oklch(0.86 0.06 255));
+
+  --success: light-dark(oklch(0.52 0.12 155), oklch(0.72 0.14 155));
+  --success-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 155));
+  --warning: light-dark(oklch(0.75 0.15 70), oklch(0.8 0.14 75));
+  --warning-foreground: light-dark(oklch(0.25 0.05 60), oklch(0.22 0.05 60));
+  --danger: light-dark(oklch(0.55 0.2 25), oklch(0.7 0.17 25));
+  --danger-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 25));
+
+  /* Project: genre badge colors (tldr-bible). Fill + -foreground pairs, all >= 5.5:1. */
+  --genre-law: light-dark(oklch(0.45 0.04 255), oklch(0.78 0.04 255));
+  --genre-law-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+  --genre-history: light-dark(oklch(0.52 0.15 45), oklch(0.78 0.12 55));
+  --genre-history-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+  --genre-wisdom: light-dark(oklch(0.5 0.12 245), oklch(0.78 0.1 245));
+  --genre-wisdom-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+  --genre-prophecy: light-dark(oklch(0.5 0.16 305), oklch(0.78 0.1 305));
+  --genre-prophecy-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+  --genre-gospel: light-dark(oklch(0.5 0.09 180), oklch(0.8 0.1 180));
+  --genre-gospel-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+  --genre-epistle: light-dark(oklch(0.85 0.15 90), oklch(0.85 0.14 90));
+  --genre-epistle-foreground: light-dark(oklch(0.25 0.05 80), oklch(0.18 0.03 255));
+  --genre-apocalyptic: light-dark(oklch(0.52 0.19 25), oklch(0.76 0.13 25));
+  --genre-apocalyptic-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* For the rare case a token can't express something. Prefer adding a token. */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+
+  /* Project: genre badges */
+  --color-genre-law: var(--genre-law);
+  --color-genre-law-foreground: var(--genre-law-foreground);
+  --color-genre-history: var(--genre-history);
+  --color-genre-history-foreground: var(--genre-history-foreground);
+  --color-genre-wisdom: var(--genre-wisdom);
+  --color-genre-wisdom-foreground: var(--genre-wisdom-foreground);
+  --color-genre-prophecy: var(--genre-prophecy);
+  --color-genre-prophecy-foreground: var(--genre-prophecy-foreground);
+  --color-genre-gospel: var(--genre-gospel);
+  --color-genre-gospel-foreground: var(--genre-gospel-foreground);
+  --color-genre-epistle: var(--genre-epistle);
+  --color-genre-epistle-foreground: var(--genre-epistle-foreground);
+  --color-genre-apocalyptic: var(--genre-apocalyptic);
+  --color-genre-apocalyptic-foreground: var(--genre-apocalyptic-foreground);
+
+  /* Each framework sets --bd-font-sans / --bd-font-mono when it loads the font files. */
+  --font-sans: var(--bd-font-sans, ui-sans-serif), system-ui, sans-serif;
+  --font-mono: var(--bd-font-mono, ui-monospace), "SFMono-Regular", monospace;
+}
+
+@theme {
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+@layer base {
+  html {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
+  * {
+    @apply border-border;
+  }
+}

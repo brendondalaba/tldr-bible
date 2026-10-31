@@ -1,0 +1,30 @@
+---
+type Props = {
+  genre: string;
+  class?: string;
+};
+
+// Full class strings so Tailwind can find them. Colors live in tokens.css.
+const GENRE_CLASSES: Record<string, string> = {
+  Law: "bg-genre-law text-genre-law-foreground",
+  History: "bg-genre-history text-genre-history-foreground",
+  Wisdom: "bg-genre-wisdom text-genre-wisdom-foreground",
+  Prophecy: "bg-genre-prophecy text-genre-prophecy-foreground",
+  Gospel: "bg-genre-gospel text-genre-gospel-foreground",
+  Epistle: "bg-genre-epistle text-genre-epistle-foreground",
+  Apocalyptic: "bg-genre-apocalyptic text-genre-apocalyptic-foreground",
+};
+
+const { genre, class: className = "" } = Astro.props;
+const colors = GENRE_CLASSES[genre] ?? GENRE_CLASSES.Law;
+---
+
+<span
+  class:list={[
+    "inline-block rounded-full px-2.5 py-0.5 font-medium text-xs",
+    colors,
+    className,
+  ]}
+>
+  {genre}
+</span>
