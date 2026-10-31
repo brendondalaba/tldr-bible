@@ -109,7 +109,7 @@ Similar in tone to Proverbs — full of short, memorable teachings.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Perfect Example (1:12)** | Jesus endured testing and overcame temptation. |
 | **The Law of Liberty (2:8–12)** | Christ fulfills the royal law of love. |

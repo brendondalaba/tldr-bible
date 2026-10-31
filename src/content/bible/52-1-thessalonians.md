@@ -98,7 +98,7 @@ Warm, personal, and practical — a shepherd writing to beloved spiritual childr
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|--------------------|
 | **The Coming Lord (4:16–17)** | Jesus returns for His Church in power and glory. |
 | **The Resurrected Savior (4:14)** | His resurrection guarantees ours. |

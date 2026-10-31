@@ -114,7 +114,7 @@ Matthew blends biography, parables, sermons, and prophecy to reveal Jesus as bot
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **Messiah of Promise (1:1–17)** | Jesus fulfills the Abrahamic and Davidic covenants. |
 | **Immanuel (1:23)** | God present among His people in human form. |

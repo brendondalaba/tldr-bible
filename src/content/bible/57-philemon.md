@@ -95,7 +95,7 @@ Warm, relational, and deeply practical — showing theology lived out through lo
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **Paul’s Intercession** | Reflects Christ’s role as our mediator before the Father. |
 | **Debt Paid (v. 18–19)** | Jesus took on our debt and paid it in full. |

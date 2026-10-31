@@ -103,7 +103,7 @@ Blends deep Old Testament insight with practical encouragement.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The High Priest (4:14–15)** | Jesus mediates between God and humanity perfectly. |
 | **The Sacrificial Lamb (9:12)** | His blood secures eternal forgiveness. |

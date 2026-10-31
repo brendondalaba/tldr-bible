@@ -110,7 +110,7 @@ Romans is both a spiritual constitution and a love letter — explaining God’s
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Righteousness of God (1:17)** | Jesus fulfills and offers perfect righteousness to believers. |
 | **The Second Adam (5:12–19)** | Christ reverses Adam’s curse and brings life. |

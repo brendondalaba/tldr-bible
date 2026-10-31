@@ -109,7 +109,7 @@ Blends firm correction with fatherly encouragement — truth spoken in love.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Wisdom of God (1:24)** | Jesus embodies true wisdom, power, and redemption. |
 | **The Foundation of the Church (3:11)** | Christ is the unshakable cornerstone. |

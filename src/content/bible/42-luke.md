@@ -105,7 +105,7 @@ Luke combines careful history with heart-level storytelling — full of detail, 
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **Promised Savior (1:32–33)** | Jesus fulfills the Davidic covenant forever. |
 | **Light to the Nations (2:32)** | Salvation extends beyond Israel to all humanity. |

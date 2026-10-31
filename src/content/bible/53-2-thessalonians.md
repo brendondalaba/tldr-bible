@@ -98,7 +98,7 @@ Balances comfort and correction, assuring believers of God’s control over hist
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Returning Lord (1:7–10)** | Jesus returns with power and glory to bring justice. |
 | **The Righteous Judge (1:5–6)** | Christ repays evil and rewards faithfulness. |

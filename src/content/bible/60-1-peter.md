@@ -105,7 +105,7 @@ Full of warmth and conviction — hope rooted in eternal truth.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Cornerstone (2:6)** | Jesus is the living stone on which God builds His people. |
 | **The Suffering Servant (2:21–23)** | Christ’s example shows the power of patient endurance. |

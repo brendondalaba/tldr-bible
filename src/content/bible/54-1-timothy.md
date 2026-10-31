@@ -107,7 +107,7 @@ Practical wisdom for leading God’s people with conviction and compassion.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|--------------------|
 | **The Savior of Sinners (1:15)** | Jesus came to rescue and redeem the lost. |
 | **The Mediator (2:5)** | Christ alone bridges God and humanity. |

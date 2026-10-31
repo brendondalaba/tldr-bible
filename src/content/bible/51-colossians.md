@@ -107,7 +107,7 @@ Balances deep theology (who Christ is) with practical instruction (how to live i
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **Image of God (1:15)** | Jesus perfectly reveals the Father. |
 | **Creator and Sustainer (1:16–17)** | All things exist through Him and for Him. |

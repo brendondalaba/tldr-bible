@@ -112,7 +112,7 @@ John blends narrative, reflection, and dialogue to reveal both the power and per
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Word (1:1)** | Jesus is God’s ultimate revelation. |
 | **The Lamb of God (1:29)** | Jesus is the perfect sacrifice for sin. |

@@ -92,7 +92,7 @@ Ephesians blends deep theology with daily application — belief and behavior in
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Head of the Church (1:22–23)** | Christ rules and nourishes His body, the Church. |
 | **The Cornerstone (2:20)** | Jesus unites Jews and Gentiles into one household. |

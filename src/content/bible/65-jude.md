@@ -103,7 +103,7 @@ Prophetic in tone — bold, urgent, and full of vivid imagery.
 ## Connection to Christ
 
 
-| Foreshadow | Fulfilled in Jesus |
+| In This Book | What It Shows About Jesus |
 |-------------|-------------------|
 | **The Faith Once Delivered (v. 3)** | Jesus is the foundation and focus of true faith. |
 | **The Judge and Savior (v. 5)** | Christ delivers the faithful and judges the rebellious. |
