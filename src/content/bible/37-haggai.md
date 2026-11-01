@@ -4,6 +4,7 @@ description: 'The God Who Calls Us to Rebuild'
 verse: '"Be strong, all you people of the land, declares the Lord, and work. For I am with you." — Haggai 2:4'
 genre: 'Prophecy'
 group: 'Minor Prophets'
+chapters: 2
 ---
 
 ## Overview

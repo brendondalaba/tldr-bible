@@ -4,6 +4,7 @@ description: 'The God Who Restores His Glory Among His People'
 verse: '"I will give you a new heart and put a new spirit in you." — Ezekiel 36:26'
 genre: 'Prophecy'
 group: 'Major Prophets'
+chapters: 48
 ---
 
 ## Overview

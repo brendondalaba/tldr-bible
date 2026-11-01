@@ -1,7 +1,9 @@
 ---
 import { getCollection } from "astro:content";
+import AccountMenu from "@/components/AccountMenu.astro";
 import GenreBadge from "@/components/GenreBadge.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
+import TimesRead from "@/components/TimesRead.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 // File names start with the book number (01-genesis ... 66-revelation).
@@ -16,8 +18,8 @@ const testaments = [
 ---
 
 <BaseLayout
-  title="Bible Sidekick - Quick Bible Summaries"
-  description="Concise breakdowns of every book of the Bible"
+  title="Bible Sidekick - Bible Reading Tracker"
+  description="Track your Bible reading chapter by chapter, with a quick breakdown of every book."
   showNav={false}
 >
   <header class="border-b bg-surface">
@@ -26,10 +28,14 @@ const testaments = [
         <h1 class="font-semibold text-3xl tracking-tight sm:text-5xl">
           Bible Sidekick
         </h1>
-        <ThemeToggle />
+        <div class="flex shrink-0 items-center gap-2">
+          <ThemeToggle />
+          <AccountMenu />
+        </div>
       </div>
       <p class="mt-2 max-w-prose text-muted-foreground sm:mt-4 sm:text-lg">
-        Concise breakdowns of every book of the Bible
+        Track your reading chapter by chapter, with a quick breakdown of every
+        book of the Bible
       </p>
       <a
         href="/start-here"
@@ -54,12 +60,28 @@ const testaments = [
                 class="block rounded-lg border bg-surface px-4 py-3 transition-colors duration-150 hover:border-primary sm:p-5"
               >
                 <div class="flex items-center justify-between gap-3 sm:mb-2 sm:items-start">
-                  <h3 class="font-medium sm:text-lg">{book.data.title}</h3>
+                  <div class="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+                    <h3 class="font-medium sm:text-lg">{book.data.title}</h3>
+                    <TimesRead book={book.id} />
+                  </div>
                   <GenreBadge genre={book.data.genre} class="shrink-0" />
                 </div>
                 <p class="line-clamp-1 text-muted-foreground text-sm sm:line-clamp-2">
                   {book.data.description}
                 </p>
+                <div
+                  class="mt-2 hidden items-center gap-3"
+                  data-card-progress={book.id}
+                  data-chapters={book.data.chapters}
+                >
+                  <div class="h-1 flex-1 overflow-hidden rounded-full bg-muted">
+                    <div class="h-full rounded-full bg-primary" data-card-fill />
+                  </div>
+                  <span
+                    class="text-muted-foreground text-xs tabular-nums"
+                    data-card-count
+                  />
+                </div>
               </a>
             ))}
           </div>
@@ -68,3 +90,30 @@ const testaments = [
     }
   </div>
 </BaseLayout>
+
+<script>
+  import { getProgressStore } from "@/lib/progress";
+
+  // Show "12 / 50" and a bar on each book with a read-through in progress.
+  const store = getProgressStore();
+
+  function render() {
+    for (const row of document.querySelectorAll<HTMLElement>(
+      "[data-card-progress]"
+    )) {
+      const total = Number(row.dataset.chapters);
+      const read = Object.keys(
+        store.getBook(row.dataset.cardProgress ?? "").current
+      ).length;
+      row.classList.toggle("hidden", read === 0);
+      row.classList.toggle("flex", read > 0);
+      const fill = row.querySelector<HTMLElement>("[data-card-fill]");
+      if (fill) fill.style.width = `${(read / total) * 100}%`;
+      const count = row.querySelector("[data-card-count]");
+      if (count) count.textContent = `${read} / ${total}`;
+    }
+  }
+
+  store.subscribe(render);
+  render();
+</script>

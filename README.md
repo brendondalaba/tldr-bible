@@ -4,6 +4,8 @@ A modern, interactive website that provides concise summaries of all 66 books of
 
 ## ✨ Features
 
+- **Reading Tracker**: Tap chapters as you read; finishing a book counts a full read ("Read 2×") and resets for the next read-through, with dates kept for every chapter
+- **Accounts with Sync**: Works signed out (saved on the device); sign in with Google to sync across devices
 - **Complete Coverage**: Summaries for all 66 books of the Bible (Old and New Testament)
 - **Key Verses**: Each book features an inspirational verse displayed prominently on the page
 - **Genre Color Coding (light and dark themes)**: Visual organization by biblical genre (Law, History, Wisdom, Prophecy, Gospels, Letters, etc.)

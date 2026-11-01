@@ -4,6 +4,7 @@ description: 'The God Who Loves the Unfaithful'
 verse: '"I will heal their backsliding, I will love them freely." — Hosea 14:4'
 genre: 'Prophecy'
 group: 'Minor Prophets'
+chapters: 14
 ---
 
 ## Overview

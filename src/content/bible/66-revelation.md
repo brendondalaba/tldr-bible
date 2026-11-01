@@ -4,6 +4,7 @@ description: 'The God Who Wins in the End'
 verse: '"Behold, He is coming with the clouds, and every eye will see Him." — Revelation 1:7'
 genre: 'Apocalyptic'
 group: 'Prophecy'
+chapters: 22
 ---
 
 ## Overview

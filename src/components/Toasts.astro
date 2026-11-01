@@ -1,0 +1,83 @@
+<!--
+  Short messages at the bottom of the screen: "Finished Acts" (with Undo) and
+  sync errors. Announced to screen readers; clears itself after a few seconds.
+-->
+<div
+  data-toasts
+  aria-live="polite"
+  class="pointer-events-none fixed inset-x-0 bottom-[calc(1rem+env(safe-area-inset-bottom))] z-40 flex justify-center px-4"
+></div>
+
+<template data-toast-template>
+  <div
+    class="pointer-events-auto flex w-full max-w-sm items-center gap-3 rounded-lg border bg-surface px-4 py-3 text-sm shadow-sm motion-safe:animate-[toast-in_200ms_ease-out]"
+  >
+    <p class="flex-1" data-toast-text></p>
+    <button
+      type="button"
+      data-toast-action
+      class="hidden shrink-0 font-medium text-primary hover:underline"
+    >
+      Undo
+    </button>
+  </div>
+</template>
+
+<script>
+  import { getProgressStore } from "@/lib/progress";
+
+  const store = getProgressStore();
+  const region = document.querySelector<HTMLElement>("[data-toasts]");
+  const template = document.querySelector<HTMLTemplateElement>(
+    "[data-toast-template]"
+  );
+  let timer: number | undefined;
+
+  function show(text: string, action?: { label: string; run: () => void }) {
+    if (!region || !template) return;
+    const toast = template.content.firstElementChild?.cloneNode(true);
+    if (!(toast instanceof HTMLElement)) return;
+
+    const textEl = toast.querySelector("[data-toast-text]");
+    if (textEl) textEl.textContent = text;
+    const button = toast.querySelector<HTMLButtonElement>("[data-toast-action]");
+    if (action && button) {
+      button.textContent = action.label;
+      button.classList.remove("hidden");
+      button.addEventListener("click", () => {
+        action.run();
+        region.replaceChildren();
+      });
+    }
+
+    region.replaceChildren(toast);
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => region.replaceChildren(), 6000);
+  }
+
+  function bookTitle(slug: string): string {
+    const el = document.querySelector<HTMLElement>(`[data-book-title="${slug}"]`);
+    return el?.dataset.title ?? "Book";
+  }
+
+  store.onEvent(event => {
+    if (event.type === "completed") {
+      const times = event.times === 1 ? "once" : `${event.times} times`;
+      show(`Finished ${bookTitle(event.book)}! Read ${times}.`, {
+        label: "Undo",
+        run: () => void store.undoCompletion(event.book),
+      });
+    } else {
+      show(`Couldn't sync: ${event.message}`);
+    }
+  });
+</script>
+
+<style is:global>
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+  }
+</style>

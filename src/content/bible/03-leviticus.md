@@ -4,6 +4,7 @@ description: 'The God Who Makes Us Holy'
 verse: '"Be holy, because I, the Lord your God, am holy." — Leviticus 19:2'
 genre: 'Law'
 group: 'Pentateuch'
+chapters: 27
 ---
 
 ## Overview

@@ -1,0 +1,109 @@
+<!--
+  Sign in with Google, or (when signed in) a small menu with the account and
+  Sign out. Hidden entirely if the site was built without Supabase settings.
+  Phones show an icon; larger screens add the "Sign in" label.
+-->
+<div data-account class="relative hidden">
+  <button
+    type="button"
+    data-sign-in
+    aria-label="Sign in with Google to sync your reading"
+    title="Sign in to sync your reading"
+    class="inline-flex h-9 min-w-9 items-center justify-center gap-2 whitespace-nowrap rounded-md border border-input px-2 text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground sm:px-3"
+  >
+    <svg
+      class="size-4 shrink-0"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="8" r="4"></circle>
+      <path d="M4 21a8 8 0 0 1 16 0"></path>
+    </svg>
+    <span class="hidden sm:inline">Sign in</span>
+  </button>
+
+  <details data-account-menu class="group relative hidden">
+    <summary
+      class="inline-flex size-9 cursor-pointer list-none items-center justify-center rounded-full bg-primary font-semibold text-primary-foreground text-sm [&::-webkit-details-marker]:hidden"
+      aria-label="Account"
+    >
+      <span data-account-initial>?</span>
+    </summary>
+    <div
+      class="absolute right-0 z-30 mt-2 w-64 rounded-lg border bg-surface p-4 shadow-sm"
+    >
+      <p class="truncate font-medium" data-account-name></p>
+      <p class="truncate text-muted-foreground text-sm" data-account-email></p>
+      <p class="mt-3 text-muted-foreground text-sm">
+        Your reading is synced to this account.
+      </p>
+      <button
+        type="button"
+        data-sign-out
+        class="mt-4 inline-flex h-9 w-full items-center justify-center rounded-md border border-input text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
+      >
+        Sign out
+      </button>
+    </div>
+  </details>
+</div>
+
+<script>
+  import { getProgressStore } from "@/lib/progress";
+
+  const store = getProgressStore();
+
+  function render() {
+    const account = store.getAccount();
+    for (const root of document.querySelectorAll<HTMLElement>(
+      "[data-account]"
+    )) {
+      root.classList.toggle("hidden", !store.canSignIn);
+      const signIn = root.querySelector<HTMLElement>("[data-sign-in]");
+      const menu = root.querySelector<HTMLDetailsElement>("[data-account-menu]");
+      // Avoid flashing "Sign in" before the saved session has been checked.
+      signIn?.classList.toggle("hidden", !store.isReady || account !== null);
+      menu?.classList.toggle("hidden", account === null);
+      if (!account || !menu) continue;
+
+      const name = account.name || account.email;
+      const initial = root.querySelector("[data-account-initial]");
+      if (initial) initial.textContent = name.charAt(0).toUpperCase();
+      const nameEl = root.querySelector("[data-account-name]");
+      if (nameEl) nameEl.textContent = account.name;
+      const emailEl = root.querySelector("[data-account-email]");
+      if (emailEl) emailEl.textContent = account.email;
+    }
+  }
+
+  for (const button of document.querySelectorAll("[data-sign-in]")) {
+    button.addEventListener("click", () => void store.signIn());
+  }
+  for (const button of document.querySelectorAll("[data-sign-out]")) {
+    button.addEventListener("click", () => {
+      for (const menu of document.querySelectorAll<HTMLDetailsElement>(
+        "[data-account-menu]"
+      )) {
+        menu.open = false;
+      }
+      void store.signOut();
+    });
+  }
+
+  // Close the menu when tapping elsewhere.
+  document.addEventListener("click", event => {
+    for (const menu of document.querySelectorAll<HTMLDetailsElement>(
+      "[data-account-menu][open]"
+    )) {
+      if (!menu.contains(event.target as Node)) menu.open = false;
+    }
+  });
+
+  store.subscribe(render);
+  render();
+</script>

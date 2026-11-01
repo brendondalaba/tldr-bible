@@ -4,6 +4,7 @@ description: 'The God Who Leads Faithfully'
 verse: '"The Lord is slow to anger, abounding in love and forgiving sin and rebellion." — Numbers 14:18'
 genre: 'Law'
 group: 'Pentateuch'
+chapters: 36
 ---
 
 ## Overview

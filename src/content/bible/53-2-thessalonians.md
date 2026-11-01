@@ -4,6 +4,7 @@ description: 'The God Who Keeps His Promises'
 verse: '"But the Lord is faithful, and He will strengthen you and guard you from the evil one." — 2 Thessalonians 3:3'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 3
 ---
 
 ## Overview

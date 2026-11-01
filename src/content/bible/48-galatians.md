@@ -4,6 +4,7 @@ description: 'The God Who Sets Us Free'
 verse: '"It is for freedom that Christ has set us free." — Galatians 5:1'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 6
 ---
 
 ## Overview

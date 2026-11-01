@@ -4,6 +4,7 @@ description: 'The God Who Demands Justice and True Worship'
 verse: '"Let justice roll on like a river, righteousness like a never-failing stream." — Amos 5:24'
 genre: 'Prophecy'
 group: 'Minor Prophets'
+chapters: 9
 ---
 
 ## Overview

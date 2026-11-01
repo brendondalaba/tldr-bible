@@ -4,6 +4,7 @@ description: 'The God Who Rules Over Every Kingdom'
 verse: '"The Most High rules over the kingdom of men and gives it to whomever He will." — Daniel 4:17'
 genre: 'Prophecy'
 group: 'Major Prophets'
+chapters: 12
 ---
 
 ## Overview

@@ -4,6 +4,7 @@ description: 'The God Who Reigns in Suffering and Redeems the Broken'
 verse: '"Though He slay me, yet will I trust in Him." — Job 13:15'
 genre: 'Wisdom'
 group: 'Wisdom Literature'
+chapters: 42
 ---
 
 ## Overview

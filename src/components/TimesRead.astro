@@ -1,0 +1,57 @@
+---
+/*
+ * "Read 2×" tag shown beside a book's title once the reader has finished it.
+ * Hidden until there is at least one full read.
+ */
+type Props = {
+  book: string;
+  class?: string;
+};
+
+const { book, class: className = "" } = Astro.props;
+---
+
+<span
+  data-times-read={book}
+  class:list={[
+    "hidden shrink-0 items-center gap-1 rounded-full bg-accent px-2 py-0.5 font-medium text-accent-foreground text-xs tabular-nums",
+    className,
+  ]}
+>
+  <svg
+    class="size-3"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M5 12l5 5L20 7"></path>
+  </svg>
+  <span data-times-read-text></span>
+</span>
+
+<script>
+  import { getProgressStore } from "@/lib/progress";
+
+  const store = getProgressStore();
+
+  function render() {
+    for (const tag of document.querySelectorAll<HTMLElement>(
+      "[data-times-read]"
+    )) {
+      const times = store.timesRead(tag.dataset.timesRead ?? "");
+      tag.classList.toggle("hidden", times === 0);
+      tag.classList.toggle("inline-flex", times > 0);
+      tag.title = times === 1 ? "Read once" : `Read ${times} times`;
+      tag.setAttribute("aria-label", tag.title);
+      const text = tag.querySelector("[data-times-read-text]");
+      if (text) text.textContent = `Read ${times}×`;
+    }
+  }
+
+  store.subscribe(render);
+  render();
+</script>

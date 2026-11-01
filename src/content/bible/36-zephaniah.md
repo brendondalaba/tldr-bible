@@ -4,6 +4,7 @@ description: 'The God Who Judges to Restore'
 verse: '"The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you." — Zephaniah 3:17'
 genre: 'Prophecy'
 group: 'Minor Prophets'
+chapters: 3
 ---
 
 ## Overview

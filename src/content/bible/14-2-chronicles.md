@@ -4,6 +4,7 @@ description: 'The God Who Revives and Restores His People'
 verse: '"If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven... and heal their land." — 2 Chronicles 7:14'
 genre: 'History'
 group: 'Historical Books'
+chapters: 36
 ---
 
 ## Overview

@@ -4,6 +4,7 @@ description: 'The God Who Delights in Covenant Love'
 verse: "\"I am my beloved's and my beloved is mine.\" — Song of Solomon 6:3"
 genre: 'Wisdom'
 group: 'Wisdom Literature'
+chapters: 8
 ---
 
 ## Overview

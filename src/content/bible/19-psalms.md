@@ -4,6 +4,7 @@ description: 'The God Who Hears, Heals, and Dwells Among His People'
 verse: '"The Lord is my shepherd; I shall not want." — Psalm 23:1'
 genre: 'Wisdom'
 group: 'Wisdom Literature'
+chapters: 150
 ---
 
 ## Overview

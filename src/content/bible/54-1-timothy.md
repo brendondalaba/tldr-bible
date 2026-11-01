@@ -4,6 +4,7 @@ description: 'The God Who Calls and Equips His Servants'
 verse: '"Fight the good fight of the faith. Take hold of the eternal life to which you were called." — 1 Timothy 6:12'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 6
 ---
 
 ## Overview
