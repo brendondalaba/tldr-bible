@@ -15,7 +15,11 @@ const { title, description = "", showNav = true } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- viewport-fit=cover lets the page paint behind the phone's gesture bar. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
@@ -35,6 +39,7 @@ const { title, description = "", showNav = true } = Astro.props;
     />
     <meta name="apple-mobile-web-app-title" content="Bible Sidekick" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <title>{title}</title>
     <!-- Runs before first paint so a saved theme never flashes the wrong colors. -->
     <script is:inline>
@@ -42,11 +47,24 @@ const { title, description = "", showNav = true } = Astro.props;
         const theme = localStorage.getItem("theme");
         if (theme === "light" || theme === "dark") {
           document.documentElement.dataset.theme = theme;
+          // Same as applyThemeColor() in src/lib/themeColor.ts.
+          const source = document.querySelector(
+            `meta[name="theme-color"][media*="${theme}"]`
+          );
+          if (source) {
+            const forced = document.createElement("meta");
+            forced.name = "theme-color";
+            forced.content = source.content;
+            forced.dataset.forced = "";
+            document.head.prepend(forced);
+          }
         }
       } catch {}
     </script>
   </head>
-  <body class="flex min-h-dvh flex-col">
+  <body
+    class="flex min-h-dvh flex-col pr-[env(safe-area-inset-right)] pl-[env(safe-area-inset-left)]"
+  >
     {
       showNav && (
         <nav class="border-b bg-surface">
@@ -76,8 +94,9 @@ const { title, description = "", showNav = true } = Astro.props;
     </main>
 
     <footer class="border-t bg-surface">
+      <!-- Bottom padding keeps the footer color behind the phone's gesture bar. -->
       <div
-        class="mx-auto w-full max-w-5xl px-4 py-8 text-center text-muted-foreground text-sm sm:px-6"
+        class="mx-auto w-full max-w-5xl px-4 pt-8 pb-[calc(2rem+env(safe-area-inset-bottom))] text-center text-muted-foreground text-sm sm:px-6"
       >
         Made with ❤️ by Brendon Dalaba
       </div>
