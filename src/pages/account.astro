@@ -1,0 +1,301 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+// Titles and chapter counts for the "In progress" list.
+const books = Object.fromEntries(
+  (await getCollection("bible")).map(book => [
+    book.id,
+    { title: book.data.title, chapters: book.data.chapters },
+  ])
+);
+---
+
+<BaseLayout
+  title="Account - Bible Sidekick"
+  description="Sign up to sync your Bible reading across your devices."
+>
+  <div
+    class="mx-auto w-full max-w-md px-4 py-10 sm:px-6 sm:py-16"
+    data-account-page
+    data-books={JSON.stringify(books)}
+  >
+    <!-- Shown until the saved session has been checked. -->
+    <div data-state="loading" class="flex justify-center py-16">
+      <span
+        class="size-6 rounded-full border-2 border-muted border-t-primary motion-safe:animate-spin"
+        role="status"
+      ><span class="sr-only">Loading</span></span>
+    </div>
+
+    <!-- Signed out: sign up / sign in -->
+    <section data-state="signed-out" hidden>
+      <h1 class="font-semibold text-3xl tracking-tight">
+        Create your free account
+      </h1>
+      <p class="mt-2 text-muted-foreground">
+        Keep your reading in sync on your phone, tablet and computer.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-sm">
+        {
+          [
+            "Your chapters and finished books on every device",
+            "Never lose your history if you clear your browser",
+            "Your reading stays private to you",
+          ].map(item => (
+            <li class="flex gap-3">
+              <svg
+                class="mt-0.5 size-4 shrink-0 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12l5 5L20 7" />
+              </svg>
+              {item}
+            </li>
+          ))
+        }
+      </ul>
+
+      <p
+        class="mt-6 hidden rounded-lg border bg-accent p-3 text-accent-foreground text-sm"
+        data-guest-carryover
+      >
+        The progress you've already made on this device will be added to your
+        account.
+      </p>
+
+      <button
+        type="button"
+        data-google
+        class="mt-6 inline-flex h-11 w-full items-center justify-center gap-3 rounded-md border border-input bg-surface font-medium transition-colors duration-150 hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
+      >
+        <!-- Google's "G" must keep its brand colors (Google sign-in branding
+             guidelines), the one place raw colors are allowed. -->
+        <svg class="size-5" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            fill="#4285F4"
+            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1Z"
+          ></path>
+          <path
+            fill="#34A853"
+            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z"
+          ></path>
+          <path
+            fill="#FBBC05"
+            d="M5.84 14.1A6.6 6.6 0 0 1 5.5 12c0-.73.13-1.44.34-2.1V7.06H2.18A11 11 0 0 0 1 12c0 1.78.43 3.45 1.18 4.94l3.66-2.84Z"
+          ></path>
+          <path
+            fill="#EA4335"
+            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.55 10.55 0 0 0 12 1 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38Z"
+          ></path>
+        </svg>
+        Continue with Google
+      </button>
+      <p class="mt-3 text-center text-muted-foreground text-xs">
+        New here? This creates your account. Already have one? This signs you
+        in.
+      </p>
+
+      <p
+        role="alert"
+        class="mt-4 hidden rounded-lg border border-danger p-3 text-sm"
+        data-account-error
+      >
+      </p>
+
+      <a
+        href="/"
+        class="mt-8 block text-center font-medium text-primary text-sm hover:underline"
+      >
+        Keep using without an account
+      </a>
+    </section>
+
+    <!-- Signed in: account details -->
+    <section data-state="signed-in" hidden>
+      <div class="flex items-center gap-4">
+        <span
+          class="flex size-14 shrink-0 items-center justify-center rounded-full bg-primary font-semibold text-primary-foreground text-xl"
+          data-initial></span>
+        <div class="min-w-0">
+          <h1 class="truncate font-semibold text-2xl tracking-tight" data-name>
+            Your account
+          </h1>
+          <p class="truncate text-muted-foreground text-sm" data-email></p>
+        </div>
+      </div>
+      <p class="mt-4 text-muted-foreground text-sm">
+        Signed in with Google. Your reading is synced to this account.
+      </p>
+
+      <dl class="mt-8 grid grid-cols-3 gap-2 text-center">
+        <div class="rounded-lg border bg-surface p-3">
+          <dt class="text-muted-foreground text-xs">Books finished</dt>
+          <dd class="mt-1 font-semibold text-2xl tabular-nums" data-stat="books">
+            0
+          </dd>
+        </div>
+        <div class="rounded-lg border bg-surface p-3">
+          <dt class="text-muted-foreground text-xs">Times finished</dt>
+          <dd class="mt-1 font-semibold text-2xl tabular-nums" data-stat="times">
+            0
+          </dd>
+        </div>
+        <div class="rounded-lg border bg-surface p-3">
+          <dt class="text-muted-foreground text-xs">Chapters read</dt>
+          <dd
+            class="mt-1 font-semibold text-2xl tabular-nums"
+            data-stat="chapters"
+          >
+            0
+          </dd>
+        </div>
+      </dl>
+
+      <section class="mt-8">
+        <h2 class="font-semibold">In progress</h2>
+        <p class="mt-2 text-muted-foreground text-sm" data-progress-empty>
+          Nothing in progress yet. Open a book and tap a chapter to start.
+        </p>
+        <ul class="mt-3 space-y-2" data-progress-list></ul>
+      </section>
+
+      <button
+        type="button"
+        data-sign-out
+        class="mt-10 inline-flex h-10 w-full items-center justify-center rounded-md border border-input font-medium text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
+      >
+        Sign out
+      </button>
+      <p class="mt-3 text-center text-muted-foreground text-xs">
+        Signing out keeps your reading safe in your account. This device will
+        start fresh until you sign in again.
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  import { getProgressStore } from "@/lib/progress";
+
+  type BookInfo = { title: string; chapters: number };
+
+  const store = getProgressStore();
+  const page = document.querySelector<HTMLElement>("[data-account-page]");
+  const books = JSON.parse(page?.dataset.books ?? "{}") as Record<
+    string,
+    BookInfo
+  >;
+  const views = {
+    loading: page?.querySelector<HTMLElement>('[data-state="loading"]'),
+    signedOut: page?.querySelector<HTMLElement>('[data-state="signed-out"]'),
+    signedIn: page?.querySelector<HTMLElement>('[data-state="signed-in"]'),
+  };
+  const googleButton = page?.querySelector<HTMLButtonElement>("[data-google]");
+  const errorBox = page?.querySelector<HTMLElement>("[data-account-error]");
+
+  function showError(message: string) {
+    if (!errorBox) return;
+    errorBox.textContent = message;
+    errorBox.classList.toggle("hidden", !message);
+  }
+
+  // Google sends people back with ?error=... if they cancel or something fails.
+  const params = new URLSearchParams(window.location.search);
+  const returnedError =
+    params.get("error_description") ?? params.get("error") ?? "";
+  if (returnedError) {
+    showError(
+      returnedError === "access_denied"
+        ? "Sign-in was cancelled."
+        : `Sign-in didn't finish: ${returnedError.replaceAll("+", " ")}`
+    );
+    history.replaceState(history.state, "", window.location.pathname);
+  }
+
+  // Don't send anyone to a broken Google page while sign-in is being set up.
+  void store.isGoogleEnabled().then(enabled => {
+    if (enabled || !googleButton) return;
+    googleButton.disabled = true;
+    showError(
+      "Accounts are almost ready. Sign-in is still being set up, so check back soon. Your reading is saved on this device in the meantime."
+    );
+  });
+
+  googleButton?.addEventListener("click", () => {
+    googleButton.disabled = true;
+    void store.signIn("/account").finally(() => {
+      googleButton.disabled = false;
+    });
+  });
+
+  page
+    ?.querySelector("[data-sign-out]")
+    ?.addEventListener("click", () => void store.signOut());
+
+  const DATE = new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+  });
+
+  function render() {
+    const account = store.getAccount();
+    const ready = store.isReady;
+    if (views.loading) views.loading.hidden = ready;
+    if (views.signedOut) views.signedOut.hidden = !ready || account !== null;
+    if (views.signedIn) views.signedIn.hidden = !ready || account === null;
+
+    page
+      ?.querySelector("[data-guest-carryover]")
+      ?.classList.toggle("hidden", account !== null || !store.hasProgress());
+
+    if (!account || !page) return;
+
+    const name = account.name || account.email;
+    const set = (selector: string, text: string) => {
+      const el = page.querySelector(selector);
+      if (el) el.textContent = text;
+    };
+    set("[data-initial]", name.charAt(0).toUpperCase());
+    set("[data-name]", name);
+    set("[data-email]", account.email === name ? "" : account.email);
+
+    const stats = store.getStats();
+    set('[data-stat="books"]', String(stats.booksFinished));
+    set('[data-stat="times"]', String(stats.timesFinished));
+    set('[data-stat="chapters"]', stats.chaptersRead.toLocaleString());
+
+    page
+      .querySelector("[data-progress-empty]")
+      ?.classList.toggle("hidden", stats.inProgress.length > 0);
+    page.querySelector("[data-progress-list]")?.replaceChildren(
+      ...stats.inProgress.map(entry => {
+        const info = books[entry.book];
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = `/bible/${entry.book}`;
+        link.className =
+          "flex items-center justify-between gap-3 rounded-lg border bg-surface px-4 py-3 text-sm transition-colors duration-150 hover:border-primary";
+        const title = document.createElement("span");
+        title.className = "font-medium";
+        title.textContent = info?.title ?? entry.book;
+        const detail = document.createElement("span");
+        detail.className = "text-muted-foreground tabular-nums";
+        detail.textContent = `${entry.read} / ${info?.chapters ?? "?"} · ${DATE.format(new Date(entry.lastReadAt))}`;
+        link.append(title, detail);
+        item.append(link);
+        return item;
+      })
+    );
+  }
+
+  store.subscribe(render);
+  render();
+</script>

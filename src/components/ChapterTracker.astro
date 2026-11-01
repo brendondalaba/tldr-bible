@@ -91,13 +91,9 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
     data-guest-note
   >
     Your progress is saved on this device.{" "}
-    <button
-      type="button"
-      data-tracker-sign-in
-      class="font-medium text-primary hover:underline"
-    >
-      Sign in with Google
-    </button>{" "}
+    <a href="/account" class="font-medium text-primary hover:underline">
+      Create a free account
+    </a>{" "}
     to keep it in sync across your phone and computer.
   </p>
 </div>
@@ -182,9 +178,6 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
       });
     }
     undo?.addEventListener("click", () => void store.undoCompletion(book));
-    root
-      .querySelector("[data-tracker-sign-in]")
-      ?.addEventListener("click", () => void store.signIn());
 
     store.subscribe(render);
     render();

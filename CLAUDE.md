@@ -22,7 +22,7 @@ Astro + Tailwind CSS v4 + TypeScript, brought onto bd-style after the fact.
 - Deployed on Netlify (bible-sidekick.netlify.app) from `main`. Node 22 via `.nvmrc`.
 - Book summaries are Markdown in `src/content/bible/` (`NN-book-name.md`); the number prefix sets order and URL.
   Frontmatter `chapters` drives the tracker grid and must match `public.books` in Supabase.
-- Reading tracker: `src/lib/progress.ts` (one shared store). Guests save to localStorage; signed-in readers
+- Reading tracker: `src/lib/progress.ts` (one shared store); `/account` is sign-up (signed out) or the account page (signed in). Guests save to localStorage; signed-in readers
   (Google via Supabase Auth) sync to Supabase and guest progress is merged on sign-in.
 - Database schema, RLS and functions live in `supabase/migrations/`. Change them with a new migration file,
   never by editing an applied one.
