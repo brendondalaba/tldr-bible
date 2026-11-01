@@ -31,6 +31,17 @@ export type Progress = Record<string, BookProgress>;
 
 export type Account = { email: string; name: string } | null;
 
+export type ReadingStats = {
+  /** Distinct books finished at least once */
+  booksFinished: number;
+  /** Every finished read-through, across all books */
+  timesFinished: number;
+  /** Every chapter marked read, including past read-throughs */
+  chaptersRead: number;
+  /** Books with a read-through in progress, most recently read first */
+  inProgress: { book: string; read: number; lastReadAt: string }[];
+};
+
 export type ProgressEvent =
   | { type: "completed"; book: string; times: number }
   | { type: "error"; message: string };
@@ -110,6 +121,7 @@ class ProgressStore {
   private eventListeners = new Set<EventListener>();
   private client: SupabaseClient | null = null;
   private totals: Record<string, number> = {};
+  private googleEnabled: Promise<boolean> | undefined;
 
   constructor() {
     if (SUPABASE_URL && SUPABASE_KEY) {
@@ -135,6 +147,52 @@ class ProgressStore {
 
   getAccount(): Account {
     return this.account;
+  }
+
+  hasProgress(): boolean {
+    return !isEmpty(this.progress);
+  }
+
+  getStats(): ReadingStats {
+    const stats: ReadingStats = {
+      booksFinished: 0,
+      timesFinished: 0,
+      chaptersRead: 0,
+      inProgress: [],
+    };
+    for (const [book, progress] of Object.entries(this.progress)) {
+      const current = Object.values(progress.current);
+      if (progress.completions.length > 0) stats.booksFinished += 1;
+      stats.timesFinished += progress.completions.length;
+      stats.chaptersRead +=
+        current.length +
+        progress.completions.reduce((sum, c) => sum + c.reads.length, 0);
+      if (current.length > 0) {
+        stats.inProgress.push({
+          book,
+          read: current.length,
+          lastReadAt: current.sort().at(-1) ?? "",
+        });
+      }
+    }
+    stats.inProgress.sort((a, b) => b.lastReadAt.localeCompare(a.lastReadAt));
+    return stats;
+  }
+
+  /**
+   * Whether Google sign-in is switched on for the Supabase project. Checked
+   * before sending anyone to Google, so a half-finished setup shows a clear
+   * message instead of a broken page.
+   */
+  async isGoogleEnabled(): Promise<boolean> {
+    if (!this.client) return false;
+    this.googleEnabled ??= fetch(`${SUPABASE_URL}/auth/v1/settings`, {
+      headers: { apikey: SUPABASE_KEY },
+    })
+      .then(response => (response.ok ? response.json() : null))
+      .then(settings => Boolean(settings?.external?.google))
+      .catch(() => false);
+    return this.googleEnabled;
   }
 
   getBook(book: string): BookProgress {
@@ -261,9 +319,10 @@ class ProgressStore {
 
   // ----- accounts -----
 
-  async signIn() {
+  /** Sends the reader to Google, then back to `returnTo` (default: here). */
+  async signIn(returnTo = window.location.href.split("#")[0]) {
     if (!this.client) return;
-    const redirectTo = window.location.href.split("#")[0];
+    const redirectTo = new URL(returnTo, window.location.origin).href;
     const { error } = await this.client.auth.signInWithOAuth({
       provider: "google",
       options: { redirectTo },

@@ -1,11 +1,11 @@
 {
   "name": "Bible Sidekick",
   "short_name": "Bible Sidekick",
-  "description": "Quick Bible summaries for all 66 books",
+  "description": "Track your Bible reading chapter by chapter, with a quick breakdown of every book.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#15191e",
+  "theme_color": "#15191e",
   "icons": [
     {
       "src": "/icon-192.png",
