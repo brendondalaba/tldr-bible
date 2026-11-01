@@ -4,6 +4,7 @@ description: 'The God Whose Mercies Are New Every Morning'
 verse: "\"Because of the Lord's great love we are not consumed, for His compassions never fail. They are new every morning; great is Your faithfulness.\" — Lamentations 3:22–23"
 genre: 'Prophecy'
 group: 'Major Prophets'
+chapters: 5
 ---
 
 ## Overview

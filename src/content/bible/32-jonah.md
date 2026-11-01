@@ -4,6 +4,7 @@ description: 'The God of Relentless Mercy'
 verse: '"Salvation belongs to the Lord." — Jonah 2:9'
 genre: 'Prophecy'
 group: 'Minor Prophets'
+chapters: 4
 ---
 
 ## Overview

@@ -4,6 +4,7 @@ description: 'The God Who Teaches Us How to Live Wisely'
 verse: '"Trust in the Lord with all your heart and lean not on your own understanding." — Proverbs 3:5'
 genre: 'Wisdom'
 group: 'Wisdom Literature'
+chapters: 31
 ---
 
 ## Overview

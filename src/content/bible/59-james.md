@@ -4,6 +4,7 @@ description: 'The God Who Grows Faith Through Action'
 verse: '"Faith by itself, if it is not accompanied by action, is dead." — James 2:17'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 5
 ---
 
 ## Overview

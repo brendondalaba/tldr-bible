@@ -4,6 +4,7 @@ description: 'The God Who Empowers His People'
 verse: '"But you will receive power when the Holy Spirit comes on you; and you will be My witnesses…" — Acts 1:8'
 genre: 'History'
 group: 'Church History'
+chapters: 28
 ---
 
 ## Overview

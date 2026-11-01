@@ -10,6 +10,7 @@ const bible = defineCollection({
     verse: z.string(),
     genre: z.string(),
     group: z.string(),
+    chapters: z.number().int().positive(),
   }),
 });
 

@@ -4,6 +4,7 @@ description: 'The God Who Delivers'
 verse: '"The Lord will fight for you; you need only to be still." — Exodus 14:14'
 genre: 'Law'
 group: 'Pentateuch'
+chapters: 40
 ---
 
 ## Overview

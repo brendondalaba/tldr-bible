@@ -4,6 +4,7 @@ description: 'The God Who Fulfills His Promises'
 verse: '"Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go." — Joshua 1:9'
 genre: 'History'
 group: 'Historical Books'
+chapters: 24
 ---
 
 ## Overview

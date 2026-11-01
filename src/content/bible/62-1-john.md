@@ -4,6 +4,7 @@ description: 'The God Who Gives Assurance Through Love and Truth'
 verse: '"We love because He first loved us." — 1 John 4:19'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 5
 ---
 
 ## Overview

@@ -4,6 +4,7 @@ description: 'The God Who Rewards Faithful Service'
 verse: '"Dear friend, you are faithful in what you are doing for the brothers and sisters, even though they are strangers to you." — 3 John 5'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 1
 ---
 
 ## Overview

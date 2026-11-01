@@ -4,6 +4,7 @@ description: 'The God Who Calls, Corrects, and Still Restores'
 verse: '"Before I formed you in the womb I knew you; before you were born I set you apart." — Jeremiah 1:5'
 genre: 'Prophecy'
 group: 'Major Prophets'
+chapters: 52
 ---
 
 ## Overview

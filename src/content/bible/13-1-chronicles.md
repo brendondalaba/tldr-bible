@@ -4,6 +4,7 @@ description: 'The God Who Establishes His Kingdom Through Worship and Covenant'
 verse: '"Yours, Lord, is the greatness and the power and the glory and the majesty and the splendor... Everything in heaven and earth is yours." — 1 Chronicles 29:11'
 genre: 'History'
 group: 'Historical Books'
+chapters: 29
 ---
 
 ## Overview

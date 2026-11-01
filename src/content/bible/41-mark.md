@@ -4,6 +4,7 @@ description: 'The Servant King in Action'
 verse: '"For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many." — Mark 10:45'
 genre: 'Gospel'
 group: 'Gospels'
+chapters: 16
 ---
 
 ## Overview

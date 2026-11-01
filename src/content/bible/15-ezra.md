@@ -4,6 +4,7 @@ description: 'The God Who Restores His People and Rebuilds What Was Broken'
 verse: '"The hand of the Lord my God was on me." — Ezra 7:28'
 genre: 'History'
 group: 'Historical Books'
+chapters: 10
 ---
 
 ## Overview

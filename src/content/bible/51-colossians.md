@@ -4,6 +4,7 @@ description: 'The God Who Is Above All Things'
 verse: '"He is before all things, and in Him all things hold together." — Colossians 1:17'
 genre: 'Epistle'
 group: 'Letters'
+chapters: 4
 ---
 
 ## Overview

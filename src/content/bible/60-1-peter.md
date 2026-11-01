@@ -4,6 +4,7 @@ description: 'The God Who Gives Hope in Suffering'
 verse: "\"But you are a chosen people, a royal priesthood, a holy nation, God's special possession, that you may declare the praises of Him who called you out of darkness into His wonderful light.\" — 1 Peter 2:9"
 genre: 'Epistle'
 group: 'Letters'
+chapters: 5
 ---
 
 ## Overview

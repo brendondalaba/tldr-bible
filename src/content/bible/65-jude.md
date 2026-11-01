@@ -4,6 +4,7 @@ description: 'The God Who Keeps Us From Falling'
 verse: "\"Contend for the faith that was once for all entrusted to God's holy people.\" — Jude 3"
 genre: 'Epistle'
 group: 'Letters'
+chapters: 1
 ---
 
 ## Overview

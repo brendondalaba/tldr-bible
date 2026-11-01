@@ -4,6 +4,7 @@ description: 'The King Has Come'
 verse: '"You shall call His name Jesus, for He will save His people from their sins." — Matthew 1:21'
 genre: 'Gospel'
 group: 'Gospels'
+chapters: 28
 ---
 
 ## Overview
