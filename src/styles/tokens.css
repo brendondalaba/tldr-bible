@@ -38,7 +38,7 @@
   --danger: light-dark(oklch(0.55 0.2 25), oklch(0.7 0.17 25));
   --danger-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 25));
 
-  /* Project: genre badge colors (tldr-bible). Fill + -foreground pairs, all >= 5.5:1. */
+  /* Project: genre badge colors (bible-sidekick). Fill + -foreground pairs, all >= 5.5:1. */
   --genre-law: light-dark(oklch(0.45 0.04 255), oklch(0.78 0.04 255));
   --genre-law-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 255));
   --genre-history: light-dark(oklch(0.52 0.15 45), oklch(0.78 0.12 55));

@@ -1,6 +1,6 @@
 {
-  "name": "TLDR Bible",
-  "short_name": "TLDR Bible",
+  "name": "Bible Sidekick",
+  "short_name": "Bible Sidekick",
   "description": "Quick Bible summaries for all 66 books",
   "start_url": "/",
   "display": "standalone",
