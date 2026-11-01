@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# TLDR Bible
+# Bible Sidekick
 
 Astro + Tailwind CSS v4 + TypeScript, brought onto bd-style after the fact.
 
@@ -19,7 +19,7 @@ Astro + Tailwind CSS v4 + TypeScript, brought onto bd-style after the fact.
 
 ## Project notes
 
-- Deployed on Netlify (tldr-bible.netlify.app) from `master`. Node 22 via `.nvmrc`.
+- Deployed on Netlify (tldr-bible.netlify.app) from `main`. Node 22 via `.nvmrc`.
 - Book summaries are Markdown in `src/content/bible/` (`NN-book-name.md`); the number prefix sets order and URL.
 - Content is written from an Assemblies of God (Pentecostal) perspective.
 - Genre badge colors are project tokens (`--genre-*`) in `tokens.css`; see the table in `docs/DESIGN.md`.

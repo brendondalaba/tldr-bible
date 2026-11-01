@@ -1,4 +1,4 @@
-# TLDR Bible 📖
+# Bible Sidekick 📖
 
 A modern, interactive website that provides concise summaries of all 66 books of the Bible. Each book is presented with its key themes, important passages, and a digestible overview - perfect for quick reference or study.
 

@@ -31,7 +31,7 @@ const { title, description = "" } = Astro.props;
       media="(prefers-color-scheme: dark)"
       content="#15191e"
     />
-    <meta name="apple-mobile-web-app-title" content="TLDR Bible" />
+    <meta name="apple-mobile-web-app-title" content="Bible Sidekick" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>{title}</title>
     <!-- Runs before first paint so a saved theme never flashes the wrong colors. -->
@@ -47,12 +47,12 @@ const { title, description = "" } = Astro.props;
   <body class="flex min-h-dvh flex-col">
     <nav class="border-b bg-surface">
       <div
-        class="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6"
+        class="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6"
       >
         <a href="/" class="whitespace-nowrap font-semibold tracking-tight">
-          TLDR Bible
+          Bible Sidekick
         </a>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 sm:gap-4">
           <a
             href="/start-here"
             class="whitespace-nowrap text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
