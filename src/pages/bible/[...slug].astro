@@ -1,7 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
+import ChapterTracker from "@/components/ChapterTracker.astro";
 import GenreBadge from "@/components/GenreBadge.astro";
+import TimesRead from "@/components/TimesRead.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { GLANCE_ID, splitBook } from "@/lib/bookSections";
 
@@ -34,9 +36,16 @@ const toc = [
         <GenreBadge genre={book.data.genre} />
         <span class="text-muted-foreground text-sm">{book.data.group}</span>
       </div>
-      <h1 class="mt-3 font-semibold text-3xl tracking-tight sm:text-5xl">
-        {book.data.title}
-      </h1>
+      <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <h1
+          class="font-semibold text-3xl tracking-tight sm:text-5xl"
+          data-book-title={book.id}
+          data-title={book.data.title}
+        >
+          {book.data.title}
+        </h1>
+        <TimesRead book={book.id} class="sm:text-sm" />
+      </div>
       <p class="mt-1 text-muted-foreground sm:mt-2 sm:text-lg">{book.data.description}</p>
       <blockquote
         class="mt-4 max-w-prose border-primary border-l-4 pl-3 text-muted-foreground text-sm italic sm:mt-5 sm:pl-4 sm:text-base"
@@ -46,96 +55,151 @@ const toc = [
     </div>
   </header>
 
-  <!-- Phones and tablets: sticky, sideways-scrolling jump bar. -->
-  <nav
-    aria-label="On this page"
-    class="sticky top-0 z-10 border-b bg-surface/95 backdrop-blur lg:hidden"
-  >
-    <ul
-      class="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-2.5 [scrollbar-width:none] sm:px-6"
-      data-toc-bar
+  <div class="mx-auto w-full max-w-5xl px-4 pt-4 sm:px-6 sm:pt-6">
+    <div
+      role="tablist"
+      aria-label={`${book.data.title} views`}
+      class="grid grid-cols-2 gap-1 rounded-lg bg-muted p-1 sm:inline-grid sm:w-80"
     >
-      {
-        toc.map(item => (
-          <li class="shrink-0">
-            <a
-              href={`#${item.id}`}
-              data-toc-link={item.id}
-              class="toc-chip inline-flex h-8 items-center rounded-full border px-3 text-muted-foreground text-sm transition-colors duration-150"
-            >
-              {item.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
+      <button
+        type="button"
+        role="tab"
+        id="tab-tracker"
+        aria-controls="panel-tracker"
+        aria-selected="true"
+        data-tab="tracker"
+        class="book-tab h-9 rounded-md font-medium text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+      >
+        Tracker
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-breakdown"
+        aria-controls="panel-breakdown"
+        aria-selected="false"
+        tabindex="-1"
+        data-tab="breakdown"
+        class="book-tab h-9 rounded-md font-medium text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+      >
+        Breakdown
+      </button>
+    </div>
+  </div>
 
   <div
-    class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-8 lg:grid lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-12 lg:py-12"
+    id="panel-tracker"
+    role="tabpanel"
+    aria-labelledby="tab-tracker"
+    class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-8"
   >
-    <!-- Desktop: sticky sidebar. -->
-    <nav aria-label="On this page" class="hidden lg:block">
-      <div class="sticky top-8">
-        <p
-          class="mb-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider"
-        >
-          On this page
-        </p>
-        <ul class="space-y-1 border-l">
-          {
-            toc.map(item => (
-              <li>
-                <a
-                  href={`#${item.id}`}
-                  data-toc-link={item.id}
-                  class="toc-link -ml-px block border-transparent border-l-2 py-1 pl-3 text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+    <div class="max-w-2xl">
+      <ChapterTracker
+        book={book.id}
+        title={book.data.title}
+        chapters={book.data.chapters}
+      />
+    </div>
+  </div>
+
+  <div
+    id="panel-breakdown"
+    role="tabpanel"
+    aria-labelledby="tab-breakdown"
+    hidden
+    class="pt-4"
+  >
+    <!-- Phones and tablets: sticky, sideways-scrolling jump bar. -->
+    <nav
+      aria-label="On this page"
+      class="sticky top-0 z-10 border-b bg-surface/95 backdrop-blur lg:hidden"
+    >
+      <ul
+        class="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-2.5 [scrollbar-width:none] sm:px-6"
+        data-toc-bar
+      >
+        {
+          toc.map(item => (
+            <li class="shrink-0">
+              <a
+                href={`#${item.id}`}
+                data-toc-link={item.id}
+                class="toc-chip inline-flex h-8 items-center rounded-full border px-3 text-muted-foreground text-sm transition-colors duration-150"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
     </nav>
 
-    <article class="markdown-content min-w-0">
-      {intro && <Fragment set:html={intro} />}
+    <div
+      class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-8 lg:grid lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-12 lg:py-12"
+    >
+      <!-- Desktop: sticky sidebar. -->
+      <nav aria-label="On this page" class="hidden lg:block">
+        <div class="sticky top-8">
+          <p
+            class="mb-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider"
+          >
+            On this page
+          </p>
+          <ul class="space-y-1 border-l">
+            {
+              toc.map(item => (
+                <li>
+                  <a
+                    href={`#${item.id}`}
+                    data-toc-link={item.id}
+                    class="toc-link -ml-px block border-transparent border-l-2 py-1 pl-3 text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </nav>
 
-      {
-        facts.length > 0 && (
-          <section id={GLANCE_ID} class="at-a-glance">
-            <h2>At a glance</h2>
-            <dl>
-              {facts.map(fact => (
-                <div>
-                  <dt>{fact.label}</dt>
-                  <dd>
-                    <Fragment set:html={fact.lead} />
-                    {fact.more && (
-                      <details class="glance-more">
-                        <summary>More</summary>
-                        <Fragment set:html={fact.more} />
-                      </details>
-                    )}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-        )
-      }
+      <article class="markdown-content min-w-0">
+        {intro && <Fragment set:html={intro} />}
 
-      {
-        sections.map(section => (
-          <section id={section.id} class="book-section">
-            <h2>{section.title}</h2>
-            <Fragment set:html={section.html} />
-          </section>
-        ))
-      }
-    </article>
+        {
+          facts.length > 0 && (
+            <section id={GLANCE_ID} class="at-a-glance">
+              <h2>At a glance</h2>
+              <dl>
+                {facts.map(fact => (
+                  <div>
+                    <dt>{fact.label}</dt>
+                    <dd>
+                      <Fragment set:html={fact.lead} />
+                      {fact.more && (
+                        <details class="glance-more">
+                          <summary>More</summary>
+                          <Fragment set:html={fact.more} />
+                        </details>
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )
+        }
+
+        {
+          sections.map(section => (
+            <section id={section.id} class="book-section">
+              <h2>{section.title}</h2>
+              <Fragment set:html={section.html} />
+            </section>
+          ))
+        }
+      </article>
+    </div>
   </div>
 
   <nav
@@ -168,6 +232,64 @@ const toc = [
     }
   </nav>
 </BaseLayout>
+
+<script>
+  // Tracker / Breakdown tabs. Tracker is the default; "#breakdown" or a link to
+  // any Breakdown section (e.g. "#key-verses") opens Breakdown.
+  type Tab = "tracker" | "breakdown";
+  const tabs = document.querySelectorAll<HTMLButtonElement>("[data-tab]");
+  const panels: Record<Tab, HTMLElement | null> = {
+    tracker: document.getElementById("panel-tracker"),
+    breakdown: document.getElementById("panel-breakdown"),
+  };
+
+  function tabForHash(hash: string): Tab {
+    const id = decodeURIComponent(hash.slice(1));
+    if (id === "breakdown") return "breakdown";
+    if (id && panels.breakdown?.querySelector(`[id="${CSS.escape(id)}"]`)) {
+      return "breakdown";
+    }
+    return "tracker";
+  }
+
+  function selectTab(tab: Tab, { updateUrl = true } = {}) {
+    for (const button of tabs) {
+      const selected = button.dataset.tab === tab;
+      button.setAttribute("aria-selected", String(selected));
+      button.tabIndex = selected ? 0 : -1;
+    }
+    for (const [name, panel] of Object.entries(panels)) {
+      if (panel) panel.hidden = name !== tab;
+    }
+    if (updateUrl) {
+      const url = new URL(window.location.href);
+      url.hash = tab === "breakdown" ? "breakdown" : "";
+      history.replaceState(history.state, "", url);
+    }
+  }
+
+  for (const button of tabs) {
+    button.addEventListener("click", () =>
+      selectTab(button.dataset.tab as Tab)
+    );
+    // Arrow keys move between tabs, as screen-reader users expect.
+    button.addEventListener("keydown", event => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      const next = button.dataset.tab === "tracker" ? "breakdown" : "tracker";
+      selectTab(next);
+      document.querySelector<HTMLElement>(`[data-tab="${next}"]`)?.focus();
+    });
+  }
+
+  const initial = tabForHash(window.location.hash);
+  selectTab(initial, { updateUrl: false });
+  if (initial === "breakdown" && window.location.hash.length > 1) {
+    document.getElementById(window.location.hash.slice(1))?.scrollIntoView();
+  }
+  window.addEventListener("hashchange", () =>
+    selectTab(tabForHash(window.location.hash), { updateUrl: false })
+  );
+</script>
 
 <script>
   // Highlight the section being read and keep its chip in view on phones.

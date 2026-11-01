@@ -1,0 +1,192 @@
+---
+/*
+ * Chapter checklist for one book. The grid is rendered at build time (all
+ * unchecked) so nothing shifts; the script fills in the reader's progress.
+ */
+type Props = {
+  book: string;
+  title: string;
+  chapters: number;
+};
+
+const { book, title, chapters } = Astro.props;
+const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
+---
+
+<div
+  data-tracker
+  data-book={book}
+  data-title={title}
+  data-chapters={chapters}
+  class="space-y-6"
+>
+  <section class="rounded-lg border bg-surface p-4 sm:p-5">
+    <div class="flex items-baseline justify-between gap-3">
+      <h2 class="font-semibold">
+        {chapters === 1 ? "Chapter" : "Chapters"}
+      </h2>
+      <p class="text-muted-foreground text-sm" data-tracker-count>
+        0 of {chapters} read
+      </p>
+    </div>
+    <div
+      class="mt-3 h-1.5 overflow-hidden rounded-full bg-muted"
+      role="progressbar"
+      aria-label={`${title} progress`}
+      aria-valuemin="0"
+      aria-valuemax={chapters}
+      aria-valuenow="0"
+      data-tracker-bar
+    >
+      <div
+        class="h-full w-0 rounded-full bg-primary motion-safe:transition-[width] motion-safe:duration-300"
+        data-tracker-fill
+      >
+      </div>
+    </div>
+
+    <p class="mt-4 text-muted-foreground text-sm">
+      Tap a chapter when you've read it.
+    </p>
+    <ul
+      class="mt-3 grid grid-cols-[repeat(auto-fill,minmax(2.75rem,1fr))] gap-2"
+      aria-label={`${title} chapters`}
+    >
+      {
+        numbers.map(chapter => (
+          <li>
+            <button
+              type="button"
+              data-chapter={chapter}
+              aria-pressed="false"
+              aria-label={`Chapter ${chapter}`}
+              class="chapter-button flex aspect-square w-full items-center justify-center rounded-md border border-input font-medium text-sm tabular-nums transition-colors duration-150 hover:border-primary"
+            >
+              {chapter}
+            </button>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4 hidden text-muted-foreground text-sm" data-tracker-last></p>
+  </section>
+
+  <section class="rounded-lg border bg-surface p-4 sm:p-5">
+    <h2 class="font-semibold">Times read</h2>
+    <p class="mt-1 text-muted-foreground text-sm" data-history-empty>
+      Finish every chapter to count a full read of {title}.
+    </p>
+    <ol class="mt-3 hidden space-y-2 text-sm" data-history-list></ol>
+    <button
+      type="button"
+      data-undo
+      class="mt-4 hidden font-medium text-primary text-sm hover:underline"
+    >
+      Undo last finish
+    </button>
+  </section>
+
+  <p
+    class="hidden rounded-lg border border-dashed p-4 text-muted-foreground text-sm"
+    data-guest-note
+  >
+    Your progress is saved on this device.{" "}
+    <button
+      type="button"
+      data-tracker-sign-in
+      class="font-medium text-primary hover:underline"
+    >
+      Sign in with Google
+    </button>{" "}
+    to keep it in sync across your phone and computer.
+  </p>
+</div>
+
+<script>
+  import { getProgressStore } from "@/lib/progress";
+
+  const store = getProgressStore();
+  const DATE = new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+  const formatDate = (iso: string) => DATE.format(new Date(iso));
+
+  for (const root of document.querySelectorAll<HTMLElement>("[data-tracker]")) {
+    const book = root.dataset.book ?? "";
+    const total = Number(root.dataset.chapters);
+    const buttons = root.querySelectorAll<HTMLButtonElement>("[data-chapter]");
+    const count = root.querySelector("[data-tracker-count]");
+    const bar = root.querySelector("[data-tracker-bar]");
+    const fill = root.querySelector<HTMLElement>("[data-tracker-fill]");
+    const last = root.querySelector<HTMLElement>("[data-tracker-last]");
+    const empty = root.querySelector<HTMLElement>("[data-history-empty]");
+    const list = root.querySelector<HTMLElement>("[data-history-list]");
+    const undo = root.querySelector<HTMLElement>("[data-undo]");
+    const guestNote = root.querySelector<HTMLElement>("[data-guest-note]");
+
+    const render = () => {
+      const progress = store.getBook(book);
+      const readCount = Object.keys(progress.current).length;
+
+      for (const button of buttons) {
+        const chapter = Number(button.dataset.chapter);
+        const readAt = progress.current[chapter];
+        button.setAttribute("aria-pressed", String(Boolean(readAt)));
+        button.title = readAt ? `Read ${formatDate(readAt)}` : "Not read yet";
+      }
+
+      if (count) count.textContent = `${readCount} of ${total} read`;
+      bar?.setAttribute("aria-valuenow", String(readCount));
+      if (fill) fill.style.width = `${(readCount / total) * 100}%`;
+
+      const latest = Object.entries(progress.current).sort((a, b) =>
+        b[1].localeCompare(a[1])
+      )[0];
+      if (last) {
+        last.classList.toggle("hidden", !latest);
+        if (latest) {
+          last.textContent = `Last read: chapter ${latest[0]} on ${formatDate(latest[1])}`;
+        }
+      }
+
+      const completions = [...progress.completions].reverse();
+      empty?.classList.toggle("hidden", completions.length > 0);
+      list?.classList.toggle("hidden", completions.length === 0);
+      list?.replaceChildren(
+        ...completions.map((completion, index) => {
+          const item = document.createElement("li");
+          item.className = "flex items-center justify-between gap-3";
+          const label = document.createElement("span");
+          label.textContent = `Read ${completions.length - index}`;
+          label.className = "font-medium";
+          const date = document.createElement("span");
+          date.className = "text-muted-foreground";
+          date.textContent = `Finished ${formatDate(completion.completedAt)}`;
+          item.append(label, date);
+          return item;
+        })
+      );
+      undo?.classList.toggle("hidden", !store.canUndo(book));
+
+      guestNote?.classList.toggle(
+        "hidden",
+        !store.canSignIn || !store.isReady || store.getAccount() !== null
+      );
+    };
+
+    for (const button of buttons) {
+      button.addEventListener("click", () => {
+        void store.toggleChapter(book, Number(button.dataset.chapter), total);
+      });
+    }
+    undo?.addEventListener("click", () => void store.undoCompletion(book));
+    root
+      .querySelector("[data-tracker-sign-in]")
+      ?.addEventListener("click", () => void store.signIn());
+
+    store.subscribe(render);
+    render();
+  }
+</script>

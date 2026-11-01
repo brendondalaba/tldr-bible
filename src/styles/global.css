@@ -337,3 +337,17 @@
     color: var(--muted-foreground);
   }
 }
+
+/* ---- Reading tracker ---- */
+
+.chapter-button[aria-pressed="true"] {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.book-tab[aria-selected="true"] {
+  background: var(--surface);
+  color: var(--foreground);
+  box-shadow: 0 0 0 1px var(--border);
+}
