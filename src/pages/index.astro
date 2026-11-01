@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import AccountMenu from "@/components/AccountMenu.astro";
 import GenreBadge from "@/components/GenreBadge.astro";
+import Logo from "@/components/Logo.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
 import TimesRead from "@/components/TimesRead.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -25,7 +26,10 @@ const testaments = [
   <header class="border-b bg-surface">
     <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-16">
       <div class="flex items-start justify-between gap-4">
-        <h1 class="font-semibold text-3xl tracking-tight sm:text-5xl">
+        <h1
+          class="flex items-center gap-3 font-semibold text-3xl tracking-tight sm:gap-4 sm:text-5xl"
+        >
+          <Logo class="size-9 sm:size-14" />
           Bible Sidekick
         </h1>
         <div class="flex shrink-0 items-center gap-2">
