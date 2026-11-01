@@ -5,9 +5,11 @@ import "@/styles/global.css";
 type Props = {
   title: string;
   description?: string;
+  /** The home page hero already has the title and Start Here link. */
+  showNav?: boolean;
 };
 
-const { title, description = "" } = Astro.props;
+const { title, description = "", showNav = true } = Astro.props;
 ---
 
 <html lang="en">
@@ -45,25 +47,29 @@ const { title, description = "" } = Astro.props;
     </script>
   </head>
   <body class="flex min-h-dvh flex-col">
-    <nav class="border-b bg-surface">
-      <div
-        class="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6"
-      >
-        <a href="/" class="whitespace-nowrap font-semibold tracking-tight">
-          Bible Sidekick
-        </a>
-        <div class="flex items-center gap-2 sm:gap-4">
-          <a
-            href="/start-here"
-            class="whitespace-nowrap text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+    {
+      showNav && (
+        <nav class="border-b bg-surface">
+          <div
+            class="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6"
           >
-            <span class="sm:hidden">Start here</span>
-            <span class="hidden sm:inline">How to read the Bible</span>
-          </a>
-          <ThemeToggle />
-        </div>
-      </div>
-    </nav>
+            <a href="/" class="whitespace-nowrap font-semibold tracking-tight">
+              Bible Sidekick
+            </a>
+            <div class="flex items-center gap-2 sm:gap-4">
+              <a
+                href="/start-here"
+                class="whitespace-nowrap text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+              >
+                <span class="sm:hidden">Start here</span>
+                <span class="hidden sm:inline">How to read the Bible</span>
+              </a>
+              <ThemeToggle />
+            </div>
+          </div>
+        </nav>
+      )
+    }
 
     <main class="flex-1">
       <slot />
