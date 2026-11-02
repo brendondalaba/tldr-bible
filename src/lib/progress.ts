@@ -539,6 +539,55 @@ function finishLocally(
   };
 }
 
+export type BibleProgress = {
+  /** Times every book of the Bible has been finished */
+  timesRead: number;
+  /** Chapters counted toward the read-through in progress */
+  read: number;
+  total: number;
+  /** Same, per group of books (e.g. Old and New Testament) */
+  groups: Record<string, { read: number; total: number }>;
+};
+
+/**
+ * Progress through the whole Bible. Round N is complete once every book has
+ * been finished N times. Within the current round, a book already finished
+ * this round counts in full; otherwise its current chapters count.
+ *
+ * `books` maps each book to its chapter count and (optional) group name.
+ */
+export function bibleProgress(
+  getBook: (book: string) => BookProgress,
+  books: Record<string, { chapters: number; group?: string }>
+): BibleProgress {
+  const entries = Object.entries(books);
+  const timesRead = Math.min(
+    ...entries.map(([book]) => getBook(book).completions.length)
+  );
+  const result: BibleProgress = {
+    timesRead: Number.isFinite(timesRead) ? timesRead : 0,
+    read: 0,
+    total: 0,
+    groups: {},
+  };
+
+  for (const [book, { chapters, group }] of entries) {
+    const progress = getBook(book);
+    const read =
+      progress.completions.length > result.timesRead
+        ? chapters
+        : Math.min(Object.keys(progress.current).length, chapters);
+    result.read += read;
+    result.total += chapters;
+    if (group) {
+      result.groups[group] ??= { read: 0, total: 0 };
+      result.groups[group].read += read;
+      result.groups[group].total += chapters;
+    }
+  }
+  return result;
+}
+
 let store: ProgressStore | undefined;
 
 /** The one shared store for the page. */
