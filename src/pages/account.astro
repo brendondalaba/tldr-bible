@@ -267,7 +267,11 @@ const books = Object.fromEntries(
     set("[data-name]", name);
     set("[data-email]", account.email === name ? "" : account.email);
 
-    const stats = store.getStats();
+    const stats = store.getStats(
+      Object.fromEntries(
+        Object.entries(books).map(([book, info]) => [book, info.chapters])
+      )
+    );
     set('[data-stat="books"]', String(stats.booksFinished));
     set('[data-stat="times"]', String(stats.timesFinished));
     set('[data-stat="chapters"]', stats.chaptersRead.toLocaleString());

@@ -6,7 +6,11 @@ import {
 
 /*
  * Reading progress: which chapters of each book are read in the current
- * read-through, and every finished read-through (with the date of each chapter).
+ * read-through, and every earlier read-through (with the date of each chapter).
+ *
+ * A read-through is finished once every chapter is checked; it stays finished
+ * (and counts as a read) until the reader chooses "Read again", which files it
+ * away and starts a fresh one. Books never reset on their own.
  *
  * Signed out ("guest"): saved in this browser only.
  * Signed in: saved to Supabase and synced across devices. Guest progress is
@@ -43,7 +47,10 @@ export type ReadingStats = {
 };
 
 export type ProgressEvent =
-  | { type: "completed"; book: string; times: number }
+  /** The last chapter of a read-through was checked. */
+  | { type: "finished"; book: string; times: number }
+  /** The reader chose "Read again"; `pass` is the new read-through number. */
+  | { type: "restarted"; book: string; pass: number }
   | { type: "error"; message: string };
 
 type Listener = () => void;
@@ -120,7 +127,6 @@ class ProgressStore {
   private listeners = new Set<Listener>();
   private eventListeners = new Set<EventListener>();
   private client: SupabaseClient | null = null;
-  private totals: Record<string, number> = {};
   private googleEnabled: Promise<boolean> | undefined;
 
   constructor() {
@@ -153,7 +159,7 @@ class ProgressStore {
     return !isEmpty(this.progress);
   }
 
-  getStats(): ReadingStats {
+  getStats(chapters: Record<string, number>): ReadingStats {
     const stats: ReadingStats = {
       booksFinished: 0,
       timesFinished: 0,
@@ -162,12 +168,14 @@ class ProgressStore {
     };
     for (const [book, progress] of Object.entries(this.progress)) {
       const current = Object.values(progress.current);
-      if (progress.completions.length > 0) stats.booksFinished += 1;
-      stats.timesFinished += progress.completions.length;
+      const passes = passesFinished(progress, chapters[book] ?? 0);
+      const finished = isFinished(progress, chapters[book] ?? 0);
+      if (passes > 0) stats.booksFinished += 1;
+      stats.timesFinished += passes;
       stats.chaptersRead +=
         current.length +
         progress.completions.reduce((sum, c) => sum + c.reads.length, 0);
-      if (current.length > 0) {
+      if (current.length > 0 && !finished) {
         stats.inProgress.push({
           book,
           read: current.length,
@@ -199,12 +207,17 @@ class ProgressStore {
     return this.progress[book] ?? emptyBook();
   }
 
-  timesRead(book: string): number {
-    return this.getBook(book).completions.length;
+  /** Finished read-throughs, including a finished one not yet restarted. */
+  timesRead(book: string, chapters: number): number {
+    return passesFinished(this.getBook(book), chapters);
   }
 
-  /** Undo is offered only right after finishing, before a new read starts. */
-  canUndo(book: string): boolean {
+  isFinished(book: string, chapters: number): boolean {
+    return isFinished(this.getBook(book), chapters);
+  }
+
+  /** "Read again" can be undone until a chapter of the new read is checked. */
+  canUndoRestart(book: string): boolean {
     const progress = this.getBook(book);
     return (
       progress.completions.length > 0 &&
@@ -250,60 +263,73 @@ class ProgressStore {
     if (isRead) delete current[chapter];
     else current[chapter] = new Date().toISOString();
 
-    const finished = !isRead && Object.keys(current).length >= totalChapters;
-    this.setBook(book, finishLocally({ ...before, current }, finished));
-    if (finished) {
+    const after = { ...before, current };
+    this.setBook(book, after);
+    if (!isRead && isFinished(after, totalChapters)) {
       this.emit({
-        type: "completed",
+        type: "finished",
         book,
-        times: before.completions.length + 1,
+        times: passesFinished(after, totalChapters),
       });
     }
 
     if (!this.account || !this.client) return;
 
     try {
-      if (isRead) {
-        const { error } = await this.client
-          .from("chapter_reads")
-          .delete()
-          .eq("book", book)
-          .eq("chapter", chapter)
-          .is("completion_id", null);
-        if (error) throw error;
-      } else {
-        const { error } = await this.client
-          .from("chapter_reads")
-          .insert({ book, chapter, read_at: current[chapter] });
-        if (error) throw error;
-        if (finished) {
-          const { error: completeError } = await this.client.rpc(
-            "complete_book",
-            { p_book: book }
-          );
-          if (completeError) throw completeError;
-        }
-      }
-      if (finished) await this.reloadBook(book);
+      const { error } = isRead
+        ? await this.client
+            .from("chapter_reads")
+            .delete()
+            .eq("book", book)
+            .eq("chapter", chapter)
+            .is("completion_id", null)
+        : await this.client
+            .from("chapter_reads")
+            .insert({ book, chapter, read_at: current[chapter] });
+      if (error) throw error;
     } catch (error) {
       this.emit({ type: "error", message: errorMessage(error) });
       await this.reloadBook(book);
     }
   }
 
-  async undoCompletion(book: string) {
-    if (!this.canUndo(book)) return;
+  /** "Read again": file away the finished read-through and start a new one. */
+  async restartBook(book: string, totalChapters: number) {
+    const before = this.getBook(book);
+    if (!isFinished(before, totalChapters)) return;
+
+    const reads = Object.entries(before.current).map(([chapter, readAt]) => ({
+      chapter: Number(chapter),
+      readAt,
+    }));
+    this.setBook(book, {
+      current: {},
+      completions: [
+        ...before.completions,
+        { id: localId(), completedAt: new Date().toISOString(), reads },
+      ],
+    });
+    this.emit({
+      type: "restarted",
+      book,
+      pass: before.completions.length + 2,
+    });
+
+    if (!this.account || !this.client) return;
+    const { error } = await this.client.rpc("complete_book", { p_book: book });
+    if (error) this.emit({ type: "error", message: errorMessage(error) });
+    await this.reloadBook(book);
+  }
+
+  /** Undo "Read again": bring the finished read-through back. */
+  async undoRestart(book: string) {
+    if (!this.canUndoRestart(book)) return;
     const before = this.getBook(book);
     const last = before.completions.at(-1);
     if (!last) return;
 
-    // Restore that read-through minus the chapter that finished it.
-    const reads = [...last.reads].sort((a, b) =>
-      a.readAt.localeCompare(b.readAt)
-    );
-    reads.pop();
     const current: Record<number, string> = {};
-    for (const read of reads) current[read.chapter] = read.readAt;
+    for (const read of last.reads) current[read.chapter] = read.readAt;
     this.setBook(book, {
       current,
       completions: before.completions.slice(0, -1),
@@ -417,28 +443,6 @@ class ProgressStore {
     });
     if (error) throw error;
     removeKey(GUEST_KEY);
-
-    // Merging can finish a book (guest + account chapters together).
-    await this.reloadAll();
-    const totals = await this.loadTotals();
-    for (const [book, progress] of Object.entries(this.progress)) {
-      const total = totals[book];
-      if (total && Object.keys(progress.current).length >= total) {
-        await this.client.rpc("complete_book", { p_book: book });
-      }
-    }
-  }
-
-  private async loadTotals(): Promise<Record<string, number>> {
-    if (Object.keys(this.totals).length > 0 || !this.client) return this.totals;
-    const { data, error } = await this.client
-      .from("books")
-      .select("slug, chapters");
-    if (error) throw error;
-    this.totals = Object.fromEntries(
-      (data ?? []).map(row => [row.slug as string, row.chapters as number])
-    );
-    return this.totals;
   }
 
   private async reloadAll() {
@@ -520,23 +524,17 @@ class ProgressStore {
   }
 }
 
-/** When the last chapter is read: record the read-through and clear checks. */
-function finishLocally(
+/** Every chapter of the current read-through is checked. */
+export function isFinished(progress: BookProgress, chapters: number): boolean {
+  return chapters > 0 && Object.keys(progress.current).length >= chapters;
+}
+
+/** Earlier read-throughs plus the current one if it's finished. */
+export function passesFinished(
   progress: BookProgress,
-  finished: boolean
-): BookProgress {
-  if (!finished) return progress;
-  const reads = Object.entries(progress.current).map(([chapter, readAt]) => ({
-    chapter: Number(chapter),
-    readAt,
-  }));
-  return {
-    current: {},
-    completions: [
-      ...progress.completions,
-      { id: localId(), completedAt: new Date().toISOString(), reads },
-    ],
-  };
+  chapters: number
+): number {
+  return progress.completions.length + (isFinished(progress, chapters) ? 1 : 0);
 }
 
 export type BibleProgress = {
@@ -551,8 +549,9 @@ export type BibleProgress = {
 
 /**
  * Progress through the whole Bible. Round N is complete once every book has
- * been finished N times. Within the current round, a book already finished
- * this round counts in full; otherwise its current chapters count.
+ * been read through N times. Within the current round, a book already read
+ * through more times than the round counts in full; otherwise the chapters of
+ * its current read-through count. Rereading one book never lowers the total.
  *
  * `books` maps each book to its chapter count and (optional) group name.
  */
@@ -562,7 +561,9 @@ export function bibleProgress(
 ): BibleProgress {
   const entries = Object.entries(books);
   const timesRead = Math.min(
-    ...entries.map(([book]) => getBook(book).completions.length)
+    ...entries.map(([book, { chapters }]) =>
+      passesFinished(getBook(book), chapters)
+    )
   );
   const result: BibleProgress = {
     timesRead: Number.isFinite(timesRead) ? timesRead : 0,
@@ -574,7 +575,7 @@ export function bibleProgress(
   for (const [book, { chapters, group }] of entries) {
     const progress = getBook(book);
     const read =
-      progress.completions.length > result.timesRead
+      passesFinished(progress, chapters) > result.timesRead
         ? chapters
         : Math.min(Object.keys(progress.current).length, chapters);
     result.read += read;

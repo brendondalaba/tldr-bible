@@ -124,7 +124,7 @@ const bookInfo = Object.fromEntries(
                 <div class="flex items-center justify-between gap-3 sm:mb-2 sm:items-start">
                   <div class="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
                     <h3 class="font-medium sm:text-lg">{book.data.title}</h3>
-                    <TimesRead book={book.id} />
+                    <TimesRead book={book.id} chapters={book.data.chapters} />
                   </div>
                   <GenreBadge genre={book.data.genre} class="shrink-0" />
                 </div>
