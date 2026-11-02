@@ -23,7 +23,8 @@ Astro + Tailwind CSS v4 + TypeScript, brought onto bd-style after the fact.
 - Book summaries are Markdown in `src/content/bible/` (`NN-book-name.md`); the number prefix sets order and URL.
   Frontmatter `chapters` drives the tracker grid and must match `public.books` in Supabase.
 - Reading tracker: `src/lib/progress.ts` (one shared store); `/account` is sign-up (signed out) or the account page (signed in). Guests save to localStorage; signed-in readers
-  (Google via Supabase Auth) sync to Supabase and guest progress is merged on sign-in.
+  (Google via Supabase Auth) sync to Supabase and guest progress is merged on sign-in. A book with every chapter
+  checked counts as read and stays finished until the reader taps "Read again" (`complete_book`); never auto-reset.
 - Database schema, RLS and functions live in `supabase/migrations/`. Change them with a new migration file,
   never by editing an applied one.
 - Content is written from an Assemblies of God (Pentecostal) perspective.

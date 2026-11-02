@@ -16,6 +16,20 @@ const testaments = [
   { name: "Old Testament", books: books.slice(0, 39) },
   { name: "New Testament", books: books.slice(39) },
 ];
+
+const sum = (list: typeof books) =>
+  list.reduce((total, book) => total + book.data.chapters, 0);
+const totalChapters = sum(books);
+
+// Chapter counts and testament for the progress script.
+const bookInfo = Object.fromEntries(
+  testaments.flatMap(testament =>
+    testament.books.map(book => [
+      book.id,
+      { chapters: book.data.chapters, group: testament.name },
+    ])
+  )
+);
 ---
 
 <BaseLayout
@@ -52,11 +66,55 @@ const testaments = [
   </header>
 
   <div class="mx-auto w-full max-w-5xl space-y-10 px-4 py-8 sm:space-y-16 sm:px-6 sm:py-16">
+    <section
+      aria-labelledby="bible-progress-title"
+      class="rounded-lg border bg-surface p-4 sm:p-6"
+      data-bible-progress
+      data-books={JSON.stringify(bookInfo)}
+    >
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <h2 id="bible-progress-title" class="font-semibold text-lg sm:text-xl">
+          Whole Bible
+        </h2>
+        <p class="text-muted-foreground text-sm tabular-nums">
+          <span data-bible-read>0</span> of {totalChapters.toLocaleString("en-US")} chapters
+        </p>
+      </div>
+      <div class="mt-3 flex items-center gap-3">
+        <div
+          class="h-2.5 flex-1 overflow-hidden rounded-full bg-border"
+          role="progressbar"
+          aria-label="Whole Bible progress"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+          data-bible-bar
+        >
+          <div
+            class="h-full w-0 rounded-full bg-primary motion-safe:transition-[width] motion-safe:duration-500"
+            data-bible-fill
+          >
+          </div>
+        </div>
+        <span class="w-12 text-right font-semibold tabular-nums" data-bible-percent
+          >0%</span
+        >
+      </div>
+      <p class="mt-3 hidden text-muted-foreground text-sm" data-bible-times></p>
+    </section>
+
     {
-      
       testaments.map(testament => (
         <section>
-          <h2 class="mb-4 font-semibold text-xl sm:mb-6 sm:text-2xl">{testament.name}</h2>
+          <div class="mb-4 flex items-baseline justify-between gap-4 sm:mb-6">
+            <h2 class="font-semibold text-xl sm:text-2xl">{testament.name}</h2>
+            <p
+              class="text-muted-foreground text-sm tabular-nums"
+              data-group-progress={testament.name}
+            >
+              0 / {sum(testament.books).toLocaleString("en-US")}
+            </p>
+          </div>
           <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
             {testament.books.map(book => (
               <a
@@ -66,7 +124,7 @@ const testaments = [
                 <div class="flex items-center justify-between gap-3 sm:mb-2 sm:items-start">
                   <div class="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
                     <h3 class="font-medium sm:text-lg">{book.data.title}</h3>
-                    <TimesRead book={book.id} />
+                    <TimesRead book={book.id} chapters={book.data.chapters} />
                   </div>
                   <GenreBadge genre={book.data.genre} class="shrink-0" />
                 </div>
@@ -74,17 +132,19 @@ const testaments = [
                   {book.data.description}
                 </p>
                 <div
-                  class="mt-2 hidden items-center gap-3"
+                  class="mt-2 flex items-center gap-3"
                   data-card-progress={book.id}
                   data-chapters={book.data.chapters}
                 >
-                  <div class="h-1 flex-1 overflow-hidden rounded-full bg-muted">
+                  <div class="h-1 flex-1 overflow-hidden rounded-full bg-border">
                     <div class="h-full rounded-full bg-primary" data-card-fill />
                   </div>
                   <span
-                    class="text-muted-foreground text-xs tabular-nums"
+                    class="w-14 text-right text-muted-foreground text-xs tabular-nums"
                     data-card-count
-                  />
+                  >
+                    0 / {book.data.chapters}
+                  </span>
                 </div>
               </a>
             ))}
@@ -96,12 +156,18 @@ const testaments = [
 </BaseLayout>
 
 <script>
-  import { getProgressStore } from "@/lib/progress";
+  import { bibleProgress, getProgressStore } from "@/lib/progress";
 
-  // Show "12 / 50" and a bar on each book with a read-through in progress.
   const store = getProgressStore();
+  const panel = document.querySelector<HTMLElement>("[data-bible-progress]");
+  const books = JSON.parse(panel?.dataset.books ?? "{}") as Record<
+    string,
+    { chapters: number; group: string }
+  >;
+  const NUMBER = new Intl.NumberFormat("en-US");
 
   function render() {
+    // Each book: chapters read in its current read-through.
     for (const row of document.querySelectorAll<HTMLElement>(
       "[data-card-progress]"
     )) {
@@ -109,12 +175,45 @@ const testaments = [
       const read = Object.keys(
         store.getBook(row.dataset.cardProgress ?? "").current
       ).length;
-      row.classList.toggle("hidden", read === 0);
-      row.classList.toggle("flex", read > 0);
       const fill = row.querySelector<HTMLElement>("[data-card-fill]");
       if (fill) fill.style.width = `${(read / total) * 100}%`;
       const count = row.querySelector("[data-card-count]");
       if (count) count.textContent = `${read} / ${total}`;
+    }
+
+    // Whole Bible and each testament.
+    const bible = bibleProgress(book => store.getBook(book), books);
+    const percent = bible.total ? (bible.read / bible.total) * 100 : 0;
+    const shown =
+      percent > 0 && percent < 1 ? "<1" : String(Math.floor(percent));
+    const set = (selector: string, text: string) => {
+      const el = panel?.querySelector(selector);
+      if (el) el.textContent = text;
+    };
+    set("[data-bible-read]", NUMBER.format(bible.read));
+    set("[data-bible-percent]", `${shown}%`);
+    const fill = panel?.querySelector<HTMLElement>("[data-bible-fill]");
+    if (fill) fill.style.width = `${percent}%`;
+    panel
+      ?.querySelector("[data-bible-bar]")
+      ?.setAttribute("aria-valuenow", String(Math.floor(percent)));
+
+    const times = panel?.querySelector<HTMLElement>("[data-bible-times]");
+    if (times) {
+      times.classList.toggle("hidden", bible.timesRead === 0);
+      times.textContent =
+        bible.timesRead === 1
+          ? "You've read the whole Bible once. This bar tracks your next time through."
+          : `You've read the whole Bible ${bible.timesRead} times. This bar tracks your next time through.`;
+    }
+
+    for (const el of document.querySelectorAll<HTMLElement>(
+      "[data-group-progress]"
+    )) {
+      const group = bible.groups[el.dataset.groupProgress ?? ""];
+      if (group) {
+        el.textContent = `${NUMBER.format(group.read)} / ${NUMBER.format(group.total)}`;
+      }
     }
   }
 

@@ -5,14 +5,16 @@
  */
 type Props = {
   book: string;
+  chapters: number;
   class?: string;
 };
 
-const { book, class: className = "" } = Astro.props;
+const { book, chapters, class: className = "" } = Astro.props;
 ---
 
 <span
   data-times-read={book}
+  data-chapters={chapters}
   class:list={[
     "hidden shrink-0 items-center gap-1 rounded-full bg-accent px-2 py-0.5 font-medium text-accent-foreground text-xs tabular-nums",
     className,
@@ -42,7 +44,10 @@ const { book, class: className = "" } = Astro.props;
     for (const tag of document.querySelectorAll<HTMLElement>(
       "[data-times-read]"
     )) {
-      const times = store.timesRead(tag.dataset.timesRead ?? "");
+      const times = store.timesRead(
+        tag.dataset.timesRead ?? "",
+        Number(tag.dataset.chapters)
+      );
       tag.classList.toggle("hidden", times === 0);
       tag.classList.toggle("inline-flex", times > 0);
       tag.title = times === 1 ? "Read once" : `Read ${times} times`;

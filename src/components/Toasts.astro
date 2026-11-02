@@ -61,11 +61,13 @@
   }
 
   store.onEvent(event => {
-    if (event.type === "completed") {
+    if (event.type === "finished") {
       const times = event.times === 1 ? "once" : `${event.times} times`;
-      show(`Finished ${bookTitle(event.book)}! Read ${times}.`, {
+      show(`Finished ${bookTitle(event.book)}! Read ${times}.`);
+    } else if (event.type === "restarted") {
+      show(`Started read-through ${event.pass} of ${bookTitle(event.book)}.`, {
         label: "Undo",
-        run: () => void store.undoCompletion(event.book),
+        run: () => void store.undoRestart(event.book),
       });
     } else {
       show(`Couldn't sync: ${event.message}`);

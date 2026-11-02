@@ -23,9 +23,10 @@ create table public.book_completions (
   completed_at timestamptz not null default now()
 );
 
--- One row per chapter marked read. completion_id is null for the read-through
--- in progress; finishing a book stamps its rows with the completion's id, so
--- every chapter keeps the date it was read.
+-- One row per chapter marked read. completion_id is null for the current
+-- read-through. A read-through with every chapter checked counts as finished
+-- and stays that way until the reader chooses "Read again" (complete_book),
+-- which stamps its rows with a completion id; every chapter keeps its date.
 create table public.chapter_reads (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null default auth.uid() references auth.users (id) on delete cascade,
@@ -75,8 +76,8 @@ create policy "Update own chapter reads" on public.chapter_reads
 create policy "Delete own chapter reads" on public.chapter_reads
   for delete to authenticated using ((select auth.uid()) = user_id);
 
--- Finish a book: requires every chapter in the current read-through.
--- Records the completion and clears the checkmarks for the next read.
+-- "Read again": requires every chapter in the current read-through. Files it
+-- away as a completion and clears the checkmarks for the next read-through.
 create function public.complete_book(p_book text)
 returns uuid
 language plpgsql
@@ -112,9 +113,8 @@ begin
 end;
 $$;
 
--- Undo the most recent completion of a book (for a mistaken tap). Only allowed
--- before a new read-through has started. Restores the previous checkmarks minus
--- the chapter that finished the book.
+-- Undo "Read again" (for a mistaken tap). Only allowed before a chapter of the
+-- new read-through is checked. Brings back the finished read-through's checks.
 create function public.undo_last_completion(p_book text)
 returns void
 language plpgsql
@@ -123,7 +123,6 @@ set search_path = ''
 as $$
 declare
   v_completion uuid;
-  v_last uuid;
 begin
   if exists (
     select 1 from public.chapter_reads
@@ -142,14 +141,7 @@ begin
     raise exception 'No completed read of % to undo', p_book;
   end if;
 
-  select id into v_last
-  from public.chapter_reads
-  where completion_id = v_completion
-  order by read_at desc
-  limit 1;
-
   delete from public.book_completions where id = v_completion; -- reads revert to current
-  delete from public.chapter_reads where id = v_last;
 end;
 $$;
 

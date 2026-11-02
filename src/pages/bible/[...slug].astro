@@ -44,7 +44,11 @@ const toc = [
         >
           {book.data.title}
         </h1>
-        <TimesRead book={book.id} class="sm:text-sm" />
+        <TimesRead
+          book={book.id}
+          chapters={book.data.chapters}
+          class="sm:text-sm"
+        />
       </div>
       <p class="mt-1 text-muted-foreground sm:mt-2 sm:text-lg">{book.data.description}</p>
       <blockquote
