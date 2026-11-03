@@ -361,6 +361,26 @@ class ProgressStore {
     await this.client.auth.signOut();
   }
 
+  /**
+   * Permanently delete the signed-in account and all of its reading progress,
+   * then clear everything this app saved on this device. Throws on failure so
+   * the page can say so; nothing local is cleared unless the server delete
+   * succeeded.
+   */
+  async deleteAccount() {
+    if (!this.client || !this.account) return;
+    const { error } = await this.client.rpc("delete_my_account");
+    if (error) throw new Error(errorMessage(error));
+
+    removeKey(CACHE_KEY);
+    removeKey(GUEST_KEY);
+    // The account is gone; signOut can fail server-side, so clear locally too.
+    await this.client.auth.signOut({ scope: "local" });
+    this.account = null;
+    this.progress = {};
+    this.notify();
+  }
+
   private async init() {
     if (!this.client) {
       this.ready = true;

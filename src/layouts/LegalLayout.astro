@@ -1,0 +1,32 @@
+---
+/*
+ * Layout for /privacy and /terms (Markdown pages in src/pages/).
+ * Frontmatter: title, description, updated (e.g. "November 2, 2026").
+ */
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+type Props = {
+  frontmatter: {
+    title: string;
+    description: string;
+    updated: string;
+  };
+};
+
+const { title, description, updated } = Astro.props.frontmatter;
+---
+
+<BaseLayout title={`${title} - Bible Sidekick`} description={description}>
+  <header class="border-b bg-surface">
+    <div class="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
+      <h1 class="font-semibold text-3xl tracking-tight sm:text-4xl">{title}</h1>
+      <p class="mt-2 text-muted-foreground text-sm">Last updated {updated}</p>
+    </div>
+  </header>
+
+  <article
+    class="markdown-content mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-12"
+  >
+    <slot />
+  </article>
+</BaseLayout>
