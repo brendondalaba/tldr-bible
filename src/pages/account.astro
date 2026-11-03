@@ -102,6 +102,12 @@ const books = Object.fromEntries(
         New here? This creates your account. Already have one? This signs you
         in.
       </p>
+      <p class="mt-2 text-center text-muted-foreground text-xs">
+        By continuing, you confirm you're 13 or older and agree to the{" "}
+        <a href="/terms" class="font-medium text-primary hover:underline">Terms of Service</a>{" "}
+        and{" "}
+        <a href="/privacy" class="font-medium text-primary hover:underline">Privacy Policy</a>.
+      </p>
 
       <p
         role="alert"
@@ -178,6 +184,76 @@ const books = Object.fromEntries(
         Signing out keeps your reading safe in your account. This device will
         start fresh until you sign in again.
       </p>
+
+      <section
+        class="mt-12 rounded-lg border border-danger p-4"
+        aria-labelledby="delete-title"
+      >
+        <h2 id="delete-title" class="font-semibold">Delete account</h2>
+        <p class="mt-1 text-muted-foreground text-sm">
+          Permanently erases your account and all of your reading progress.
+          This can't be undone.
+        </p>
+        <button
+          type="button"
+          data-delete-start
+          class="mt-4 inline-flex h-10 items-center rounded-md border border-danger px-4 font-medium text-sm transition-colors duration-150 hover:bg-danger hover:text-danger-foreground"
+        >
+          Delete my account
+        </button>
+
+        <div class="mt-4 hidden" data-delete-confirm>
+          <label class="block font-medium text-sm" for="delete-input">
+            Type <span class="font-mono">DELETE</span> to confirm
+          </label>
+          <input
+            id="delete-input"
+            type="text"
+            autocomplete="off"
+            autocapitalize="characters"
+            spellcheck="false"
+            class="mt-2 h-10 w-full rounded-md border border-input bg-background px-3 font-mono"
+            data-delete-input
+          />
+          <div class="mt-3 flex gap-2">
+            <button
+              type="button"
+              disabled
+              data-delete-confirm-button
+              class="inline-flex h-10 flex-1 items-center justify-center rounded-md bg-danger px-4 font-medium text-danger-foreground text-sm transition-colors duration-150 hover:bg-danger/90 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              Permanently delete
+            </button>
+            <button
+              type="button"
+              data-delete-cancel
+              class="inline-flex h-10 items-center justify-center rounded-md border border-input px-4 text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
+            >
+              Cancel
+            </button>
+          </div>
+          <p
+            role="alert"
+            class="mt-3 hidden text-sm"
+            data-delete-error
+          ></p>
+        </div>
+      </section>
+    </section>
+
+    <!-- After deleting -->
+    <section data-state="deleted" hidden>
+      <h1 class="font-semibold text-3xl tracking-tight">Account deleted</h1>
+      <p class="mt-2 text-muted-foreground">
+        Your account and all of your reading progress have been erased.
+        You're welcome back any time.
+      </p>
+      <a
+        href="/"
+        class="mt-6 inline-flex h-10 items-center rounded-md bg-primary px-4 font-medium text-primary-foreground transition-colors duration-150 hover:bg-primary/90"
+      >
+        Back to Bible Sidekick
+      </a>
     </section>
   </div>
 </BaseLayout>
@@ -240,6 +316,56 @@ const books = Object.fromEntries(
     ?.querySelector("[data-sign-out]")
     ?.addEventListener("click", () => void store.signOut());
 
+  // Delete account: reveal a typed confirmation, then delete.
+  let deleted = false;
+  const deleteStart = page?.querySelector<HTMLButtonElement>(
+    "[data-delete-start]"
+  );
+  const deleteBox = page?.querySelector<HTMLElement>("[data-delete-confirm]");
+  const deleteInput =
+    page?.querySelector<HTMLInputElement>("[data-delete-input]");
+  const deleteButton = page?.querySelector<HTMLButtonElement>(
+    "[data-delete-confirm-button]"
+  );
+  const deleteError = page?.querySelector<HTMLElement>("[data-delete-error]");
+
+  deleteStart?.addEventListener("click", () => {
+    deleteStart.hidden = true;
+    deleteBox?.classList.remove("hidden");
+    deleteInput?.focus();
+  });
+  page?.querySelector("[data-delete-cancel]")?.addEventListener("click", () => {
+    deleteBox?.classList.add("hidden");
+    if (deleteStart) deleteStart.hidden = false;
+    if (deleteInput) deleteInput.value = "";
+    if (deleteButton) deleteButton.disabled = true;
+    deleteError?.classList.add("hidden");
+  });
+  deleteInput?.addEventListener("input", () => {
+    if (deleteButton) {
+      deleteButton.disabled = deleteInput.value.trim().toUpperCase() !== "DELETE";
+    }
+  });
+  deleteButton?.addEventListener("click", async () => {
+    deleteButton.disabled = true;
+    deleteButton.textContent = "Deleting…";
+    try {
+      deleted = true;
+      await store.deleteAccount();
+      render();
+    } catch (error) {
+      deleted = false;
+      deleteButton.disabled = false;
+      deleteButton.textContent = "Permanently delete";
+      if (deleteError) {
+        deleteError.textContent = `Couldn't delete your account: ${
+          error instanceof Error ? error.message : "please try again"
+        }. Nothing was removed.`;
+        deleteError.classList.remove("hidden");
+      }
+    }
+  });
+
   const DATE = new Intl.DateTimeFormat(undefined, {
     month: "short",
     day: "numeric",
@@ -248,8 +374,14 @@ const books = Object.fromEntries(
   function render() {
     const account = store.getAccount();
     const ready = store.isReady;
+    const deletedView = page?.querySelector<HTMLElement>(
+      '[data-state="deleted"]'
+    );
+    if (deletedView) deletedView.hidden = !(deleted && account === null);
     if (views.loading) views.loading.hidden = ready;
-    if (views.signedOut) views.signedOut.hidden = !ready || account !== null;
+    if (views.signedOut) {
+      views.signedOut.hidden = !ready || account !== null || deleted;
+    }
     if (views.signedIn) views.signedIn.hidden = !ready || account === null;
 
     page

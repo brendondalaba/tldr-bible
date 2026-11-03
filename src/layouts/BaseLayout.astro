@@ -106,7 +106,15 @@ const { title, description = "", showNav = true } = Astro.props;
       <div
         class="mx-auto w-full max-w-5xl px-4 pt-8 pb-[calc(2rem+env(safe-area-inset-bottom))] text-center text-muted-foreground text-sm sm:px-6"
       >
-        Find Jesus ❤️
+        <p>Find Jesus ❤️</p>
+        <nav aria-label="Legal" class="mt-3 flex justify-center gap-4 text-xs">
+          <a href="/privacy" class="hover:text-foreground hover:underline"
+            >Privacy Policy</a
+          >
+          <a href="/terms" class="hover:text-foreground hover:underline"
+            >Terms of Service</a
+          >
+        </nav>
       </div>
     </footer>
     <Toasts />
