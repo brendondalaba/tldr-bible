@@ -25,6 +25,9 @@ Astro + Tailwind CSS v4 + TypeScript, brought onto bd-style after the fact.
 - Reading tracker: `src/lib/progress.ts` (one shared store); `/account` is sign-up (signed out) or the account page (signed in). Guests save to localStorage; signed-in readers
   (Google via Supabase Auth) sync to Supabase and guest progress is merged on sign-in. A book with every chapter
   checked counts as read and stays finished until the reader taps "Read again" (`complete_book`); never auto-reset.
+- Sync: changes apply locally and go into a per-account queue in localStorage (`bs-progress-queue-v1`) that is
+  sent in order and retried on reconnect/focus/next load; focus and a 2-minute timer pull other devices' changes.
+  Never write to Supabase outside `flushQueue`.
 - Database schema, RLS and functions live in `supabase/migrations/`. Change them with a new migration file,
   never by editing an applied one.
 - Content is written from an Assemblies of God (Pentecostal) perspective.

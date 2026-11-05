@@ -16,6 +16,12 @@ import {
  * Signed in: saved to Supabase and synced across devices. Guest progress is
  * merged into the account on sign-in. A local copy is cached for instant paint.
  *
+ * Sync: every change is applied on screen at once and added to a queue that is
+ * saved on the device and sent to Supabase in order. If the phone is offline or
+ * the request fails, the queue is kept and retried (on reconnect, when the app
+ * comes back to the foreground, and on the next visit), so taps are never lost.
+ * Coming back to the app also pulls changes made on other devices.
+ *
  * Every page shares one store; UI subscribes and re-renders on change.
  */
 
@@ -58,6 +64,23 @@ type EventListener = (event: ProgressEvent) => void;
 
 const GUEST_KEY = "bs-progress-guest-v1";
 const CACHE_KEY = "bs-progress-account-v1";
+/** Which account the cache belongs to, so another account never sees it. */
+const CACHE_OWNER_KEY = "bs-progress-account-owner-v1";
+/** Changes not yet confirmed by the server, per account id. */
+const QUEUE_KEY = "bs-progress-queue-v1";
+
+/** Refresh from the server at most this often when the app regains focus. */
+const REFRESH_MIN_MS = 10_000;
+/** And every so often while the page stays open and visible. */
+const REFRESH_EVERY_MS = 120_000;
+
+type PendingChange =
+  | { type: "check"; book: string; chapter: number; readAt: string }
+  | { type: "uncheck"; book: string; chapter: number }
+  | { type: "restart"; book: string }
+  | { type: "undo-restart"; book: string };
+
+export type SyncStatus = "guest" | "synced" | "syncing" | "pending";
 
 /*
  * Public by design: the URL and publishable key ship to every visitor's browser.
@@ -96,6 +119,83 @@ function removeKey(key: string) {
   } catch {}
 }
 
+function readText(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeText(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {}
+}
+
+function readQueues(): Record<string, PendingChange[]> {
+  try {
+    const raw = localStorage.getItem(QUEUE_KEY);
+    return raw ? (JSON.parse(raw) as Record<string, PendingChange[]>) : {};
+  } catch {
+    return {};
+  }
+}
+
+function writeQueues(queues: Record<string, PendingChange[]>) {
+  try {
+    localStorage.setItem(QUEUE_KEY, JSON.stringify(queues));
+  } catch {}
+}
+
+/** Apply one change to progress, exactly as the server will. */
+function applyChange(progress: Progress, change: PendingChange): Progress {
+  const before = progress[change.book] ?? emptyBook();
+  const current = { ...before.current };
+  let next: BookProgress = before;
+
+  if (change.type === "check") {
+    current[change.chapter] = change.readAt;
+    next = { ...before, current };
+  } else if (change.type === "uncheck") {
+    delete current[change.chapter];
+    next = { ...before, current };
+  } else if (change.type === "restart") {
+    if (Object.keys(before.current).length === 0) return progress;
+    const reads = Object.entries(before.current).map(([chapter, readAt]) => ({
+      chapter: Number(chapter),
+      readAt,
+    }));
+    next = {
+      current: {},
+      completions: [
+        ...before.completions,
+        { id: localId(), completedAt: new Date().toISOString(), reads },
+      ],
+    };
+  } else {
+    const last = before.completions.at(-1);
+    if (!last || Object.keys(before.current).length > 0) return progress;
+    const restored: Record<number, string> = {};
+    for (const read of last.reads) restored[read.chapter] = read.readAt;
+    next = { current: restored, completions: before.completions.slice(0, -1) };
+  }
+  return { ...progress, [change.book]: next };
+}
+
+/**
+ * Errors worth retrying later: no connection, a timeout, or an expired login
+ * that Supabase will refresh. Anything else (e.g. a rule the server enforces)
+ * won't succeed on retry.
+ */
+function isRetryable(error: { code?: string; message?: string }): boolean {
+  if (typeof navigator !== "undefined" && navigator.onLine === false) {
+    return true;
+  }
+  const code = error.code ?? "";
+  return code === "" || code.startsWith("PGRST3") || code === "57014";
+}
+
 function emptyBook(): BookProgress {
   return { current: {}, completions: [] };
 }
@@ -128,6 +228,14 @@ class ProgressStore {
   private eventListeners = new Set<EventListener>();
   private client: SupabaseClient | null = null;
   private googleEnabled: Promise<boolean> | undefined;
+  private userId: string | null = null;
+  private syncing = false;
+  private syncAgain = false;
+  private lastRefresh = 0;
+  /** Set on sign-in: this device's signed-out progress still needs uploading. */
+  private needsGuestImport = false;
+  /** Session changes run one at a time so guest progress is imported once. */
+  private sessionTask: Promise<void> = Promise.resolve();
 
   constructor() {
     if (SUPABASE_URL && SUPABASE_KEY) {
@@ -153,6 +261,17 @@ class ProgressStore {
 
   getAccount(): Account {
     return this.account;
+  }
+
+  /** Changes on this device the server hasn't confirmed yet. */
+  pendingCount(): number {
+    return this.userId ? (readQueues()[this.userId]?.length ?? 0) : 0;
+  }
+
+  getSyncStatus(): SyncStatus {
+    if (!this.account) return "guest";
+    if (this.syncing) return "syncing";
+    return this.pendingCount() > 0 ? "pending" : "synced";
   }
 
   hasProgress(): boolean {
@@ -244,27 +363,38 @@ class ProgressStore {
   }
 
   private save() {
-    writeJson(this.account ? CACHE_KEY : GUEST_KEY, this.progress);
+    if (this.account && this.userId) {
+      writeJson(CACHE_KEY, this.progress);
+      writeText(CACHE_OWNER_KEY, this.userId);
+    } else {
+      writeJson(GUEST_KEY, this.progress);
+    }
   }
 
-  private setBook(book: string, value: BookProgress) {
-    this.progress = { ...this.progress, [book]: value };
+  /** Apply a change now and, when signed in, queue it for the server. */
+  private change(change: PendingChange) {
+    this.progress = applyChange(this.progress, change);
     this.save();
+    if (this.account && this.userId) {
+      const queues = readQueues();
+      queues[this.userId] = [...(queues[this.userId] ?? []), change];
+      writeQueues(queues);
+      void this.sync();
+    }
     this.notify();
   }
 
   // ----- writing -----
 
   async toggleChapter(book: string, chapter: number, totalChapters: number) {
-    const before = this.getBook(book);
-    const isRead = chapter in before.current;
-    const current = { ...before.current };
+    const isRead = chapter in this.getBook(book).current;
+    this.change(
+      isRead
+        ? { type: "uncheck", book, chapter }
+        : { type: "check", book, chapter, readAt: new Date().toISOString() }
+    );
 
-    if (isRead) delete current[chapter];
-    else current[chapter] = new Date().toISOString();
-
-    const after = { ...before, current };
-    this.setBook(book, after);
+    const after = this.getBook(book);
     if (!isRead && isFinished(after, totalChapters)) {
       this.emit({
         type: "finished",
@@ -272,75 +402,131 @@ class ProgressStore {
         times: passesFinished(after, totalChapters),
       });
     }
-
-    if (!this.account || !this.client) return;
-
-    try {
-      const { error } = isRead
-        ? await this.client
-            .from("chapter_reads")
-            .delete()
-            .eq("book", book)
-            .eq("chapter", chapter)
-            .is("completion_id", null)
-        : await this.client
-            .from("chapter_reads")
-            .insert({ book, chapter, read_at: current[chapter] });
-      if (error) throw error;
-    } catch (error) {
-      this.emit({ type: "error", message: errorMessage(error) });
-      await this.reloadBook(book);
-    }
   }
 
   /** "Read again": file away the finished read-through and start a new one. */
   async restartBook(book: string, totalChapters: number) {
     const before = this.getBook(book);
     if (!isFinished(before, totalChapters)) return;
-
-    const reads = Object.entries(before.current).map(([chapter, readAt]) => ({
-      chapter: Number(chapter),
-      readAt,
-    }));
-    this.setBook(book, {
-      current: {},
-      completions: [
-        ...before.completions,
-        { id: localId(), completedAt: new Date().toISOString(), reads },
-      ],
-    });
+    this.change({ type: "restart", book });
     this.emit({
       type: "restarted",
       book,
       pass: before.completions.length + 2,
     });
-
-    if (!this.account || !this.client) return;
-    const { error } = await this.client.rpc("complete_book", { p_book: book });
-    if (error) this.emit({ type: "error", message: errorMessage(error) });
-    await this.reloadBook(book);
   }
 
   /** Undo "Read again": bring the finished read-through back. */
   async undoRestart(book: string) {
     if (!this.canUndoRestart(book)) return;
-    const before = this.getBook(book);
-    const last = before.completions.at(-1);
-    if (!last) return;
+    this.change({ type: "undo-restart", book });
+  }
 
-    const current: Record<number, string> = {};
-    for (const read of last.reads) current[read.chapter] = read.readAt;
-    this.setBook(book, {
-      current,
-      completions: before.completions.slice(0, -1),
-    });
+  // ----- syncing -----
 
-    if (!this.account || !this.client) return;
-    const { error } = await this.client.rpc("undo_last_completion", {
-      p_book: book,
+  /**
+   * Send queued changes in order, then pull the latest from the server. Safe to
+   * call any time; overlapping calls are merged.
+   */
+  async sync({ refresh = true } = {}) {
+    if (!this.client || !this.account || !this.userId) return;
+    if (this.syncing) {
+      this.syncAgain = true;
+      return;
+    }
+    this.syncing = true;
+    this.notify();
+    try {
+      do {
+        this.syncAgain = false;
+        const sent = await this.flushQueue();
+        if (sent && this.needsGuestImport) {
+          await this.importGuestProgress();
+          this.needsGuestImport = false;
+        }
+        if (sent && refresh) await this.reloadAll();
+      } while (this.syncAgain);
+    } catch (error) {
+      this.emit({ type: "error", message: errorMessage(error) });
+    } finally {
+      this.syncing = false;
+      this.notify();
+    }
+  }
+
+  /**
+   * Send this account's queued changes. Returns false if it stopped early
+   * because the connection is down (the rest stay queued for next time).
+   */
+  private async flushQueue(): Promise<boolean> {
+    const client = this.client;
+    const userId = this.userId;
+    if (!client || !userId) return false;
+
+    while (true) {
+      const queue = readQueues()[userId] ?? [];
+      const next = queue[0];
+      if (!next) return true;
+
+      let result: { error: { code?: string; message?: string } | null };
+      try {
+        if (next.type === "check") {
+          result = await client.from("chapter_reads").insert({
+            book: next.book,
+            chapter: next.chapter,
+            read_at: next.readAt,
+          });
+          // Already checked (e.g. on another device): that's the goal anyway.
+          if (result.error?.code === "23505") result = { error: null };
+        } else if (next.type === "uncheck") {
+          result = await client
+            .from("chapter_reads")
+            .delete()
+            .eq("book", next.book)
+            .eq("chapter", next.chapter)
+            .is("completion_id", null);
+        } else if (next.type === "restart") {
+          result = await client.rpc("complete_book", { p_book: next.book });
+        } else {
+          result = await client.rpc("undo_last_completion", {
+            p_book: next.book,
+          });
+        }
+      } catch (error) {
+        result = { error: { message: errorMessage(error) } };
+      }
+
+      if (result.error && isRetryable(result.error)) return false;
+      if (result.error) {
+        // The server won't accept this one (e.g. the book changed on another
+        // device). Drop it; the refresh that follows shows the true state.
+        this.emit({ type: "error", message: errorMessage(result.error) });
+      }
+      const queues = readQueues();
+      queues[userId] = (queues[userId] ?? []).slice(1);
+      if (queues[userId].length === 0) delete queues[userId];
+      writeQueues(queues);
+    }
+  }
+
+  /** Pull from the server when the app is opened again or reconnects. */
+  private watchForChanges() {
+    const refresh = (force = false) => {
+      if (!this.account) return;
+      if (!force && Date.now() - this.lastRefresh < REFRESH_MIN_MS) return;
+      void this.sync();
+    };
+    window.addEventListener("online", () => refresh(true));
+    window.addEventListener("focus", () => refresh());
+    window.addEventListener("pageshow", event => {
+      if (event.persisted) refresh(true);
     });
-    if (error) this.emit({ type: "error", message: errorMessage(error) });
-    await this.reloadBook(book);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") refresh();
+    });
+    window.setInterval(() => {
+      if (document.visibilityState === "visible") refresh(true);
+    }, REFRESH_EVERY_MS);
   }
 
   // ----- accounts -----
@@ -351,7 +537,8 @@ class ProgressStore {
     const redirectTo = new URL(returnTo, window.location.origin).href;
     const { error } = await this.client.auth.signInWithOAuth({
       provider: "google",
-      options: { redirectTo },
+      // Always ask which Google account, so nobody lands in the wrong one.
+      options: { redirectTo, queryParams: { prompt: "select_account" } },
     });
     if (error) this.emit({ type: "error", message: errorMessage(error) });
   }
@@ -373,10 +560,17 @@ class ProgressStore {
     if (error) throw new Error(errorMessage(error));
 
     removeKey(CACHE_KEY);
+    removeKey(CACHE_OWNER_KEY);
     removeKey(GUEST_KEY);
+    if (this.userId) {
+      const queues = readQueues();
+      delete queues[this.userId];
+      writeQueues(queues);
+    }
     // The account is gone; signOut can fail server-side, so clear locally too.
     await this.client.auth.signOut({ scope: "local" });
     this.account = null;
+    this.userId = null;
     this.progress = {};
     this.notify();
   }
@@ -388,13 +582,16 @@ class ProgressStore {
       return;
     }
 
+    // Listen first, so "back online" isn't missed while the first sync waits.
+    this.watchForChanges();
     const { data } = await this.client.auth.getSession();
-    await this.handleSession(data.session);
+    await this.queueSession(data.session);
 
     this.client.auth.onAuthStateChange((event, session) => {
-      if (event === "SIGNED_IN" || event === "SIGNED_OUT") {
+      const changedUser = (session?.user.id ?? null) !== this.userId;
+      if (event === "SIGNED_OUT" || (event === "SIGNED_IN" && changedUser)) {
         // Run outside the auth callback, as Supabase recommends.
-        setTimeout(() => void this.handleSession(session), 0);
+        setTimeout(() => void this.queueSession(session), 0);
       }
     });
 
@@ -406,12 +603,20 @@ class ProgressStore {
     }
   }
 
-  private async handleSession(session: Session | null) {
-    const wasSignedIn = this.account !== null;
+  private queueSession(session: Session | null): Promise<void> {
+    this.sessionTask = this.sessionTask.then(() => this.handleSession(session));
+    return this.sessionTask;
+  }
 
+  private async handleSession(session: Session | null) {
     if (!session) {
+      const wasSignedIn = this.account !== null;
       this.account = null;
-      if (wasSignedIn) removeKey(CACHE_KEY);
+      this.userId = null;
+      if (wasSignedIn) {
+        removeKey(CACHE_KEY);
+        removeKey(CACHE_OWNER_KEY);
+      }
       this.progress = readJson(GUEST_KEY);
       this.ready = true;
       this.notify();
@@ -419,19 +624,34 @@ class ProgressStore {
     }
 
     const meta = session.user.user_metadata as Record<string, unknown>;
+    this.userId = session.user.id;
     this.account = {
       email: session.user.email ?? "",
       name: String(meta.full_name ?? meta.name ?? session.user.email ?? ""),
     };
 
-    try {
-      await this.importGuestProgress();
-      await this.reloadAll();
-    } catch (error) {
-      this.emit({ type: "error", message: errorMessage(error) });
+    // A different account's cached progress must never show, even briefly.
+    if (readText(CACHE_OWNER_KEY) !== this.userId) {
+      removeKey(CACHE_KEY);
+      this.progress = {};
+    } else {
+      this.progress = readJson(CACHE_KEY);
     }
-    this.ready = true;
+    this.replayQueue();
     this.notify();
+
+    // Show what we have right away; the server catches up behind it.
+    this.ready = true;
+    this.needsGuestImport = true;
+    await this.sync();
+  }
+
+  /** Show queued (not yet confirmed) changes on top of what we have. */
+  private replayQueue() {
+    if (!this.userId) return;
+    for (const change of readQueues()[this.userId] ?? []) {
+      this.progress = applyChange(this.progress, change);
+    }
   }
 
   private async importGuestProgress() {
@@ -466,23 +686,18 @@ class ProgressStore {
   }
 
   private async reloadAll() {
-    this.progress = await this.fetchProgress();
+    const userId = this.userId;
+    const fresh = await this.fetchProgress();
+    if (!this.account || this.userId !== userId) return; // signed out meanwhile
+    this.progress = fresh;
+    this.replayQueue();
+    this.lastRefresh = Date.now();
     this.save();
     this.notify();
   }
 
-  private async reloadBook(book: string) {
-    if (!this.account) return;
-    try {
-      const fresh = await this.fetchProgress(book);
-      this.setBook(book, fresh[book] ?? emptyBook());
-    } catch (error) {
-      this.emit({ type: "error", message: errorMessage(error) });
-    }
-  }
-
   /** Reads every row for this user (paged; the API returns 1,000 at a time). */
-  private async fetchProgress(book?: string): Promise<Progress> {
+  private async fetchProgress(): Promise<Progress> {
     if (!this.client) return {};
     const PAGE = 1000;
 
@@ -496,12 +711,11 @@ class ProgressStore {
 
     const completions: CompletionRow[] = [];
     for (let from = 0; ; from += PAGE) {
-      let query = this.client
+      const query = this.client
         .from("book_completions")
         .select("id, book, completed_at")
         .order("completed_at")
         .range(from, from + PAGE - 1);
-      if (book) query = query.eq("book", book);
       const { data, error } = await query;
       if (error) throw error;
       completions.push(...(data as CompletionRow[]));
@@ -510,12 +724,11 @@ class ProgressStore {
 
     const reads: ReadRow[] = [];
     for (let from = 0; ; from += PAGE) {
-      let query = this.client
+      const query = this.client
         .from("chapter_reads")
         .select("book, chapter, read_at, completion_id")
         .order("read_at")
         .range(from, from + PAGE - 1);
-      if (book) query = query.eq("book", book);
       const { data, error } = await query;
       if (error) throw error;
       reads.push(...(data as ReadRow[]));
