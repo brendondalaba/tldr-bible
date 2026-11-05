@@ -132,6 +132,17 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
     </a>{" "}
     to keep it in sync across your phone and computer.
   </p>
+
+  <p
+    class="hidden items-center gap-2 text-muted-foreground text-xs"
+    data-sync-note
+  >
+    <span
+      class="size-2 shrink-0 rounded-full bg-success"
+      data-sync-dot
+      aria-hidden="true"></span>
+    <span data-sync-text></span>
+  </p>
 </div>
 
 <script>
@@ -160,6 +171,9 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
     const finishedBox = root.querySelector<HTMLElement>("[data-finished]");
     const hint = root.querySelector<HTMLElement>("[data-tracker-hint]");
     const guestNote = root.querySelector<HTMLElement>("[data-guest-note]");
+    const syncNote = root.querySelector<HTMLElement>("[data-sync-note]");
+    const syncDot = root.querySelector<HTMLElement>("[data-sync-dot]");
+    const syncText = root.querySelector<HTMLElement>("[data-sync-text]");
 
     const render = () => {
       const progress = store.getBook(book);
@@ -227,6 +241,24 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
         "hidden",
         !store.canSignIn || !store.isReady || store.getAccount() !== null
       );
+
+      // Signed in: say which account this device syncs to, and whether
+      // anything is still waiting to be saved.
+      const account = store.getAccount();
+      syncNote?.classList.toggle("hidden", !account);
+      syncNote?.classList.toggle("flex", Boolean(account));
+      if (account && syncText && syncDot) {
+        const status = store.getSyncStatus();
+        const pending = store.pendingCount();
+        syncDot.classList.toggle("bg-success", status === "synced");
+        syncDot.classList.toggle("bg-warning", status !== "synced");
+        syncText.textContent =
+          status === "pending"
+            ? `${pending} ${pending === 1 ? "change" : "changes"} saved on this device, waiting to sync to ${account.email}`
+            : status === "syncing"
+              ? `Syncing to ${account.email}…`
+              : `Synced to ${account.email}`;
+      }
     };
 
     for (const button of buttons) {
