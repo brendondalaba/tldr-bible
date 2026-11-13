@@ -32,6 +32,12 @@ const toc = [
 >
   <header class="border-b bg-surface">
     <div class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-12">
+      <a
+        href="/"
+        class="-ml-2 mb-4 inline-flex h-8 items-center gap-1 rounded-md px-2 text-muted-foreground text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground sm:mb-6"
+      >
+        <span aria-hidden="true">←</span> All books
+      </a>
       <div class="flex items-center gap-3">
         <GenreBadge genre={book.data.genre} />
         <span class="text-muted-foreground text-sm">{book.data.group}</span>
