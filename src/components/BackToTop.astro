@@ -1,0 +1,43 @@
+<!--
+  Floating "back to top" button, bottom right. Hidden while the page is already
+  scrolled to the top. Sits under toasts (z-30 vs z-40) so a toast never hides
+  behind it. Scrolling is smooth unless the reader prefers reduced motion
+  (html scroll-behavior in global.css).
+-->
+<button
+  type="button"
+  data-back-to-top
+  aria-label="Back to top"
+  title="Back to top"
+  class="invisible fixed right-[calc(1rem+env(safe-area-inset-right))] bottom-[calc(1rem+env(safe-area-inset-bottom))] z-30 inline-flex size-11 items-center justify-center rounded-full border bg-surface text-surface-foreground opacity-0 shadow-sm transition-[opacity,visibility,background-color,color] duration-150 hover:bg-accent hover:text-accent-foreground data-visible:visible data-visible:opacity-100"
+>
+  <svg
+    class="size-5"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 19V5M5 12l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>("[data-back-to-top]");
+
+  if (button) {
+    const update = () => {
+      button.toggleAttribute("data-visible", window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+
+    button.addEventListener("click", () => {
+      window.scrollTo({ top: 0 });
+    });
+  }
+</script>

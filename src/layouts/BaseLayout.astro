@@ -1,5 +1,6 @@
 ---
 import AccountMenu from "@/components/AccountMenu.astro";
+import BackToTop from "@/components/BackToTop.astro";
 import Logo from "@/components/Logo.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
 import Toasts from "@/components/Toasts.astro";
@@ -117,6 +118,7 @@ const { title, description = "", showNav = true } = Astro.props;
         </nav>
       </div>
     </footer>
+    <BackToTop />
     <Toasts />
   </body>
 </html>
