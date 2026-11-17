@@ -1,0 +1,129 @@
+---
+/*
+ * Timeline tab: where this book's events fall among the other 65.
+ * Lists books that happened before it, around the same time, and after it,
+ * oldest first. Long lists show the nearest few and fold away the rest.
+ */
+import { getCollection } from "astro:content";
+import TimelineList from "@/components/TimelineList.astro";
+import {
+  type BookSpan,
+  compareSpans,
+  relation,
+  spanLabel,
+  TIMELINE,
+} from "@/data/timeline";
+
+type Props = {
+  book: string;
+  title: string;
+};
+
+type Entry = { id: string; title: string; span: BookSpan };
+
+const NEAREST = 5;
+
+const { book, title } = Astro.props;
+const span = TIMELINE[book];
+if (!span) throw new Error(`No timeline entry for ${book}`);
+
+const others: Entry[] = (await getCollection("bible"))
+  .filter(entry => entry.id !== book)
+  .map(entry => {
+    const other = TIMELINE[entry.id];
+    if (!other) throw new Error(`No timeline entry for ${entry.id}`);
+    return { id: entry.id, title: entry.data.title, span: other };
+  })
+  .sort((a, b) => compareSpans(a.span, b.span) || a.id.localeCompare(b.id));
+
+const before = others.filter(
+  o => relation(book, span, o.id, o.span) === "before"
+);
+const same = others.filter(
+  o => relation(book, span, o.id, o.span) === "same"
+);
+const after = others.filter(
+  o => relation(book, span, o.id, o.span) === "after"
+);
+
+// Show the books nearest this one; fold away the far ends.
+const earlier = before.slice(0, Math.max(0, before.length - NEAREST));
+const justBefore = before.slice(-NEAREST);
+const justAfter = after.slice(0, NEAREST);
+const later = after.slice(NEAREST);
+const plural = (n: number) => (n === 1 ? "book" : "books");
+---
+
+<div class="space-y-6">
+  <section class="rounded-lg border border-primary bg-accent p-4 text-accent-foreground sm:p-5">
+    <p class="font-medium text-xs uppercase tracking-wider">
+      Where {title} fits
+    </p>
+    <p class="mt-1 font-semibold text-2xl tracking-tight">{spanLabel(span)}</p>
+    {span.note && <p class="mt-2 text-sm">{span.note}</p>}
+  </section>
+
+  {
+    before.length > 0 && (
+      <section aria-labelledby="timeline-before">
+        <h2 id="timeline-before" class="font-semibold">
+          Happened before{" "}
+          <span class="font-normal text-muted-foreground text-sm">
+            · {before.length} {plural(before.length)}
+          </span>
+        </h2>
+        {earlier.length > 0 && (
+          <details class="timeline-more mt-3">
+            <summary class="cursor-pointer font-medium text-primary text-sm">
+              Show {earlier.length} earlier {plural(earlier.length)}
+            </summary>
+            <TimelineList entries={earlier} />
+          </details>
+        )}
+        <TimelineList entries={justBefore} />
+      </section>
+    )
+  }
+
+  {
+    same.length > 0 && (
+      <section aria-labelledby="timeline-same">
+        <h2 id="timeline-same" class="font-semibold">
+          Around the same time{" "}
+          <span class="font-normal text-muted-foreground text-sm">
+            · {same.length} {plural(same.length)}
+          </span>
+        </h2>
+        <TimelineList entries={same} />
+      </section>
+    )
+  }
+
+  {
+    after.length > 0 && (
+      <section aria-labelledby="timeline-after">
+        <h2 id="timeline-after" class="font-semibold">
+          Happened after{" "}
+          <span class="font-normal text-muted-foreground text-sm">
+            · {after.length} {plural(after.length)}
+          </span>
+        </h2>
+        <TimelineList entries={justAfter} />
+        {later.length > 0 && (
+          <details class="timeline-more mt-3">
+            <summary class="cursor-pointer font-medium text-primary text-sm">
+              Show {later.length} later {plural(later.length)}
+            </summary>
+            <TimelineList entries={later} />
+          </details>
+        )}
+      </section>
+    )
+  }
+
+  <p class="text-muted-foreground text-xs">
+    Dates are approximate and follow traditional dating. Letters are placed
+    when they were written. Books whose events overlap are listed as around the
+    same time.
+  </p>
+</div>

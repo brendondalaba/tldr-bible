@@ -1,0 +1,26 @@
+---
+/* One run of books on the Timeline tab, oldest first. */
+import { type BookSpan, spanLabel } from "@/data/timeline";
+
+type Props = {
+  entries: { id: string; title: string; span: BookSpan }[];
+  class?: string;
+};
+
+const { entries, class: className = "mt-3" } = Astro.props;
+---
+
+<ol class:list={["timeline", className]}>
+  {
+    entries.map(entry => (
+      <li>
+        <a href={`/bible/${entry.id}#timeline`}>
+          <span class="font-medium">{entry.title}</span>
+          <span class="text-muted-foreground text-xs">
+            {spanLabel(entry.span)}
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ol>
