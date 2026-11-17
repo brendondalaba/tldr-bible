@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
+import BookTimeline from "@/components/BookTimeline.astro";
 import ChapterTracker from "@/components/ChapterTracker.astro";
 import GenreBadge from "@/components/GenreBadge.astro";
 import TimesRead from "@/components/TimesRead.astro";
@@ -69,7 +70,7 @@ const toc = [
     <div
       role="tablist"
       aria-label={`${book.data.title} views`}
-      class="grid grid-cols-2 gap-1 rounded-lg bg-muted p-1 sm:inline-grid sm:w-80"
+      class="grid grid-cols-3 gap-1 rounded-lg bg-muted p-1 sm:inline-grid sm:w-[28rem]"
     >
       <button
         type="button"
@@ -93,6 +94,18 @@ const toc = [
         class="book-tab h-9 rounded-md font-medium text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
       >
         Breakdown
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tab-timeline"
+        aria-controls="panel-timeline"
+        aria-selected="false"
+        tabindex="-1"
+        data-tab="timeline"
+        class="book-tab h-9 rounded-md font-medium text-muted-foreground text-sm transition-colors duration-150 hover:text-foreground"
+      >
+        Timeline
       </button>
     </div>
   </div>
@@ -212,6 +225,18 @@ const toc = [
     </div>
   </div>
 
+  <div
+    id="panel-timeline"
+    role="tabpanel"
+    aria-labelledby="tab-timeline"
+    hidden
+    class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 sm:py-8"
+  >
+    <div class="max-w-2xl">
+      <BookTimeline book={book.id} title={book.data.title} />
+    </div>
+  </div>
+
   <nav
     aria-label="Other books"
     class="mx-auto grid w-full max-w-5xl grid-cols-2 gap-3 px-4 pb-12 sm:px-6"
@@ -244,18 +269,22 @@ const toc = [
 </BaseLayout>
 
 <script>
-  // Tracker / Breakdown tabs. Tracker is the default; "#breakdown" or a link to
-  // any Breakdown section (e.g. "#key-verses") opens Breakdown.
-  type Tab = "tracker" | "breakdown";
+  // Tracker / Breakdown / Timeline tabs. Tracker is the default; "#breakdown"
+  // or a link to any Breakdown section (e.g. "#key-verses") opens Breakdown,
+  // and "#timeline" opens Timeline.
+  type Tab = "tracker" | "breakdown" | "timeline";
+  const ORDER: Tab[] = ["tracker", "breakdown", "timeline"];
   const tabs = document.querySelectorAll<HTMLButtonElement>("[data-tab]");
   const panels: Record<Tab, HTMLElement | null> = {
     tracker: document.getElementById("panel-tracker"),
     breakdown: document.getElementById("panel-breakdown"),
+    timeline: document.getElementById("panel-timeline"),
   };
 
   function tabForHash(hash: string): Tab {
     const id = decodeURIComponent(hash.slice(1));
     if (id === "breakdown") return "breakdown";
+    if (id === "timeline") return "timeline";
     if (id && panels.breakdown?.querySelector(`[id="${CSS.escape(id)}"]`)) {
       return "breakdown";
     }
@@ -273,7 +302,7 @@ const toc = [
     }
     if (updateUrl) {
       const url = new URL(window.location.href);
-      url.hash = tab === "breakdown" ? "breakdown" : "";
+      url.hash = tab === "tracker" ? "" : tab;
       history.replaceState(history.state, "", url);
     }
   }
@@ -285,7 +314,9 @@ const toc = [
     // Arrow keys move between tabs, as screen-reader users expect.
     button.addEventListener("keydown", event => {
       if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
-      const next = button.dataset.tab === "tracker" ? "breakdown" : "tracker";
+      const step = event.key === "ArrowRight" ? 1 : -1;
+      const index = ORDER.indexOf(button.dataset.tab as Tab);
+      const next = ORDER[(index + step + ORDER.length) % ORDER.length];
       selectTab(next);
       document.querySelector<HTMLElement>(`[data-tab="${next}"]`)?.focus();
     });
