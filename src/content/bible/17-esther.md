@@ -25,7 +25,7 @@ It was likely written soon after the events it describes, during the Persian Emp
 
 ## Era / Date
 
-Takes place around **483–473 BC**, during King Xerxes’ reign — between the time of **Ezra 6** and **Nehemiah 7**.
+Takes place around **483–473 BC**, during King Xerxes’ reign — between the time of **Ezra 6** and **Ezra 7**.
 
 ## Audience
 
