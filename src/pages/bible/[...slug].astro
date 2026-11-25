@@ -45,7 +45,7 @@ const toc = [
       </div>
       <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
         <h1
-          class="font-semibold text-3xl tracking-tight sm:text-5xl"
+          class="text-balance font-semibold text-3xl tracking-tight sm:text-4xl lg:text-5xl"
           data-book-title={book.id}
           data-title={book.data.title}
         >
@@ -245,7 +245,7 @@ const toc = [
       prev ? (
         <a
           href={`/bible/${prev.id}`}
-          class="rounded-lg border bg-surface p-4 transition-colors duration-150 hover:border-primary"
+          class="rounded-xl border bg-surface p-4 transition-colors duration-150 hover:border-primary"
         >
           <span class="block text-muted-foreground text-xs">← Previous</span>
           <span class="font-medium">{prev.data.title}</span>
@@ -258,7 +258,7 @@ const toc = [
       next && (
         <a
           href={`/bible/${next.id}`}
-          class="rounded-lg border bg-surface p-4 text-right transition-colors duration-150 hover:border-primary"
+          class="rounded-xl border bg-surface p-4 text-right transition-colors duration-150 hover:border-primary"
         >
           <span class="block text-muted-foreground text-xs">Next →</span>
           <span class="font-medium">{next.data.title}</span>

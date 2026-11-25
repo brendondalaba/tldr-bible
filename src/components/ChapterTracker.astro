@@ -20,7 +20,7 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
   data-chapters={chapters}
   class="space-y-6"
 >
-  <section class="rounded-lg border bg-surface p-4 sm:p-5">
+  <section class="rounded-xl border bg-surface p-4 sm:p-6">
     <div class="flex items-baseline justify-between gap-3">
       <h2 class="font-semibold">
         {chapters === 1 ? "Chapter" : "Chapters"}
@@ -62,7 +62,7 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
       <button
         type="button"
         data-restart
-        class="mt-3 inline-flex h-10 items-center gap-2 rounded-md bg-primary px-4 font-medium text-primary-foreground text-sm transition-colors duration-150 hover:bg-primary/90"
+        class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-md bg-primary px-4 font-medium text-primary-foreground text-sm transition-colors duration-150 hover:bg-primary/90"
       >
         <svg
           class="size-4"
@@ -107,7 +107,7 @@ const numbers = Array.from({ length: chapters }, (_, i) => i + 1);
     <p class="mt-4 hidden text-muted-foreground text-sm" data-tracker-last></p>
   </section>
 
-  <section class="rounded-lg border bg-surface p-4 sm:p-5">
+  <section class="rounded-xl border bg-surface p-4 sm:p-6">
     <h2 class="font-semibold">Times read</h2>
     <p class="mt-1 text-muted-foreground text-sm" data-history-empty>
       Check every chapter to count a full read of {title}.
