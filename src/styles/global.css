@@ -227,7 +227,7 @@
 .at-a-glance {
   padding: 1.25rem;
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   background: var(--surface);
 }
 

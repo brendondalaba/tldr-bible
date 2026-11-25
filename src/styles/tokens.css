@@ -3,6 +3,8 @@
  * Components use role utilities (bg-primary, text-muted-foreground, border-border, ...),
  * never raw hex values or Tailwind palette colors (bg-blue-600).
  *
+ * Sizing follows shadcn/ui: compact controls (h-9), text-sm UI text, radii from --radius.
+ *
  * Each color is light-dark(<light>, <dark>). To re-skin a project, change the values
  * here and nothing else. Every pair listed in docs/DESIGN.md meets WCAG AA; re-check
  * contrast when you change them.
@@ -37,6 +39,9 @@
   --warning-foreground: light-dark(oklch(0.25 0.05 60), oklch(0.22 0.05 60));
   --danger: light-dark(oklch(0.55 0.2 25), oklch(0.7 0.17 25));
   --danger-foreground: light-dark(oklch(0.985 0.005 255), oklch(0.18 0.03 25));
+
+  /* Base corner radius; the rounded-* scale below is derived from it. */
+  --radius: 0.625rem;
 
   /* Project: genre badge colors (bible-sidekick). Fill + -foreground pairs, all >= 5.5:1. */
   --genre-law: light-dark(oklch(0.45 0.04 255), oklch(0.78 0.04 255));
@@ -119,11 +124,11 @@
   --font-mono: var(--bd-font-mono, ui-monospace), "SFMono-Regular", monospace;
 }
 
-@theme {
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px); /* 6px: badges, small controls */
+  --radius-md: calc(var(--radius) - 2px); /* 8px: buttons, inputs */
+  --radius-lg: var(--radius); /* 10px: alerts, popovers */
+  --radius-xl: calc(var(--radius) + 4px); /* 14px: cards, dialogs */
 }
 
 @layer base {

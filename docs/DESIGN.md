@@ -31,19 +31,29 @@ A neutral base meant to be re-skinned per project. All values live in `src/style
 
 The default palette is a cool neutral gray with a blue primary (hue 255). Checked contrast (WCAG 2.x):
 
+<!-- contrast:start -->
 | Pair | Light | Dark |
 | --- | --- | --- |
-| foreground on background | 17.2 | 16.5 |
-| muted-foreground on background | 5.8 | 7.7 |
-| muted-foreground on muted | 5.4 | 6.8 |
-| primary-foreground on primary | 5.1 | 7.6 |
-| primary (as link text) on background | 5.2 | 7.7 |
-| danger-foreground on danger | 5.2 | 6.6 |
-| success-foreground on success | 5.0 | 8.0 |
-| warning-foreground on warning | 7.1 | 9.2 |
-| input border on background | 3.3 | 3.5 |
+| foreground on background | 17.20 | 16.52 |
+| foreground on surface | 17.66 | 15.29 |
+| muted-foreground on background | 5.81 | 7.66 |
+| muted-foreground on muted | 5.41 | 6.80 |
+| muted-foreground on surface | 5.97 | 7.10 |
+| primary-foreground on primary | 5.10 | 7.57 |
+| primary (as link text) on background | 5.19 | 7.68 |
+| secondary-foreground on secondary | 13.86 | 11.87 |
+| accent-foreground on accent | 8.09 | 9.55 |
+| success-foreground on success | 4.99 | 8.02 |
+| warning-foreground on warning | 7.06 | 9.14 |
+| danger-foreground on danger | 5.15 | 6.58 |
+| danger (as error text) on background | 5.24 | 6.63 |
+| input border on background | 3.26 | 3.48 |
+| focus ring on background | 4.20 | 7.68 |
+<!-- contrast:end -->
 
-Re-check these pairs when you change a value; text needs ≥ 4.5, borders and icons ≥ 3.
+Text needs ≥ 4.5, borders and focus rings ≥ 3. Don't edit this table by hand: `npm run contrast -- --write`
+(from the bd-style repo, or `node <bd-style>/scripts/contrast.mjs . --write` in a project) checks every pair and
+regenerates it. The pairs it checks are listed in `scripts/lib/contrast-pairs.json`.
 
 ### Project tokens: genre badges
 
@@ -63,52 +73,95 @@ Used by `GenreBadge.astro` (`bg-genre-law text-genre-law-foreground`, and so on)
 ### Re-skinning quickly
 
 Most projects only need a new brand hue. In `tokens.css`, change the hue (the last number, `255`) on `primary`,
-`ring` and `accent*` to the brand's hue, then adjust lightness until the contrast table passes. Tint the neutrals by
+`ring` and `accent*` to the brand's hue, then adjust lightness until the contrast check passes. Tint the neutrals by
 changing their hue too, keeping chroma ≤ 0.015 so grays stay gray.
 
 ## Typography
 
 - **Sans:** Inter (variable). **Mono:** JetBrains Mono (variable). Swap them per project by changing the font import;
   the tokens read `--bd-font-sans` / `--bd-font-mono`.
-- Use Tailwind's type scale. A sensible default hierarchy:
+- Use Tailwind's type scale. Sizing follows shadcn/ui: compact, with `text-sm` as the default for anything inside
+  the UI (controls, cards, tables, menus). Save `text-base` for long-form reading.
 
 | Role | Classes |
 | --- | --- |
-| Display / hero | `text-4xl sm:text-5xl font-semibold tracking-tight` |
-| Page title (h1) | `text-3xl font-semibold tracking-tight` |
-| Section (h2) | `text-2xl font-semibold` |
-| Subsection (h3) | `text-lg font-medium` |
-| Body | `text-base leading-7` |
-| Small / caption | `text-sm text-muted-foreground` |
+| Display / hero | `text-4xl font-semibold tracking-tight text-balance lg:text-5xl` |
+| Page title (h1) | `text-2xl font-semibold tracking-tight` |
+| Section (h2) | `text-xl font-semibold tracking-tight` |
+| Card title (h3) | `font-semibold leading-none` |
+| UI text | `text-sm` |
+| Prose | `text-base leading-7` |
+| Description | `text-sm text-muted-foreground` |
+| Label | `text-sm font-medium leading-none` |
+| Fine print | `text-xs text-muted-foreground` |
 
 - Keep body text to `max-w-prose` (~65 characters per line).
 
+## Sizing
+
+Controls share one height per size so they line up in a row.
+
+| Control | Small | Default | Large |
+| --- | --- | --- | --- |
+| Button | `h-8 gap-1.5 px-3` | `h-9 gap-2 px-4` | `h-10 px-6` |
+| Icon button | `size-8` | `size-9` | `size-10` |
+| Input / select | | `h-9 px-3 py-1` | |
+| Icons inside controls | `size-4` | `size-4` | `size-4` |
+
+Inputs use `text-base md:text-sm`: 16px on phones stops iOS from zooming in on focus.
+
 ## Spacing & layout
 
-- Stick to Tailwind's 4px scale, preferring this subset: `1 2 3 4 6 8 12 16 24` (4–96px).
+- Stick to Tailwind's 4px scale, preferring this subset: `1 1.5 2 3 4 6 8 12 16` (4–64px).
 - Page container: `mx-auto w-full max-w-5xl px-4 sm:px-6`.
-- Vertical rhythm between page sections: `py-16 sm:py-24`. Between items in a group: `gap-4` or `gap-6`.
+- Between page sections: `py-12 sm:py-16`. Inside a card: `p-6` with `gap-6` between header, content and
+  footer. Between form fields: `gap-6`; label to input: `gap-2`. Between items in a group: `gap-2` or `gap-4`.
 - Mobile-first: write base styles for phones, then add `sm:`/`md:`/`lg:`.
 
 ## Shape & depth
 
-- Radius: `rounded-md` for controls, `rounded-lg` for cards, `rounded-full` for pills/avatars.
+- One base radius, `--radius` in `tokens.css` (0.625rem), drives the scale: `rounded-sm` 6px, `rounded-md` 8px,
+  `rounded-lg` 10px, `rounded-xl` 14px. Change `--radius` to make a project rounder or sharper.
+- `rounded-md` for buttons, inputs and badges; `rounded-lg` for alerts and popovers; `rounded-xl` for cards and
+  dialogs; `rounded-full` for avatars and pills.
 - Prefer a `border` over a shadow. Use `shadow-sm` at most for floating elements (menus, dialogs).
 
 ## Components (patterns, not a library)
 
 ```html
-<!-- Primary button -->
-<button class="inline-flex h-10 items-center rounded-md bg-primary px-4 font-medium text-primary-foreground hover:bg-primary/90">
-
-<!-- Secondary button -->
-<button class="inline-flex h-10 items-center rounded-md bg-secondary px-4 font-medium text-secondary-foreground hover:bg-accent">
+<!-- Button (default size). Swap the last group for a variant below. -->
+<button class="inline-flex h-9 items-center justify-center gap-2 rounded-md px-4 font-medium text-sm whitespace-nowrap
+  transition-colors duration-150 disabled:pointer-events-none disabled:opacity-50
+  bg-primary text-primary-foreground hover:bg-primary/90">
+<!--   secondary: bg-secondary text-secondary-foreground hover:bg-accent
+       outline:   border border-input bg-background hover:bg-accent hover:text-accent-foreground
+       ghost:     hover:bg-accent hover:text-accent-foreground
+       danger:    bg-danger text-danger-foreground hover:bg-danger/90 -->
 
 <!-- Card -->
-<div class="rounded-lg border bg-surface p-6 text-surface-foreground">
+<div class="flex flex-col gap-6 rounded-xl border bg-surface p-6 text-surface-foreground">
+  <div class="grid gap-1.5">
+    <h3 class="font-semibold leading-none">Title</h3>
+    <p class="text-muted-foreground text-sm">Description</p>
+  </div>
+</div>
 
-<!-- Text input -->
-<input class="h-10 w-full rounded-md border border-input bg-background px-3 placeholder:text-muted-foreground">
+<!-- Field -->
+<div class="grid gap-2">
+  <label class="font-medium text-sm leading-none">Email</label>
+  <input class="h-9 w-full min-w-0 rounded-md border border-input bg-background px-3 py-1 text-base
+    placeholder:text-muted-foreground md:text-sm aria-invalid:border-danger">
+</div>
+
+<!-- Textarea -->
+<textarea class="min-h-16 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm">
+
+<!-- Badge -->
+<span class="inline-flex items-center rounded-md border border-transparent bg-primary px-2 py-0.5 font-medium
+  text-primary-foreground text-xs">
+
+<!-- Alert (status fills: bg-success / bg-warning / bg-danger with their -foreground) -->
+<div role="alert" class="rounded-lg px-4 py-3 text-sm bg-danger text-danger-foreground">
 ```
 
 Once a pattern shows up a third time, turn it into a component.

@@ -41,7 +41,7 @@ const bookInfo = Object.fromEntries(
     <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-16">
       <div class="flex items-start justify-between gap-4">
         <h1
-          class="flex items-center gap-3 font-semibold text-3xl tracking-tight sm:gap-4 sm:text-5xl"
+          class="flex items-center gap-3 font-semibold text-3xl tracking-tight sm:gap-4 sm:text-4xl lg:text-5xl"
         >
           <Logo class="size-9 sm:size-14" />
           Bible Sidekick
@@ -57,7 +57,7 @@ const bookInfo = Object.fromEntries(
       </p>
       <a
         href="/start-here"
-        class="mt-6 inline-flex h-10 items-center gap-2 rounded-md bg-primary px-4 font-medium text-primary-foreground transition-colors duration-150 hover:bg-primary/90"
+        class="mt-6 inline-flex h-9 items-center justify-center gap-2 rounded-md bg-primary px-4 font-medium text-primary-foreground text-sm transition-colors duration-150 hover:bg-primary/90"
       >
         New to the Bible? Start here
         <span aria-hidden="true">→</span>
@@ -68,12 +68,12 @@ const bookInfo = Object.fromEntries(
   <div class="mx-auto w-full max-w-5xl space-y-10 px-4 py-8 sm:space-y-16 sm:px-6 sm:py-16">
     <section
       aria-labelledby="bible-progress-title"
-      class="rounded-lg border bg-surface p-4 sm:p-6"
+      class="rounded-xl border bg-surface p-4 sm:p-6"
       data-bible-progress
       data-books={JSON.stringify(bookInfo)}
     >
       <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-        <h2 id="bible-progress-title" class="font-semibold text-lg sm:text-xl">
+        <h2 id="bible-progress-title" class="font-semibold leading-none">
           Whole Bible
         </h2>
         <p class="text-muted-foreground text-sm tabular-nums">
@@ -107,7 +107,7 @@ const bookInfo = Object.fromEntries(
       testaments.map(testament => (
         <section>
           <div class="mb-4 flex items-baseline justify-between gap-4 sm:mb-6">
-            <h2 class="font-semibold text-xl sm:text-2xl">{testament.name}</h2>
+            <h2 class="font-semibold text-xl tracking-tight">{testament.name}</h2>
             <p
               class="text-muted-foreground text-sm tabular-nums"
               data-group-progress={testament.name}
@@ -119,11 +119,11 @@ const bookInfo = Object.fromEntries(
             {testament.books.map(book => (
               <a
                 href={`/bible/${book.id}`}
-                class="block rounded-lg border bg-surface px-4 py-3 transition-colors duration-150 hover:border-primary sm:p-5"
+                class="block rounded-xl border bg-surface px-4 py-3 transition-colors duration-150 hover:border-primary sm:p-5"
               >
                 <div class="flex items-center justify-between gap-3 sm:mb-2 sm:items-start">
                   <div class="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
-                    <h3 class="font-medium sm:text-lg">{book.data.title}</h3>
+                    <h3 class="font-semibold">{book.data.title}</h3>
                     <TimesRead book={book.id} chapters={book.data.chapters} />
                   </div>
                   <GenreBadge genre={book.data.genre} class="shrink-0" />

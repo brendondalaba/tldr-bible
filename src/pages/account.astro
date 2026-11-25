@@ -30,7 +30,7 @@ const books = Object.fromEntries(
 
     <!-- Signed out: sign up / sign in -->
     <section data-state="signed-out" hidden>
-      <h1 class="font-semibold text-3xl tracking-tight">
+      <h1 class="font-semibold text-2xl tracking-tight">
         Create your free account
       </h1>
       <p class="mt-2 text-muted-foreground">
@@ -74,7 +74,7 @@ const books = Object.fromEntries(
       <button
         type="button"
         data-google
-        class="mt-6 inline-flex h-11 w-full items-center justify-center gap-3 rounded-md border border-input bg-surface font-medium transition-colors duration-150 hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
+        class="mt-6 inline-flex h-10 w-full items-center justify-center gap-3 rounded-md border border-input bg-surface px-6 font-medium text-sm transition-colors duration-150 hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
       >
         <!-- Google's "G" must keep its brand colors (Google sign-in branding
              guidelines), the one place raw colors are allowed. -->
@@ -147,19 +147,19 @@ const books = Object.fromEntries(
       </p>
 
       <dl class="mt-8 grid grid-cols-3 gap-2 text-center">
-        <div class="rounded-lg border bg-surface p-3">
+        <div class="rounded-xl border bg-surface p-3">
           <dt class="text-muted-foreground text-xs">Books finished</dt>
           <dd class="mt-1 font-semibold text-2xl tabular-nums" data-stat="books">
             0
           </dd>
         </div>
-        <div class="rounded-lg border bg-surface p-3">
+        <div class="rounded-xl border bg-surface p-3">
           <dt class="text-muted-foreground text-xs">Times finished</dt>
           <dd class="mt-1 font-semibold text-2xl tabular-nums" data-stat="times">
             0
           </dd>
         </div>
-        <div class="rounded-lg border bg-surface p-3">
+        <div class="rounded-xl border bg-surface p-3">
           <dt class="text-muted-foreground text-xs">Chapters read</dt>
           <dd
             class="mt-1 font-semibold text-2xl tabular-nums"
@@ -181,7 +181,7 @@ const books = Object.fromEntries(
       <button
         type="button"
         data-sign-out
-        class="mt-10 inline-flex h-10 w-full items-center justify-center rounded-md border border-input font-medium text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
+        class="mt-10 inline-flex h-9 w-full items-center justify-center rounded-md border border-input font-medium text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
       >
         Sign out
       </button>
@@ -191,7 +191,7 @@ const books = Object.fromEntries(
       </p>
 
       <section
-        class="mt-12 rounded-lg border border-danger p-4"
+        class="mt-12 rounded-xl border border-danger p-6"
         aria-labelledby="delete-title"
       >
         <h2 id="delete-title" class="font-semibold">Delete account</h2>
@@ -202,7 +202,7 @@ const books = Object.fromEntries(
         <button
           type="button"
           data-delete-start
-          class="mt-4 inline-flex h-10 items-center rounded-md border border-danger px-4 font-medium text-sm transition-colors duration-150 hover:bg-danger hover:text-danger-foreground"
+          class="mt-4 inline-flex h-9 items-center justify-center rounded-md border border-danger px-4 font-medium text-sm transition-colors duration-150 hover:bg-danger hover:text-danger-foreground"
         >
           Delete my account
         </button>
@@ -217,7 +217,7 @@ const books = Object.fromEntries(
             autocomplete="off"
             autocapitalize="characters"
             spellcheck="false"
-            class="mt-2 h-10 w-full rounded-md border border-input bg-background px-3 font-mono"
+            class="mt-2 h-9 w-full min-w-0 rounded-md border border-input bg-background px-3 py-1 font-mono text-base md:text-sm"
             data-delete-input
           />
           <div class="mt-3 flex gap-2">
@@ -225,14 +225,14 @@ const books = Object.fromEntries(
               type="button"
               disabled
               data-delete-confirm-button
-              class="inline-flex h-10 flex-1 items-center justify-center rounded-md bg-danger px-4 font-medium text-danger-foreground text-sm transition-colors duration-150 hover:bg-danger/90 disabled:cursor-not-allowed disabled:opacity-50"
+              class="inline-flex h-9 flex-1 items-center justify-center rounded-md bg-danger px-4 font-medium text-danger-foreground text-sm transition-colors duration-150 hover:bg-danger/90 disabled:cursor-not-allowed disabled:opacity-50"
             >
               Permanently delete
             </button>
             <button
               type="button"
               data-delete-cancel
-              class="inline-flex h-10 items-center justify-center rounded-md border border-input px-4 text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
+              class="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 font-medium text-sm transition-colors duration-150 hover:bg-accent hover:text-accent-foreground"
             >
               Cancel
             </button>
@@ -248,14 +248,14 @@ const books = Object.fromEntries(
 
     <!-- After deleting -->
     <section data-state="deleted" hidden>
-      <h1 class="font-semibold text-3xl tracking-tight">Account deleted</h1>
+      <h1 class="font-semibold text-2xl tracking-tight">Account deleted</h1>
       <p class="mt-2 text-muted-foreground">
         Your account and all of your reading progress have been erased.
         You're welcome back any time.
       </p>
       <a
         href="/"
-        class="mt-6 inline-flex h-10 items-center rounded-md bg-primary px-4 font-medium text-primary-foreground transition-colors duration-150 hover:bg-primary/90"
+        class="mt-6 inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 font-medium text-primary-foreground text-sm transition-colors duration-150 hover:bg-primary/90"
       >
         Back to Bible Sidekick
       </a>
@@ -423,7 +423,7 @@ const books = Object.fromEntries(
         const link = document.createElement("a");
         link.href = `/bible/${entry.book}`;
         link.className =
-          "flex items-center justify-between gap-3 rounded-lg border bg-surface px-4 py-3 text-sm transition-colors duration-150 hover:border-primary";
+          "flex items-center justify-between gap-3 rounded-xl border bg-surface px-4 py-3 text-sm transition-colors duration-150 hover:border-primary";
         const title = document.createElement("span");
         title.className = "font-medium";
         title.textContent = info?.title ?? entry.book;
